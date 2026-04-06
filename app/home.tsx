@@ -16,14 +16,11 @@ export default function HomeScreen({ navigation }: Props) {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-
-      {/* Header */}
       <Text style={styles.title}>🩸 Blood Donation App</Text>
       <Text style={styles.subtitle}>
         Save Life, Donate Blood
       </Text>
 
-      {/* Menu Section */}
       <View style={styles.menuContainer}>
         <MenuButton title="🏠 Home" screen="Home" />
         <MenuButton title="🔍 Search Donor" screen="SearchDonor" />
@@ -31,12 +28,10 @@ export default function HomeScreen({ navigation }: Props) {
         <MenuButton title="ℹ️ About" screen="About" />
         <MenuButton title="📊 Dashboard" screen="Dashboard" />
 
-        {/* Logout Button */}
         <TouchableOpacity style={styles.logoutBtn}>
           <Text style={styles.logoutText}>🚪 Logout</Text>
         </TouchableOpacity>
       </View>
-
     </ScrollView>
   );
 }
