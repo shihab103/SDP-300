@@ -28,7 +28,7 @@ export default function HomeScreen() {
         <MenuButton title="ℹ️ About" screen="/about" />
         <MenuButton title="📊 Dashboard" screen="/dashboard" />
 
-        <TouchableOpacity style={styles.logoutBtn} onPress={() => router.replace("/login")}>
+        <TouchableOpacity style={styles.logoutBtn} onPress={() => router.replace("/")}>
           <Text style={styles.logoutText}>🚪 Logout</Text>
         </TouchableOpacity>
       </View>
