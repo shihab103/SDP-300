@@ -7,11 +7,11 @@ import {
   ScrollView,
   StatusBar,
 } from "react-native";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { useRouter } from "expo-router";
 
-type Props = NativeStackScreenProps<any, any>;
+export default function Dashboard() {
+  const router = useRouter();
 
-export default function Dashboard({ navigation }: Props) {
   const MenuCard = ({
     title,
     subtitle,
@@ -19,11 +19,11 @@ export default function Dashboard({ navigation }: Props) {
   }: {
     title: string;
     subtitle: string;
-    screen: string;
+    screen: any;
   }) => (
     <TouchableOpacity
       style={styles.card}
-      onPress={() => navigation.navigate(screen)}
+      onPress={() => router.push(screen)}
     >
       <Text style={styles.cardTitle}>{title}</Text>
       <Text style={styles.cardSubtitle}>{subtitle}</Text>
@@ -45,25 +45,25 @@ export default function Dashboard({ navigation }: Props) {
         <MenuCard
           title="Create Donation Request"
           subtitle="Request blood for a patient"
-          screen="DonationRequest"
+          screen="/donation-request"
         />
 
         <MenuCard
           title="My Requests"
           subtitle="View your donation history"
-          screen="MyRequests"
+          screen="/my-requests"
         />
 
         <MenuCard
           title="Search Donor"
           subtitle="Find available donors"
-          screen="SearchDonor"
+          screen="/search-donor"
         />
 
         <MenuCard
           title="My Profile"
           subtitle="Update personal information"
-          screen="Profile"
+          screen="/profile"
         />
       </View>
     </ScrollView>

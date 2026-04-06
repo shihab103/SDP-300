@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from "react-native";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { useRouter } from "expo-router";
 
-type Props = NativeStackScreenProps<any, any>; 
+export default function HomeScreen() {
+  const router = useRouter();
 
-export default function HomeScreen({ navigation }: Props) {
-  const MenuButton = ({ title, screen }: { title: string; screen: string }) => (
+  const MenuButton = ({ title, screen }: { title: string; screen: any }) => (
     <TouchableOpacity
       style={styles.card}
-      onPress={() => screen && navigation.navigate(screen)}
+      onPress={() => screen && router.push(screen)}
     >
       <Text style={styles.cardText}>{title}</Text>
     </TouchableOpacity>
@@ -22,13 +22,13 @@ export default function HomeScreen({ navigation }: Props) {
       </Text>
 
       <View style={styles.menuContainer}>
-        <MenuButton title="🏠 Home" screen="Home" />
-        <MenuButton title="🔍 Search Donor" screen="SearchDonor" />
-        <MenuButton title="📢 Blood Donation Request" screen="DonationRequest" />
-        <MenuButton title="ℹ️ About" screen="About" />
-        <MenuButton title="📊 Dashboard" screen="Dashboard" />
+        <MenuButton title="🏠 Home" screen="/home" />
+        <MenuButton title="🔍 Search Donor" screen="/search-donor" />
+        <MenuButton title="📢 Blood Donation Request" screen="/donation-request" />
+        <MenuButton title="ℹ️ About" screen="/about" />
+        <MenuButton title="📊 Dashboard" screen="/dashboard" />
 
-        <TouchableOpacity style={styles.logoutBtn}>
+        <TouchableOpacity style={styles.logoutBtn} onPress={() => router.replace("/login")}>
           <Text style={styles.logoutText}>🚪 Logout</Text>
         </TouchableOpacity>
       </View>
