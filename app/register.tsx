@@ -91,7 +91,7 @@ export default function Register() {
       };
 
       // 3. MongoDB (Backend) Request
-      const res = await axios.post("https://server-tawny-mu.vercel.app/add-user", backendData);
+      const res = await axios.post("https://webapp-h44f7ne7j-shihabs-projects-1f40e1ba.vercel.app/add-user", backendData);
 
       if (res.data.insertedId) {
         Alert.alert("Success", "Registration Successful ✅");

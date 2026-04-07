@@ -22,11 +22,11 @@ export default function HomeScreen() {
       </Text>
 
       <View style={styles.menuContainer}>
-        <MenuButton title="🏠 Home" screen="/home" />
-        <MenuButton title="🔍 Search Donor" screen="/search-donor" />
-        <MenuButton title="📢 Blood Donation Request" screen="/donation-request" />
-        <MenuButton title="ℹ️ About" screen="/about" />
+        {/* <MenuButton title="🏠 Home" screen="/banner" /> */}
+        {/* <MenuButton title="🔍 Search Donor" screen="/search-donor" /> */}
+        {/* <MenuButton title="📢 Blood Donation Request" screen="/donation-request" /> */}
         <MenuButton title="📊 Dashboard" screen="/dashboard" />
+        <MenuButton title="ℹ️ About" screen="/about" />
 
         <TouchableOpacity style={styles.logoutBtn} onPress={() => router.replace("/")}>
           <Text style={styles.logoutText}>🚪 Logout</Text>
