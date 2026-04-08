@@ -13,7 +13,7 @@ import {
 } from "react-native";
 import { useRouter } from "expo-router";
 import LottieView from "lottie-react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons"; 
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { AuthContext } from "../../src/Provider/AuthContext";
 
 import loginAnimation from "../../assets/loginAnimation.json";
@@ -35,23 +35,40 @@ export default function Login() {
     try {
       setLoading(true);
       await loginUser(formData.email, formData.password);
-      
-      Alert.alert("Success", "Login Successful ✅");
+
+      Alert.alert(
+        "✅ Login Successful",
+        "Welcome back! You are now logged in.",
+      );
+
       router.replace("/home");
     } catch (error: any) {
-      Alert.alert("Login Failed", error.message || "Invalid credentials");
+      let errorMessage = "Something went wrong. Please try again.";
+
+      // Firebase / custom error handling
+      if (error.message?.includes("user-not-found")) {
+        errorMessage = "No account found with this email.";
+      } else if (error.message?.includes("wrong-password")) {
+        errorMessage = "Incorrect password. Please try again.";
+      } else if (error.message?.includes("invalid-email")) {
+        errorMessage = "Invalid email format.";
+      }
+
+      Alert.alert("❌ Login Failed", errorMessage);
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <KeyboardAvoidingView 
+    <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={styles.mainContainer}
     >
-      <ScrollView contentContainerStyle={styles.scrollContainer} showsVerticalScrollIndicator={false}>
-        
+      <ScrollView
+        contentContainerStyle={styles.scrollContainer}
+        showsVerticalScrollIndicator={false}
+      >
         {/* Lottie Animation Section */}
         <View style={styles.lottieContainer}>
           <LottieView
@@ -68,7 +85,11 @@ export default function Login() {
 
           {/* Email Input */}
           <View style={styles.inputGroup}>
-            <MaterialCommunityIcons name="email-outline" size={22} color="#94a3b8" />
+            <MaterialCommunityIcons
+              name="email-outline"
+              size={22}
+              color="#94a3b8"
+            />
             <TextInput
               placeholder="Enter email"
               style={styles.input}
@@ -82,7 +103,11 @@ export default function Login() {
 
           {/* Password Input */}
           <View style={styles.inputGroup}>
-            <MaterialCommunityIcons name="lock-outline" size={22} color="#94a3b8" />
+            <MaterialCommunityIcons
+              name="lock-outline"
+              size={22}
+              color="#94a3b8"
+            />
             <TextInput
               placeholder="Enter password"
               style={styles.input}
@@ -94,24 +119,28 @@ export default function Login() {
           </View>
 
           <TouchableOpacity style={styles.forgotContainer}>
-             <Text style={styles.forgotText}>Forgot password?</Text>
+            <Text style={styles.forgotText}>Forgot password?</Text>
           </TouchableOpacity>
 
           {/* Remember Me */}
-          <TouchableOpacity 
-            style={styles.checkboxRow} 
+          <TouchableOpacity
+            style={styles.checkboxRow}
             onPress={() => setRememberMe(!rememberMe)}
           >
-            <View style={[styles.checkbox, rememberMe && styles.checkboxSelected]}>
-              {rememberMe && <MaterialCommunityIcons name="check" size={14} color="#fff" />}
+            <View
+              style={[styles.checkbox, rememberMe && styles.checkboxSelected]}
+            >
+              {rememberMe && (
+                <MaterialCommunityIcons name="check" size={14} color="#fff" />
+              )}
             </View>
             <Text style={styles.checkboxLabel}>Remember Me</Text>
           </TouchableOpacity>
 
           {/* Login Button */}
-          <TouchableOpacity 
-            style={[styles.loginBtn, loading && { opacity: 0.7 }]} 
-            onPress={handleLogin} 
+          <TouchableOpacity
+            style={[styles.loginBtn, loading && { opacity: 0.7 }]}
+            onPress={handleLogin}
             disabled={loading}
           >
             {loading ? (
@@ -122,8 +151,8 @@ export default function Login() {
           </TouchableOpacity>
 
           <View style={styles.socialContainer}>
-             <Text style={styles.orText}>Or login with social</Text>
-             {/* Social Buttons Component goes here */}
+            <Text style={styles.orText}>Or login with social</Text>
+            {/* Social Buttons Component goes here */}
           </View>
 
           {/* Footer Link */}
@@ -134,7 +163,6 @@ export default function Login() {
             </TouchableOpacity>
           </View>
         </View>
-
       </ScrollView>
     </KeyboardAvoidingView>
   );

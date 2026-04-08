@@ -27,22 +27,22 @@ export const AuthProvider = ({ children }: any) => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
-  // ✅ Register User
+  // Register User
   const createUser = async (email: string, password: string) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
-  // ✅ Login User
+  // Login User
   const loginUser = async (email: string, password: string) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  // ✅ Logout User
+  // Logout User
   const logoutUser = async () => {
     return signOut(auth);
   };
 
-  // ✅ Auto Login Detect
+  // Auto Login Detect
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
