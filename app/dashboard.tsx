@@ -23,7 +23,6 @@ export default function Dashboard() {
 
   const API_URL = "https://webapp-delta-orpin.vercel.app";
 
-  // রোল ফেচ করার ফাংশন
   useEffect(() => {
     if (user?.email) {
       setLoading(true);
@@ -57,13 +56,13 @@ export default function Dashboard() {
       activeOpacity={0.7}
     >
       <View style={styles.cardIconBox}>
-        <MaterialCommunityIcons name={icon} size={28} color="#d32f2f" />
+        <MaterialCommunityIcons name={icon} size={26} color="#d32f2f" />
       </View>
       <View style={styles.cardTextContent}>
         <Text style={styles.cardTitle}>{title}</Text>
         <Text style={styles.cardSubtitle}>{subtitle}</Text>
       </View>
-      <MaterialCommunityIcons name="chevron-right" size={24} color="#ccc" />
+      <MaterialCommunityIcons name="chevron-right" size={22} color="#ccc" />
     </TouchableOpacity>
   );
 
@@ -86,7 +85,7 @@ export default function Dashboard() {
           {role === "admin" ? "🛡️ Admin Panel" : "🩸 Donor Dashboard"}
         </Text>
         <Text style={styles.headerSubtitle}>
-          Logged in as: <Text style={styles.boldText}>{role?.toUpperCase()}</Text>
+          Welcome back, <Text style={styles.boldText}>{role?.toUpperCase()}</Text>
         </Text>
       </View>
 
@@ -105,8 +104,8 @@ export default function Dashboard() {
             <MenuCard
               title="All Users"
               subtitle="Manage all registered users"
-              screen="/all-users"
-              icon="users" // Note: Ensure icon name matches @expo/vector-icons
+              screen="/allusers"
+              icon="account-group-outline"
             />
             <MenuCard
               title="Donation Management"
@@ -135,19 +134,6 @@ export default function Dashboard() {
           </>
         )}
 
-        {/* Volunteer Only Routes */}
-        {role === "volunteer" && (
-          <>
-            <MenuCard
-              title="Manage Donations"
-              subtitle="Review pending requests"
-              screen="/donation-management"
-              icon="format-list-bulleted"
-            />
-          </>
-        )}
-
-        {/* কমন রুট: সার্চ (সবাই করতে পারে) */}
         <MenuCard
           title="Search Donor"
           subtitle="Find donors near you"
@@ -162,7 +148,7 @@ export default function Dashboard() {
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#f8f9fa" },
   loaderContainer: { flex: 1, justifyContent: "center", alignItems: "center" },
-  loaderText: { marginTop: 10, color: "#666" },
+  loaderText: { marginTop: 10, color: "#666", fontWeight: "500" },
   header: {
     backgroundColor: "#d32f2f",
     paddingTop: 60,
@@ -170,8 +156,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 25,
     borderBottomLeftRadius: 35,
     borderBottomRightRadius: 35,
+    elevation: 5,
   },
-  headerTitle: { fontSize: 28, fontWeight: "bold", color: "#fff" },
+  headerTitle: { fontSize: 26, fontWeight: "bold", color: "#fff" },
   headerSubtitle: { marginTop: 5, color: "#ffcdd2", fontSize: 14 },
   boldText: { fontWeight: "bold", color: "#fff" },
   menuWrapper: { padding: 20 },
@@ -180,20 +167,20 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     padding: 18,
-    borderRadius: 20,
-    marginBottom: 15,
+    borderRadius: 22,
+    marginBottom: 16,
     elevation: 3,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
+    shadowOpacity: 0.08,
+    shadowRadius: 6,
   },
   cardIconBox: {
-    backgroundColor: "#ffebee",
+    backgroundColor: "#fef2f2",
     padding: 12,
-    borderRadius: 15,
+    borderRadius: 16,
   },
   cardTextContent: { flex: 1, marginLeft: 15 },
-  cardTitle: { fontSize: 17, fontWeight: "bold", color: "#333" },
-  cardSubtitle: { marginTop: 3, fontSize: 13, color: "#777" },
+  cardTitle: { fontSize: 16, fontWeight: "700", color: "#1f2937" },
+  cardSubtitle: { marginTop: 2, fontSize: 12, color: "#6b7280" },
 });
