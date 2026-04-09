@@ -90,7 +90,6 @@ export default function Dashboard() {
       </View>
 
       <View style={styles.menuWrapper}>
-        {/* কমন রুট: প্রোফাইল */}
         <MenuCard
           title="My Profile"
           subtitle="View and update profile"
@@ -110,7 +109,7 @@ export default function Dashboard() {
             <MenuCard
               title="Donation Management"
               subtitle="Control all blood requests"
-              screen="/donation-management"
+              screen="/admin_donation_management"
               icon="clipboard-list-outline"
             />
           </>
@@ -134,12 +133,6 @@ export default function Dashboard() {
           </>
         )}
 
-        <MenuCard
-          title="Search Donor"
-          subtitle="Find donors near you"
-          screen="/search-donor"
-          icon="magnify"
-        />
       </View>
     </ScrollView>
   );

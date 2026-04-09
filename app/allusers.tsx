@@ -3,12 +3,13 @@ import {
   View,
   Text,
   StyleSheet,
-  ScrollView,
   Image,
   TouchableOpacity,
   ActivityIndicator,
   Alert,
   FlatList,
+  ScrollView,
+  StatusBar,
 } from "react-native";
 import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
 import axios from "axios";
@@ -118,7 +119,6 @@ const AllUsers = () => {
       </View>
 
       <View style={styles.actionRow}>
-        {/* Block/Unblock Button */}
         <TouchableOpacity 
           style={styles.actionButton} 
           onPress={() => handleUpdateStatus(item.email, item.status === 'active' ? 'blocked' : 'active')}
@@ -127,7 +127,6 @@ const AllUsers = () => {
           <Text style={styles.actionButtonText}>{item.status === 'active' ? 'Block' : 'Unblock'}</Text>
         </TouchableOpacity>
 
-        {/* Change Role Button (Admin <-> Donor) */}
         <TouchableOpacity 
           style={[styles.actionButton, styles.roleBtn]} 
           onPress={() => handleUpdateRole(item.email, item.role)}
@@ -141,11 +140,14 @@ const AllUsers = () => {
 
   return (
     <View style={styles.container}>
+      <StatusBar backgroundColor="#b71c1c" barStyle="light-content" />
+
+      {/* Header Section - Dashboard Matching Design */}
       <View style={styles.header}>
-        <Text style={styles.title}>All Users</Text>
+        <Text style={styles.headerTitle}>👥 User Management</Text>
         <View style={styles.filterBox}>
-          <Text style={styles.filterLabel}>Filter:</Text>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          <Text style={styles.headerSubtitle}>Status Filter: </Text>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.filterScroll}>
             {['all', 'active', 'blocked'].map((f) => (
               <TouchableOpacity 
                 key={f} 
@@ -163,7 +165,8 @@ const AllUsers = () => {
 
       {loading ? (
         <View style={styles.center}>
-          <ActivityIndicator size="large" color="#ef4444" />
+          <ActivityIndicator size="large" color="#d32f2f" />
+          <Text style={styles.loaderText}>Fetching Users...</Text>
         </View>
       ) : (
         <FlatList
@@ -171,6 +174,7 @@ const AllUsers = () => {
           keyExtractor={(item) => item._id}
           renderItem={renderUserCard}
           contentContainerStyle={styles.listContent}
+          showsVerticalScrollIndicator={false}
           ListEmptyComponent={<Text style={styles.emptyText}>No users found.</Text>}
         />
       )}
@@ -179,33 +183,73 @@ const AllUsers = () => {
 };
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#F9FAFB" },
-  header: { padding: 20, backgroundColor: "#fff", borderBottomWidth: 1, borderBottomColor: "#E5E7EB" },
-  title: { fontSize: 24, fontWeight: "bold", color: "#111827", marginBottom: 15 },
+  container: { flex: 1, backgroundColor: "#f8f9fa" },
+  
+  // Curved Red Header
+  header: { 
+    backgroundColor: "#d32f2f", 
+    paddingTop: 60, 
+    paddingBottom: 35, 
+    paddingHorizontal: 25, 
+    borderBottomLeftRadius: 35, 
+    borderBottomRightRadius: 35,
+    elevation: 5,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+  },
+  headerTitle: { fontSize: 26, fontWeight: "bold", color: "#fff", marginBottom: 15 },
+  headerSubtitle: { color: "#ffcdd2", fontSize: 14, fontWeight: "600" },
+  
   filterBox: { flexDirection: "row", alignItems: "center" },
-  filterLabel: { fontWeight: "600", color: "#4B5563", marginRight: 10 },
-  filterChip: { paddingHorizontal: 15, paddingVertical: 7, borderRadius: 20, backgroundColor: "#F3F4F6", marginRight: 8 },
-  activeFilterChip: { backgroundColor: "#ef4444" },
-  filterChipText: { color: "#4B5563", fontSize: 13, fontWeight: "600" },
-  activeFilterText: { color: "#fff" },
+  filterScroll: { marginLeft: 5 },
+  filterChip: { paddingHorizontal: 15, paddingVertical: 6, borderRadius: 15, backgroundColor: "rgba(255,255,255,0.2)", marginRight: 8 },
+  activeFilterChip: { backgroundColor: "#fff" },
+  filterChipText: { color: "#ffcdd2", fontSize: 12, fontWeight: "bold" },
+  activeFilterText: { color: "#d32f2f" },
+
   center: { flex: 1, justifyContent: "center", alignItems: "center" },
-  listContent: { padding: 15 },
-  userCard: { backgroundColor: "#fff", borderRadius: 15, padding: 15, marginBottom: 15, elevation: 3, shadowColor: "#000", shadowOpacity: 0.05, shadowRadius: 8 },
+  loaderText: { marginTop: 10, color: "#666", fontWeight: "600" },
+  listContent: { padding: 20, paddingTop: 25 },
+
+  // User Card Design
+  userCard: { 
+    backgroundColor: "#fff", 
+    borderRadius: 22, 
+    padding: 18, 
+    marginBottom: 16, 
+    elevation: 3, 
+    shadowColor: "#000", 
+    shadowOpacity: 0.08, 
+    shadowRadius: 8 
+  },
   cardHeader: { flexDirection: "row", alignItems: "center" },
-  avatar: { width: 52, height: 52, borderRadius: 26, backgroundColor: "#E5E7EB" },
+  avatar: { width: 55, height: 55, borderRadius: 27.5, backgroundColor: "#E5E7EB", borderWidth: 2, borderColor: "#fff" },
   userInfo: { flex: 1, marginLeft: 12 },
-  userName: { fontSize: 16, fontWeight: "bold", color: "#1F2937" },
+  userName: { fontSize: 17, fontWeight: "bold", color: "#1F2937" },
   userEmail: { fontSize: 13, color: "#6B7280", marginTop: 2 },
-  statusBadge: { paddingHorizontal: 8, paddingVertical: 4, borderRadius: 6 },
-  statusText: { fontSize: 10, fontWeight: "bold" },
-  roleContainer: { marginTop: 12, paddingBottom: 12, borderBottomWidth: 1, borderBottomColor: "#F3F4F6" },
-  roleLabel: { fontSize: 13, color: "#6B7280" },
+  statusBadge: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8 },
+  statusText: { fontSize: 10, fontWeight: "900" },
+  
+  roleContainer: { marginTop: 15, paddingBottom: 15, borderBottomWidth: 1, borderBottomColor: "#F3F4F6" },
+  roleLabel: { fontSize: 13, color: "#9CA3AF" },
   roleValue: { fontWeight: "bold", color: "#374151", textTransform: "capitalize" },
-  actionRow: { flexDirection: "row", marginTop: 12, justifyContent: "space-between" },
-  actionButton: { flexDirection: "row", alignItems: "center", paddingVertical: 10, paddingHorizontal: 14, borderRadius: 10, borderWidth: 1, borderColor: "#FEE2E2", flex: 0.48, justifyContent: "center" },
+  
+  actionRow: { flexDirection: "row", marginTop: 15, justifyContent: "space-between" },
+  actionButton: { 
+    flexDirection: "row", 
+    alignItems: "center", 
+    paddingVertical: 12, 
+    borderRadius: 14, 
+    borderWidth: 1, 
+    borderColor: "#FEE2E2", 
+    flex: 0.48, 
+    justifyContent: "center",
+    backgroundColor: "#fff"
+  },
   roleBtn: { borderColor: "#DBEAFE" },
-  actionButtonText: { marginLeft: 6, fontSize: 13, fontWeight: "700", color: "#ef4444" },
-  emptyText: { textAlign: "center", marginTop: 50, color: "#9CA3AF" }
+  actionButtonText: { marginLeft: 8, fontSize: 13, fontWeight: "700", color: "#ef4444" },
+  emptyText: { textAlign: "center", marginTop: 50, color: "#9CA3AF", fontStyle: "italic" }
 });
 
 export default AllUsers;
