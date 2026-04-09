@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   View,
   Text,
@@ -6,64 +6,153 @@ import {
   TouchableOpacity,
   ScrollView,
   StatusBar,
+  ActivityIndicator,
 } from "react-native";
 import { useRouter } from "expo-router";
+import axios from "axios";
+import { AuthContext } from "../src/Provider/AuthContext";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function Dashboard() {
   const router = useRouter();
+  const auth = useContext(AuthContext);
+  const user = auth?.user;
+
+  const [role, setRole] = useState<string | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  const API_URL = "https://webapp-delta-orpin.vercel.app";
+
+  // রোল ফেচ করার ফাংশন
+  useEffect(() => {
+    if (user?.email) {
+      setLoading(true);
+      axios
+        .get(`${API_URL}/get-user-role?email=${user.email}`)
+        .then((res) => {
+          setRole(res.data.role);
+          setLoading(false);
+        })
+        .catch((err) => {
+          console.error("Role Fetch Error:", err);
+          setLoading(false);
+        });
+    }
+  }, [user?.email]);
 
   const MenuCard = ({
     title,
     subtitle,
     screen,
+    icon,
   }: {
     title: string;
     subtitle: string;
     screen: any;
+    icon: any;
   }) => (
     <TouchableOpacity
       style={styles.card}
       onPress={() => router.push(screen)}
+      activeOpacity={0.7}
     >
-      <Text style={styles.cardTitle}>{title}</Text>
-      <Text style={styles.cardSubtitle}>{subtitle}</Text>
+      <View style={styles.cardIconBox}>
+        <MaterialCommunityIcons name={icon} size={28} color="#d32f2f" />
+      </View>
+      <View style={styles.cardTextContent}>
+        <Text style={styles.cardTitle}>{title}</Text>
+        <Text style={styles.cardSubtitle}>{subtitle}</Text>
+      </View>
+      <MaterialCommunityIcons name="chevron-right" size={24} color="#ccc" />
     </TouchableOpacity>
   );
 
-  return (
-    <ScrollView style={styles.container}>
-      <StatusBar backgroundColor="#c62828" barStyle="light-content" />
+  if (loading) {
+    return (
+      <View style={styles.loaderContainer}>
+        <ActivityIndicator size="large" color="#d32f2f" />
+        <Text style={styles.loaderText}>Loading Dashboard...</Text>
+      </View>
+    );
+  }
 
+  return (
+    <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+      <StatusBar backgroundColor="#b71c1c" barStyle="light-content" />
+
+      {/* Header Section */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>🩸 Donor Dashboard</Text>
+        <Text style={styles.headerTitle}>
+          {role === "admin" ? "🛡️ Admin Panel" : "🩸 Donor Dashboard"}
+        </Text>
         <Text style={styles.headerSubtitle}>
-          Welcome back! Ready to save lives today.
+          Logged in as: <Text style={styles.boldText}>{role?.toUpperCase()}</Text>
         </Text>
       </View>
 
       <View style={styles.menuWrapper}>
-        <MenuCard
-          title="Create Donation Request"
-          subtitle="Request blood for a patient"
-          screen="/donation-request"
-        />
-
-        <MenuCard
-          title="My Requests"
-          subtitle="View your donation history"
-          screen="/my-requests"
-        />
-
-        <MenuCard
-          title="Search Donor"
-          subtitle="Find available donors"
-          screen="/search-donor"
-        />
-
+        {/* কমন রুট: প্রোফাইল */}
         <MenuCard
           title="My Profile"
-          subtitle="Update personal information"
+          subtitle="View and update profile"
           screen="/profile"
+          icon="account-circle-outline"
+        />
+
+        {/* Admin Only Routes */}
+        {role === "admin" && (
+          <>
+            <MenuCard
+              title="All Users"
+              subtitle="Manage all registered users"
+              screen="/all-users"
+              icon="users" // Note: Ensure icon name matches @expo/vector-icons
+            />
+            <MenuCard
+              title="Donation Management"
+              subtitle="Control all blood requests"
+              screen="/donation-management"
+              icon="clipboard-list-outline"
+            />
+          </>
+        )}
+
+        {/* Donor Only Routes */}
+        {role === "donor" && (
+          <>
+            <MenuCard
+              title="Donation Request"
+              subtitle="Create a new blood request"
+              screen="/create-donation-request"
+              icon="hand-heart-outline"
+            />
+            <MenuCard
+              title="My Donation Requests"
+              subtitle="View your request history"
+              screen="/my-donation-requests"
+              icon="history"
+            />
+          </>
+        )}
+
+        {/* Volunteer Only Routes */}
+        {role === "volunteer" && (
+          <>
+            <MenuCard
+              title="Manage Donations"
+              subtitle="Review pending requests"
+              screen="/donation-management"
+              icon="format-list-bulleted"
+            />
+          </>
+        )}
+
+        {/* কমন রুট: সার্চ (সবাই করতে পারে) */}
+        <MenuCard
+          title="Search Donor"
+          subtitle="Find donors near you"
+          screen="/search-donor"
+          icon="magnify"
         />
       </View>
     </ScrollView>
@@ -71,50 +160,40 @@ export default function Dashboard() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#f4f6f8",
-  },
+  container: { flex: 1, backgroundColor: "#f8f9fa" },
+  loaderContainer: { flex: 1, justifyContent: "center", alignItems: "center" },
+  loaderText: { marginTop: 10, color: "#666" },
   header: {
     backgroundColor: "#d32f2f",
     paddingTop: 60,
     paddingBottom: 40,
-    paddingHorizontal: 20,
-    borderBottomLeftRadius: 25,
-    borderBottomRightRadius: 25,
+    paddingHorizontal: 25,
+    borderBottomLeftRadius: 35,
+    borderBottomRightRadius: 35,
   },
-  headerTitle: {
-    fontSize: 26,
-    fontWeight: "bold",
-    color: "#fff",
-  },
-  headerSubtitle: {
-    marginTop: 8,
-    color: "#ffeaea",
-    fontSize: 15,
-  },
-  menuWrapper: {
-    padding: 20,
-  },
+  headerTitle: { fontSize: 28, fontWeight: "bold", color: "#fff" },
+  headerSubtitle: { marginTop: 5, color: "#ffcdd2", fontSize: 14 },
+  boldText: { fontWeight: "bold", color: "#fff" },
+  menuWrapper: { padding: 20 },
   card: {
     backgroundColor: "#fff",
-    padding: 20,
-    borderRadius: 15,
-    marginBottom: 18,
-    elevation: 5,
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 18,
+    borderRadius: 20,
+    marginBottom: 15,
+    elevation: 3,
     shadowColor: "#000",
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.12,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
     shadowRadius: 4,
   },
-  cardTitle: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "#333",
+  cardIconBox: {
+    backgroundColor: "#ffebee",
+    padding: 12,
+    borderRadius: 15,
   },
-  cardSubtitle: {
-    marginTop: 5,
-    fontSize: 14,
-    color: "gray",
-  },
+  cardTextContent: { flex: 1, marginLeft: 15 },
+  cardTitle: { fontSize: 17, fontWeight: "bold", color: "#333" },
+  cardSubtitle: { marginTop: 3, fontSize: 13, color: "#777" },
 });

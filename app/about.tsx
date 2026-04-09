@@ -12,7 +12,7 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 
 const { width } = Dimensions.get("window");
-
+// https://webapp-delta-orpin.vercel.app
 const stats = [
   {
     id: 1,

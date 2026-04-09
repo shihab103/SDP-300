@@ -22,7 +22,7 @@ const upazilasData = require("../assets/data/upazilas.json");
 const BLOOD_GROUPS = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
 
 const API_URL =
-  "https://webapp-h44f7ne7j-shihabs-projects-1f40e1ba.vercel.app/create-donation-request";
+  "https://webapp-delta-orpin.vercel.app/create-donation-request";
 
 export default function DonationRequest() {
   const { user, userInfo }: any = useContext(AuthContext);
