@@ -12,6 +12,8 @@ import {
   TextInput,
   TouchableOpacity,
   View,
+  StatusBar,
+  Platform,
 } from "react-native";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { AuthContext } from "../src/Provider/AuthContext";
@@ -21,8 +23,7 @@ const upazilasData = require("../assets/data/upazilas.json");
 
 const BLOOD_GROUPS = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
 
-const API_URL =
-  "https://webapp-delta-orpin.vercel.app/create-donation-request";
+const API_URL = "https://webapp-delta-orpin.vercel.app/create-donation-request";
 
 export default function DonationRequest() {
   const { user, userInfo }: any = useContext(AuthContext);
@@ -59,10 +60,10 @@ export default function DonationRequest() {
 
   useEffect(() => {
     const dTable = districtsData.find(
-      (item: any) => item.type === "table" && item.name === "districts",
+      (item: any) => item.type === "table" && item.name === "districts"
     );
     const uTable = upazilasData.find(
-      (item: any) => item.type === "table" && item.name === "upazilas",
+      (item: any) => item.type === "table" && item.name === "upazilas"
     );
     if (dTable) setDistricts(dTable.data);
     if (uTable) setUpazilas(uTable.data);
@@ -72,7 +73,7 @@ export default function DonationRequest() {
     if (formData.recipientDistrictId) {
       const filtered = upazilas.filter(
         (u: any) =>
-          u.district_id.toString() === formData.recipientDistrictId.toString(),
+          u.district_id.toString() === formData.recipientDistrictId.toString()
       );
       setFilteredUpazilas(filtered);
     }
@@ -189,12 +190,20 @@ export default function DonationRequest() {
 
   return (
     <View style={styles.mainContainer}>
+      <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
+
+      {/* --- Sticky Header (Same as Management Page) --- */}
+      <View style={styles.stickyHeader}>
+        <Text style={styles.headerTitle}>🩸 Blood Request</Text>
+        <Text style={styles.headerSubtitle}>
+          Fill the form to find a <Text style={styles.boldText}>Hero Donor</Text>
+        </Text>
+      </View>
+
       <ScrollView
         contentContainerStyle={styles.scrollContainer}
         showsVerticalScrollIndicator={false}
       >
-        <Text style={styles.headerTitle}>🩸 Donation Request</Text>
-
         <View style={styles.card}>
           <Text style={styles.sectionTitle}>Requester Info</Text>
           <View style={styles.inputGroup}>
@@ -301,7 +310,6 @@ export default function DonationRequest() {
             </TouchableOpacity>
           </View>
 
-          {/* এখানে div বদলে View ব্যবহার করা হয়েছে */}
           <View style={styles.row}>
             <View style={{ flex: 1, marginRight: 10 }}>
               <Text style={styles.label}>Donation Date *</Text>
@@ -413,22 +421,51 @@ export default function DonationRequest() {
 }
 
 const styles = StyleSheet.create({
-  mainContainer: { flex: 1, backgroundColor: "#f8fafc" },
-  scrollContainer: { padding: 20, paddingBottom: 40 },
-  headerTitle: {
-    fontSize: 24,
-    fontWeight: "bold",
-    color: "#e63946",
-    textAlign: "center",
-    marginBottom: 20,
-    marginTop: 40,
+  mainContainer: { flex: 1, backgroundColor: "#f8f9fa" },
+  
+  // Sticky Header Style
+  stickyHeader: {
+    backgroundColor: "#d32f2f",
+    paddingTop: Platform.OS === "android" ? (StatusBar.currentHeight ? StatusBar.currentHeight + 20 : 50) : 60,
+    paddingBottom: 30,
+    paddingHorizontal: 25,
+    borderBottomLeftRadius: 35,
+    borderBottomRightRadius: 35,
+    elevation: 10,
+    shadowColor: "#000",
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    zIndex: 1000,
+  },
+  headerTitle: { 
+    fontSize: 26, 
+    fontWeight: "bold", 
+    color: "#fff" 
+  },
+  headerSubtitle: { 
+    marginTop: 4, 
+    color: "#ffcdd2", 
+    fontSize: 14 
+  },
+  boldText: { 
+    fontWeight: "bold", 
+    color: "#fff" 
+  },
+
+  scrollContainer: { 
+    padding: 18, 
+    paddingTop: 20, 
+    paddingBottom: 40 
   },
   card: {
     backgroundColor: "#fff",
     padding: 20,
-    borderRadius: 15,
+    borderRadius: 22,
     marginBottom: 20,
-    elevation: 3,
+    elevation: 4,
+    shadowColor: "#000",
+    shadowOpacity: 0.08,
+    shadowRadius: 8
   },
   sectionTitle: {
     fontSize: 18,
@@ -449,7 +486,7 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
     borderColor: "#e2e8f0",
-    borderRadius: 10,
+    borderRadius: 12,
     padding: 12,
     fontSize: 15,
     backgroundColor: "#f9f9f9",
@@ -458,19 +495,23 @@ const styles = StyleSheet.create({
   selectorTrigger: {
     borderWidth: 1,
     borderColor: "#e2e8f0",
-    borderRadius: 10,
+    borderRadius: 12,
     padding: 14,
     backgroundColor: "#f9f9f9",
   },
   row: { flexDirection: "row", marginBottom: 15 },
   textArea: { height: 90, textAlignVertical: "top" },
   submitBtn: {
-    backgroundColor: "#e63946",
+    backgroundColor: "#d32f2f",
     paddingVertical: 16,
-    borderRadius: 12,
+    borderRadius: 14,
     alignItems: "center",
+    marginTop: 10,
+    elevation: 2,
   },
   submitBtnText: { color: "#fff", fontSize: 18, fontWeight: "bold" },
+  
+  // Modal Styles
   modalOverlay: {
     flex: 1,
     backgroundColor: "rgba(0,0,0,0.5)",
@@ -489,7 +530,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 15,
     textAlign: "center",
-    color: "#e63946",
+    color: "#d32f2f",
   },
   modalItem: {
     padding: 15,

@@ -15,3458 +15,4446 @@
         "district_id": "1",
         "name": "Debidwar",
         "bn_name": "দেবিদ্বার",
-        "url": "debidwar.comilla.gov.bd"
+        "url": "debidwar.comilla.gov.bd",
+        "lat": "23.6083",
+        "lon": "91.0028"
       },
       {
         "id": "2",
         "district_id": "1",
         "name": "Barura",
         "bn_name": "বরুড়া",
-        "url": "barura.comilla.gov.bd"
+        "url": "barura.comilla.gov.bd",
+        "lat": "23.3750",
+        "lon": "91.0583"
       },
       {
         "id": "3",
         "district_id": "1",
         "name": "Brahmanpara",
         "bn_name": "ব্রাহ্মণপাড়া",
-        "url": "brahmanpara.comilla.gov.bd"
+        "url": "brahmanpara.comilla.gov.bd",
+        "lat": "23.6194",
+        "lon": "91.1111"
       },
       {
         "id": "4",
         "district_id": "1",
         "name": "Chandina",
         "bn_name": "চান্দিনা",
-        "url": "chandina.comilla.gov.bd"
+        "url": "chandina.comilla.gov.bd",
+        "lat": "23.4861",
+        "lon": "91.0083"
       },
       {
         "id": "5",
         "district_id": "1",
         "name": "Chauddagram",
         "bn_name": "চৌদ্দগ্রাম",
-        "url": "chauddagram.comilla.gov.bd"
+        "url": "chauddagram.comilla.gov.bd",
+        "lat": "23.2167",
+        "lon": "91.3000"
       },
       {
         "id": "6",
         "district_id": "1",
         "name": "Daudkandi",
         "bn_name": "দাউদকান্দি",
-        "url": "daudkandi.comilla.gov.bd"
+        "url": "daudkandi.comilla.gov.bd",
+        "lat": "23.5333",
+        "lon": "90.7167"
       },
       {
         "id": "7",
         "district_id": "1",
         "name": "Homna",
         "bn_name": "হোমনা",
-        "url": "homna.comilla.gov.bd"
+        "url": "homna.comilla.gov.bd",
+        "lat": "23.6833",
+        "lon": "90.7917"
       },
       {
         "id": "8",
         "district_id": "1",
         "name": "Laksam",
         "bn_name": "লাকসাম",
-        "url": "laksam.comilla.gov.bd"
+        "url": "laksam.comilla.gov.bd",
+        "lat": "23.2417",
+        "lon": "91.1167"
       },
       {
         "id": "9",
         "district_id": "1",
         "name": "Muradnagar",
         "bn_name": "মুরাদনগর",
-        "url": "muradnagar.comilla.gov.bd"
+        "url": "muradnagar.comilla.gov.bd",
+        "lat": "23.6417",
+        "lon": "90.9333"
       },
       {
         "id": "10",
         "district_id": "1",
         "name": "Nangalkot",
         "bn_name": "নাঙ্গলকোট",
-        "url": "nangalkot.comilla.gov.bd"
+        "url": "nangalkot.comilla.gov.bd",
+        "lat": "23.2000",
+        "lon": "91.2000"
       },
       {
         "id": "11",
         "district_id": "1",
         "name": "Comilla Sadar",
         "bn_name": "কুমিল্লা সদর",
-        "url": "comillasadar.comilla.gov.bd"
+        "url": "comillasadar.comilla.gov.bd",
+        "lat": "23.4607",
+        "lon": "91.1809"
       },
       {
         "id": "12",
         "district_id": "1",
         "name": "Meghna",
         "bn_name": "মেঘনা",
-        "url": "meghna.comilla.gov.bd"
+        "url": "meghna.comilla.gov.bd",
+        "lat": "23.5125",
+        "lon": "90.6278"
       },
       {
         "id": "13",
         "district_id": "1",
         "name": "Monohargonj",
         "bn_name": "মনোহরগঞ্জ",
-        "url": "monohargonj.comilla.gov.bd"
+        "url": "monohargonj.comilla.gov.bd",
+        "lat": "23.1500",
+        "lon": "91.1300"
       },
       {
         "id": "14",
         "district_id": "1",
         "name": "Sadarsouth",
         "bn_name": "সদর দক্ষিণ",
-        "url": "sadarsouth.comilla.gov.bd"
+        "url": "sadarsouth.comilla.gov.bd",
+        "lat": "23.3950",
+        "lon": "91.1750"
       },
       {
         "id": "15",
         "district_id": "1",
         "name": "Titas",
         "bn_name": "তিতাস",
-        "url": "titas.comilla.gov.bd"
+        "url": "titas.comilla.gov.bd",
+        "lat": "23.5833",
+        "lon": "90.7500"
       },
       {
         "id": "16",
         "district_id": "1",
         "name": "Burichang",
         "bn_name": "বুড়িচং",
-        "url": "burichang.comilla.gov.bd"
+        "url": "burichang.comilla.gov.bd",
+        "lat": "23.5000",
+        "lon": "91.1250"
       },
       {
         "id": "17",
         "district_id": "1",
         "name": "Lalmai",
         "bn_name": "লালমাই",
-        "url": "lalmai.comilla.gov.bd"
+        "url": "lalmai.comilla.gov.bd",
+        "lat": "23.3400",
+        "lon": "91.1500"
       },
       {
         "id": "18",
         "district_id": "2",
         "name": "Chhagalnaiya",
-        "bn_name": "ছাগলনাইয়া",
-        "url": "chhagalnaiya.feni.gov.bd"
+        "bn_name": "ছাগলনাইয়া",
+        "url": "chhagalnaiya.feni.gov.bd",
+        "lat": "23.0361",
+        "lon": "91.5194"
       },
       {
         "id": "19",
         "district_id": "2",
         "name": "Feni Sadar",
         "bn_name": "ফেনী সদর",
-        "url": "sadar.feni.gov.bd"
+        "url": "sadar.feni.gov.bd",
+        "lat": "23.0159",
+        "lon": "91.3976"
       },
       {
         "id": "20",
         "district_id": "2",
         "name": "Sonagazi",
         "bn_name": "সোনাগাজী",
-        "url": "sonagazi.feni.gov.bd"
+        "url": "sonagazi.feni.gov.bd",
+        "lat": "22.8500",
+        "lon": "91.3917"
       },
       {
         "id": "21",
         "district_id": "2",
         "name": "Fulgazi",
         "bn_name": "ফুলগাজী",
-        "url": "fulgazi.feni.gov.bd"
+        "url": "fulgazi.feni.gov.bd",
+        "lat": "23.1000",
+        "lon": "91.4333"
       },
       {
         "id": "22",
         "district_id": "2",
         "name": "Parshuram",
         "bn_name": "পরশুরাম",
-        "url": "parshuram.feni.gov.bd"
+        "url": "parshuram.feni.gov.bd",
+        "lat": "23.2083",
+        "lon": "91.4417"
       },
       {
         "id": "23",
         "district_id": "2",
         "name": "Daganbhuiyan",
         "bn_name": "দাগনভূঞা",
-        "url": "daganbhuiyan.feni.gov.bd"
+        "url": "daganbhuiyan.feni.gov.bd",
+        "lat": "22.9361",
+        "lon": "91.2861"
       },
       {
         "id": "24",
         "district_id": "3",
         "name": "Brahmanbaria Sadar",
-        "bn_name": "ব্রাহ্মণবাড়িয়া সদর",
-        "url": "sadar.brahmanbaria.gov.bd"
+        "bn_name": "ব্রাহ্মণবাড়িয়া সদর",
+        "url": "sadar.brahmanbaria.gov.bd",
+        "lat": "23.9571",
+        "lon": "91.1119"
       },
       {
         "id": "25",
         "district_id": "3",
         "name": "Kasba",
         "bn_name": "কসবা",
-        "url": "kasba.brahmanbaria.gov.bd"
+        "url": "kasba.brahmanbaria.gov.bd",
+        "lat": "23.7333",
+        "lon": "91.1667"
       },
       {
         "id": "26",
         "district_id": "3",
         "name": "Nasirnagar",
         "bn_name": "নাসিরনগর",
-        "url": "nasirnagar.brahmanbaria.gov.bd"
+        "url": "nasirnagar.brahmanbaria.gov.bd",
+        "lat": "24.2000",
+        "lon": "91.2083"
       },
       {
         "id": "27",
         "district_id": "3",
         "name": "Sarail",
         "bn_name": "সরাইল",
-        "url": "sarail.brahmanbaria.gov.bd"
+        "url": "sarail.brahmanbaria.gov.bd",
+        "lat": "24.1167",
+        "lon": "91.1250"
       },
       {
         "id": "28",
         "district_id": "3",
         "name": "Ashuganj",
         "bn_name": "আশুগঞ্জ",
-        "url": "ashuganj.brahmanbaria.gov.bd"
+        "url": "ashuganj.brahmanbaria.gov.bd",
+        "lat": "24.0250",
+        "lon": "91.0083"
       },
       {
         "id": "29",
         "district_id": "3",
         "name": "Akhaura",
-        "bn_name": "আখাউড়া",
-        "url": "akhaura.brahmanbaria.gov.bd"
+        "bn_name": "আখাউড়া",
+        "url": "akhaura.brahmanbaria.gov.bd",
+        "lat": "23.8833",
+        "lon": "91.2167"
       },
       {
         "id": "30",
         "district_id": "3",
         "name": "Nabinagar",
         "bn_name": "নবীনগর",
-        "url": "nabinagar.brahmanbaria.gov.bd"
+        "url": "nabinagar.brahmanbaria.gov.bd",
+        "lat": "23.8917",
+        "lon": "90.9750"
       },
       {
         "id": "31",
         "district_id": "3",
         "name": "Bancharampur",
         "bn_name": "বাঞ্ছারামপুর",
-        "url": "bancharampur.brahmanbaria.gov.bd"
+        "url": "bancharampur.brahmanbaria.gov.bd",
+        "lat": "23.8083",
+        "lon": "90.8083"
       },
       {
         "id": "32",
         "district_id": "3",
         "name": "Bijoynagar",
-        "bn_name": "বিজয়নগর",
-        "url": "bijoynagar.brahmanbaria.gov.bd    "
+        "bn_name": "বিজয়নগর",
+        "url": "bijoynagar.brahmanbaria.gov.bd",
+        "lat": "24.0500",
+        "lon": "91.2500"
       },
       {
         "id": "33",
         "district_id": "4",
         "name": "Rangamati Sadar",
         "bn_name": "রাঙ্গামাটি সদর",
-        "url": "sadar.rangamati.gov.bd"
+        "url": "sadar.rangamati.gov.bd",
+        "lat": "22.6574",
+        "lon": "92.1733"
       },
       {
         "id": "34",
         "district_id": "4",
         "name": "Kaptai",
         "bn_name": "কাপ্তাই",
-        "url": "kaptai.rangamati.gov.bd"
+        "url": "kaptai.rangamati.gov.bd",
+        "lat": "22.5000",
+        "lon": "92.1667"
       },
       {
         "id": "35",
         "district_id": "4",
         "name": "Kawkhali",
         "bn_name": "কাউখালী",
-        "url": "kawkhali.rangamati.gov.bd"
+        "url": "kawkhali.rangamati.gov.bd",
+        "lat": "22.5167",
+        "lon": "91.9667"
       },
       {
         "id": "36",
         "district_id": "4",
         "name": "Baghaichari",
-        "bn_name": "বাঘাইছড়ি",
-        "url": "baghaichari.rangamati.gov.bd"
+        "bn_name": "বাঘাইছড়ি",
+        "url": "baghaichari.rangamati.gov.bd",
+        "lat": "23.1833",
+        "lon": "92.2000"
       },
       {
         "id": "37",
         "district_id": "4",
         "name": "Barkal",
         "bn_name": "বরকল",
-        "url": "barkal.rangamati.gov.bd"
+        "url": "barkal.rangamati.gov.bd",
+        "lat": "22.7333",
+        "lon": "92.3500"
       },
       {
         "id": "38",
         "district_id": "4",
         "name": "Langadu",
         "bn_name": "লংগদু",
-        "url": "langadu.rangamati.gov.bd"
+        "url": "langadu.rangamati.gov.bd",
+        "lat": "22.9500",
+        "lon": "92.1583"
       },
       {
         "id": "39",
         "district_id": "4",
         "name": "Rajasthali",
         "bn_name": "রাজস্থলী",
-        "url": "rajasthali.rangamati.gov.bd"
+        "url": "rajasthali.rangamati.gov.bd",
+        "lat": "22.3833",
+        "lon": "92.2083"
       },
       {
         "id": "40",
         "district_id": "4",
         "name": "Belaichari",
-        "bn_name": "বিলাইছড়ি",
-        "url": "belaichari.rangamati.gov.bd"
+        "bn_name": "বিলাইছড়ি",
+        "url": "belaichari.rangamati.gov.bd",
+        "lat": "22.4667",
+        "lon": "92.3667"
       },
       {
         "id": "41",
         "district_id": "4",
         "name": "Juraichari",
-        "bn_name": "জুরাছড়ি",
-        "url": "juraichari.rangamati.gov.bd"
+        "bn_name": "জুরাছড়ি",
+        "url": "juraichari.rangamati.gov.bd",
+        "lat": "22.7000",
+        "lon": "92.4333"
       },
       {
         "id": "42",
         "district_id": "4",
         "name": "Naniarchar",
-        "bn_name": "নানিয়ারচর",
-        "url": "naniarchar.rangamati.gov.bd"
+        "bn_name": "নানিয়ারচর",
+        "url": "naniarchar.rangamati.gov.bd",
+        "lat": "22.8583",
+        "lon": "92.1167"
       },
       {
         "id": "43",
         "district_id": "5",
         "name": "Noakhali Sadar",
         "bn_name": "নোয়াখালী সদর",
-        "url": "sadar.noakhali.gov.bd"
+        "url": "sadar.noakhali.gov.bd",
+        "lat": "22.8696",
+        "lon": "91.0994"
       },
       {
         "id": "44",
         "district_id": "5",
         "name": "Companiganj",
         "bn_name": "কোম্পানীগঞ্জ",
-        "url": "companiganj.noakhali.gov.bd"
+        "url": "companiganj.noakhali.gov.bd",
+        "lat": "22.8167",
+        "lon": "91.2833"
       },
       {
         "id": "45",
         "district_id": "5",
         "name": "Begumganj",
         "bn_name": "বেগমগঞ্জ",
-        "url": "begumganj.noakhali.gov.bd"
+        "url": "begumganj.noakhali.gov.bd",
+        "lat": "22.9333",
+        "lon": "91.1000"
       },
       {
         "id": "46",
         "district_id": "5",
         "name": "Hatia",
         "bn_name": "হাতিয়া",
-        "url": "hatia.noakhali.gov.bd"
+        "url": "hatia.noakhali.gov.bd",
+        "lat": "22.4500",
+        "lon": "91.1250"
       },
       {
         "id": "47",
         "district_id": "5",
         "name": "Subarnachar",
         "bn_name": "সুবর্ণচর",
-        "url": "subarnachar.noakhali.gov.bd"
+        "url": "subarnachar.noakhali.gov.bd",
+        "lat": "22.6250",
+        "lon": "91.0833"
       },
       {
         "id": "48",
         "district_id": "5",
         "name": "Kabirhat",
         "bn_name": "কবিরহাট",
-        "url": "kabirhat.noakhali.gov.bd"
+        "url": "kabirhat.noakhali.gov.bd",
+        "lat": "22.8400",
+        "lon": "91.1900"
       },
       {
         "id": "49",
         "district_id": "5",
         "name": "Senbug",
         "bn_name": "সেনবাগ",
-        "url": "senbug.noakhali.gov.bd"
+        "url": "senbug.noakhali.gov.bd",
+        "lat": "22.9833",
+        "lon": "91.2333"
       },
       {
         "id": "50",
         "district_id": "5",
         "name": "Chatkhil",
         "bn_name": "চাটখিল",
-        "url": "chatkhil.noakhali.gov.bd"
+        "url": "chatkhil.noakhali.gov.bd",
+        "lat": "23.0500",
+        "lon": "90.9583"
       },
       {
         "id": "51",
         "district_id": "5",
         "name": "Sonaimori",
         "bn_name": "সোনাইমুড়ী",
-        "url": "sonaimori.noakhali.gov.bd"
+        "url": "sonaimori.noakhali.gov.bd",
+        "lat": "23.0450",
+        "lon": "91.1000"
       },
       {
         "id": "52",
         "district_id": "6",
         "name": "Haimchar",
         "bn_name": "হাইমচর",
-        "url": "haimchar.chandpur.gov.bd"
+        "url": "haimchar.chandpur.gov.bd",
+        "lat": "23.0667",
+        "lon": "90.6417"
       },
       {
         "id": "53",
         "district_id": "6",
         "name": "Kachua",
         "bn_name": "কচুয়া",
-        "url": "kachua.chandpur.gov.bd"
+        "url": "kachua.chandpur.gov.bd",
+        "lat": "23.3500",
+        "lon": "90.8917"
       },
       {
         "id": "54",
         "district_id": "6",
         "name": "Shahrasti",
-        "bn_name": "শাহরাস্তি\t",
-        "url": "shahrasti.chandpur.gov.bd"
+        "bn_name": "শাহরাস্তি",
+        "url": "shahrasti.chandpur.gov.bd",
+        "lat": "23.2250",
+        "lon": "90.9500"
       },
       {
         "id": "55",
         "district_id": "6",
         "name": "Chandpur Sadar",
         "bn_name": "চাঁদপুর সদর",
-        "url": "sadar.chandpur.gov.bd"
+        "url": "sadar.chandpur.gov.bd",
+        "lat": "23.2321",
+        "lon": "90.6631"
       },
       {
         "id": "56",
         "district_id": "6",
         "name": "Matlab South",
         "bn_name": "মতলব দক্ষিণ",
-        "url": "matlabsouth.chandpur.gov.bd"
+        "url": "matlabsouth.chandpur.gov.bd",
+        "lat": "23.3500",
+        "lon": "90.7083"
       },
       {
         "id": "57",
         "district_id": "6",
         "name": "Hajiganj",
         "bn_name": "হাজীগঞ্জ",
-        "url": "hajiganj.chandpur.gov.bd"
+        "url": "hajiganj.chandpur.gov.bd",
+        "lat": "23.2500",
+        "lon": "90.8500"
       },
       {
         "id": "58",
         "district_id": "6",
         "name": "Matlab North",
         "bn_name": "মতলব উত্তর",
-        "url": "matlabnorth.chandpur.gov.bd"
+        "url": "matlabnorth.chandpur.gov.bd",
+        "lat": "23.4667",
+        "lon": "90.6500"
       },
       {
         "id": "59",
         "district_id": "6",
         "name": "Faridgonj",
         "bn_name": "ফরিদগঞ্জ",
-        "url": "faridgonj.chandpur.gov.bd"
+        "url": "faridgonj.chandpur.gov.bd",
+        "lat": "23.1250",
+        "lon": "90.7500"
       },
       {
         "id": "60",
         "district_id": "7",
         "name": "Lakshmipur Sadar",
         "bn_name": "লক্ষ্মীপুর সদর",
-        "url": "sadar.lakshmipur.gov.bd"
+        "url": "sadar.lakshmipur.gov.bd",
+        "lat": "22.9447",
+        "lon": "90.8282"
       },
       {
         "id": "61",
         "district_id": "7",
         "name": "Kamalnagar",
         "bn_name": "কমলনগর",
-        "url": "kamalnagar.lakshmipur.gov.bd"
+        "url": "kamalnagar.lakshmipur.gov.bd",
+        "lat": "22.7500",
+        "lon": "90.8500"
       },
       {
         "id": "62",
         "district_id": "7",
         "name": "Raipur",
-        "bn_name": "রায়পুর",
-        "url": "raipur.lakshmipur.gov.bd"
+        "bn_name": "রায়পুর",
+        "url": "raipur.lakshmipur.gov.bd",
+        "lat": "23.0333",
+        "lon": "90.7667"
       },
       {
         "id": "63",
         "district_id": "7",
         "name": "Ramgati",
         "bn_name": "রামগতি",
-        "url": "ramgati.lakshmipur.gov.bd"
+        "url": "ramgati.lakshmipur.gov.bd",
+        "lat": "22.6083",
+        "lon": "90.9583"
       },
       {
         "id": "64",
         "district_id": "7",
         "name": "Ramganj",
         "bn_name": "রামগঞ্জ",
-        "url": "ramganj.lakshmipur.gov.bd"
+        "url": "ramganj.lakshmipur.gov.bd",
+        "lat": "23.1083",
+        "lon": "90.8500"
       },
       {
         "id": "65",
         "district_id": "8",
         "name": "Rangunia",
-        "bn_name": "রাঙ্গুনিয়া",
-        "url": "rangunia.chittagong.gov.bd"
+        "bn_name": "রাঙ্গুনিয়া",
+        "url": "rangunia.chittagong.gov.bd",
+        "lat": "22.4667",
+        "lon": "92.0333"
       },
       {
         "id": "66",
         "district_id": "8",
         "name": "Sitakunda",
         "bn_name": "সীতাকুন্ড",
-        "url": "sitakunda.chittagong.gov.bd"
+        "url": "sitakunda.chittagong.gov.bd",
+        "lat": "22.6167",
+        "lon": "91.6583"
       },
       {
         "id": "67",
         "district_id": "8",
         "name": "Mirsharai",
         "bn_name": "মীরসরাই",
-        "url": "mirsharai.chittagong.gov.bd"
+        "url": "mirsharai.chittagong.gov.bd",
+        "lat": "22.7719",
+        "lon": "91.5471"
       },
       {
         "id": "68",
         "district_id": "8",
         "name": "Patiya",
-        "bn_name": "পটিয়া",
-        "url": "patiya.chittagong.gov.bd"
+        "bn_name": "পটিয়া",
+        "url": "patiya.chittagong.gov.bd",
+        "lat": "22.3000",
+        "lon": "91.9833"
       },
       {
         "id": "69",
         "district_id": "8",
         "name": "Sandwip",
         "bn_name": "সন্দ্বীপ",
-        "url": "sandwip.chittagong.gov.bd"
+        "url": "sandwip.chittagong.gov.bd",
+        "lat": "22.4917",
+        "lon": "91.4417"
       },
       {
         "id": "70",
         "district_id": "8",
         "name": "Banshkhali",
         "bn_name": "বাঁশখালী",
-        "url": "banshkhali.chittagong.gov.bd"
+        "url": "banshkhali.chittagong.gov.bd",
+        "lat": "22.0500",
+        "lon": "91.9417"
       },
       {
         "id": "71",
         "district_id": "8",
         "name": "Boalkhali",
-        "bn_name": "বোয়ালখালী",
-        "url": "boalkhali.chittagong.gov.bd"
+        "bn_name": "বোয়ালখালী",
+        "url": "boalkhali.chittagong.gov.bd",
+        "lat": "22.3833",
+        "lon": "91.9250"
       },
       {
         "id": "72",
         "district_id": "8",
         "name": "Anwara",
         "bn_name": "আনোয়ারা",
-        "url": "anwara.chittagong.gov.bd"
+        "url": "anwara.chittagong.gov.bd",
+        "lat": "22.2167",
+        "lon": "91.9111"
       },
       {
         "id": "73",
         "district_id": "8",
         "name": "Chandanaish",
         "bn_name": "চন্দনাইশ",
-        "url": "chandanaish.chittagong.gov.bd"
+        "url": "chandanaish.chittagong.gov.bd",
+        "lat": "22.2167",
+        "lon": "92.0417"
       },
       {
         "id": "74",
         "district_id": "8",
         "name": "Satkania",
-        "bn_name": "সাতকানিয়া",
-        "url": "satkania.chittagong.gov.bd"
+        "bn_name": "সাতকানিয়া",
+        "url": "satkania.chittagong.gov.bd",
+        "lat": "22.0833",
+        "lon": "92.0500"
       },
       {
         "id": "75",
         "district_id": "8",
         "name": "Lohagara",
-        "bn_name": "লোহাগাড়া",
-        "url": "lohagara.chittagong.gov.bd"
+        "bn_name": "লোহাগাড়া",
+        "url": "lohagara.chittagong.gov.bd",
+        "lat": "21.9833",
+        "lon": "92.1100"
       },
       {
         "id": "76",
         "district_id": "8",
         "name": "Hathazari",
         "bn_name": "হাটহাজারী",
-        "url": "hathazari.chittagong.gov.bd"
+        "url": "hathazari.chittagong.gov.bd",
+        "lat": "22.5083",
+        "lon": "91.8083"
       },
       {
         "id": "77",
         "district_id": "8",
         "name": "Fatikchhari",
-        "bn_name": "ফটিকছড়ি",
-        "url": "fatikchhari.chittagong.gov.bd"
+        "bn_name": "ফটিকছড়ি",
+        "url": "fatikchhari.chittagong.gov.bd",
+        "lat": "22.6917",
+        "lon": "91.8000"
       },
       {
         "id": "78",
         "district_id": "8",
         "name": "Raozan",
         "bn_name": "রাউজান",
-        "url": "raozan.chittagong.gov.bd"
+        "url": "raozan.chittagong.gov.bd",
+        "lat": "22.5333",
+        "lon": "91.9167"
       },
       {
         "id": "79",
         "district_id": "8",
         "name": "Karnafuli",
         "bn_name": "কর্ণফুলী",
-        "url": "karnafuli.chittagong.gov.bd"
+        "url": "karnafuli.chittagong.gov.bd",
+        "lat": "22.2800",
+        "lon": "91.8400"
       },
       {
         "id": "80",
         "district_id": "9",
         "name": "Coxsbazar Sadar",
         "bn_name": "কক্সবাজার সদর",
-        "url": "sadar.coxsbazar.gov.bd"
+        "url": "sadar.coxsbazar.gov.bd",
+        "lat": "21.4395",
+        "lon": "92.0077"
       },
       {
         "id": "81",
         "district_id": "9",
         "name": "Chakaria",
-        "bn_name": "চকরিয়া",
-        "url": "chakaria.coxsbazar.gov.bd"
+        "bn_name": "চকরিয়া",
+        "url": "chakaria.coxsbazar.gov.bd",
+        "lat": "21.7583",
+        "lon": "92.0750"
       },
       {
         "id": "82",
         "district_id": "9",
         "name": "Kutubdia",
-        "bn_name": "কুতুবদিয়া",
-        "url": "kutubdia.coxsbazar.gov.bd"
+        "bn_name": "কুতুবদিয়া",
+        "url": "kutubdia.coxsbazar.gov.bd",
+        "lat": "21.8167",
+        "lon": "91.8500"
       },
       {
         "id": "83",
         "district_id": "9",
         "name": "Ukhiya",
-        "bn_name": "উখিয়া",
-        "url": "ukhiya.coxsbazar.gov.bd"
+        "bn_name": "উখিয়া",
+        "url": "ukhiya.coxsbazar.gov.bd",
+        "lat": "21.2833",
+        "lon": "92.1000"
       },
       {
         "id": "84",
         "district_id": "9",
         "name": "Moheshkhali",
         "bn_name": "মহেশখালী",
-        "url": "moheshkhali.coxsbazar.gov.bd"
+        "url": "moheshkhali.coxsbazar.gov.bd",
+        "lat": "21.5500",
+        "lon": "91.9500"
       },
       {
         "id": "85",
         "district_id": "9",
         "name": "Pekua",
-        "bn_name": "পেকুয়া",
-        "url": "pekua.coxsbazar.gov.bd"
+        "bn_name": "পেকুয়া",
+        "url": "pekua.coxsbazar.gov.bd",
+        "lat": "21.8600",
+        "lon": "91.9600"
       },
       {
         "id": "86",
         "district_id": "9",
         "name": "Ramu",
         "bn_name": "রামু",
-        "url": "ramu.coxsbazar.gov.bd"
+        "url": "ramu.coxsbazar.gov.bd",
+        "lat": "21.4250",
+        "lon": "92.1000"
       },
       {
         "id": "87",
         "district_id": "9",
         "name": "Teknaf",
         "bn_name": "টেকনাফ",
-        "url": "teknaf.coxsbazar.gov.bd"
+        "url": "teknaf.coxsbazar.gov.bd",
+        "lat": "20.8583",
+        "lon": "92.3000"
       },
       {
         "id": "88",
         "district_id": "10",
         "name": "Khagrachhari Sadar",
         "bn_name": "খাগড়াছড়ি সদর",
-        "url": "sadar.khagrachhari.gov.bd"
+        "url": "sadar.khagrachhari.gov.bd",
+        "lat": "23.1078",
+        "lon": "91.9423"
       },
       {
         "id": "89",
         "district_id": "10",
         "name": "Dighinala",
         "bn_name": "দিঘীনালা",
-        "url": "dighinala.khagrachhari.gov.bd"
+        "url": "dighinala.khagrachhari.gov.bd",
+        "lat": "23.2583",
+        "lon": "92.0333"
       },
       {
         "id": "90",
         "district_id": "10",
         "name": "Panchari",
         "bn_name": "পানছড়ি",
-        "url": "panchari.khagrachhari.gov.bd"
+        "url": "panchari.khagrachhari.gov.bd",
+        "lat": "23.2500",
+        "lon": "91.9167"
       },
       {
         "id": "91",
         "district_id": "10",
         "name": "Laxmichhari",
         "bn_name": "লক্ষীছড়ি",
-        "url": "laxmichhari.khagrachhari.gov.bd"
+        "url": "laxmichhari.khagrachhari.gov.bd",
+        "lat": "22.8167",
+        "lon": "91.9000"
       },
       {
         "id": "92",
         "district_id": "10",
         "name": "Mohalchari",
         "bn_name": "মহালছড়ি",
-        "url": "mohalchari.khagrachhari.gov.bd"
+        "url": "mohalchari.khagrachhari.gov.bd",
+        "lat": "22.9167",
+        "lon": "92.0000"
       },
       {
         "id": "93",
         "district_id": "10",
         "name": "Manikchari",
         "bn_name": "মানিকছড়ি",
-        "url": "manikchari.khagrachhari.gov.bd"
+        "url": "manikchari.khagrachhari.gov.bd",
+        "lat": "22.8400",
+        "lon": "91.8300"
       },
       {
         "id": "94",
         "district_id": "10",
         "name": "Ramgarh",
         "bn_name": "রামগড়",
-        "url": "ramgarh.khagrachhari.gov.bd"
+        "url": "ramgarh.khagrachhari.gov.bd",
+        "lat": "22.9800",
+        "lon": "91.7200"
       },
       {
         "id": "95",
         "district_id": "10",
         "name": "Matiranga",
         "bn_name": "মাটিরাঙ্গা",
-        "url": "matiranga.khagrachhari.gov.bd"
+        "url": "matiranga.khagrachhari.gov.bd",
+        "lat": "23.0500",
+        "lon": "91.8800"
       },
       {
         "id": "96",
         "district_id": "10",
         "name": "Guimara",
         "bn_name": "গুইমারা",
-        "url": "guimara.khagrachhari.gov.bd"
+        "url": "guimara.khagrachhari.gov.bd",
+        "lat": "22.9500",
+        "lon": "91.8500"
       },
       {
         "id": "97",
         "district_id": "11",
         "name": "Bandarban Sadar",
         "bn_name": "বান্দরবান সদর",
-        "url": "sadar.bandarban.gov.bd"
+        "url": "sadar.bandarban.gov.bd",
+        "lat": "22.1961",
+        "lon": "92.2178"
       },
       {
         "id": "98",
         "district_id": "11",
         "name": "Alikadam",
         "bn_name": "আলীকদম",
-        "url": "alikadam.bandarban.gov.bd"
+        "url": "alikadam.bandarban.gov.bd",
+        "lat": "21.6500",
+        "lon": "92.3100"
       },
       {
         "id": "99",
         "district_id": "11",
         "name": "Naikhongchhari",
-        "bn_name": "নাইক্ষ্যংছড়ি",
-        "url": "naikhongchhari.bandarban.gov.bd"
+        "bn_name": "নাইক্ষ্যংছড়ি",
+        "url": "naikhongchhari.bandarban.gov.bd",
+        "lat": "21.4167",
+        "lon": "92.1833"
       },
       {
         "id": "100",
         "district_id": "11",
         "name": "Rowangchhari",
-        "bn_name": "রোয়াংছড়ি",
-        "url": "rowangchhari.bandarban.gov.bd"
+        "bn_name": "রোয়াংছড়ি",
+        "url": "rowangchhari.bandarban.gov.bd",
+        "lat": "22.1667",
+        "lon": "92.3333"
       },
       {
         "id": "101",
         "district_id": "11",
         "name": "Lama",
         "bn_name": "লামা",
-        "url": "lama.bandarban.gov.bd"
+        "url": "lama.bandarban.gov.bd",
+        "lat": "21.7825",
+        "lon": "92.2008"
       },
       {
         "id": "102",
         "district_id": "11",
         "name": "Ruma",
         "bn_name": "রুমা",
-        "url": "ruma.bandarban.gov.bd"
+        "url": "ruma.bandarban.gov.bd",
+        "lat": "22.0500",
+        "lon": "92.4167"
       },
       {
         "id": "103",
         "district_id": "11",
         "name": "Thanchi",
         "bn_name": "থানচি",
-        "url": "thanchi.bandarban.gov.bd"
+        "url": "thanchi.bandarban.gov.bd",
+        "lat": "21.7833",
+        "lon": "92.4250"
       },
       {
         "id": "104",
         "district_id": "12",
         "name": "Belkuchi",
         "bn_name": "বেলকুচি",
-        "url": "belkuchi.sirajganj.gov.bd"
+        "url": "belkuchi.sirajganj.gov.bd",
+        "lat": "24.2917",
+        "lon": "89.7000"
       },
       {
         "id": "105",
         "district_id": "12",
         "name": "Chauhali",
         "bn_name": "চৌহালি",
-        "url": "chauhali.sirajganj.gov.bd"
+        "url": "chauhali.sirajganj.gov.bd",
+        "lat": "24.2167",
+        "lon": "89.7833"
       },
       {
         "id": "106",
         "district_id": "12",
         "name": "Kamarkhand",
         "bn_name": "কামারখন্দ",
-        "url": "kamarkhand.sirajganj.gov.bd"
+        "url": "kamarkhand.sirajganj.gov.bd",
+        "lat": "24.3667",
+        "lon": "89.6083"
       },
       {
         "id": "107",
         "district_id": "12",
         "name": "Kazipur",
         "bn_name": "কাজীপুর",
-        "url": "kazipur.sirajganj.gov.bd"
+        "url": "kazipur.sirajganj.gov.bd",
+        "lat": "24.6417",
+        "lon": "89.6500"
       },
       {
         "id": "108",
         "district_id": "12",
         "name": "Raigonj",
-        "bn_name": "রায়গঞ্জ",
-        "url": "raigonj.sirajganj.gov.bd"
+        "bn_name": "রায়গঞ্জ",
+        "url": "raigonj.sirajganj.gov.bd",
+        "lat": "24.5167",
+        "lon": "89.5000"
       },
       {
         "id": "109",
         "district_id": "12",
         "name": "Shahjadpur",
         "bn_name": "শাহজাদপুর",
-        "url": "shahjadpur.sirajganj.gov.bd"
+        "url": "shahjadpur.sirajganj.gov.bd",
+        "lat": "24.1833",
+        "lon": "89.6000"
       },
       {
         "id": "110",
         "district_id": "12",
         "name": "Sirajganj Sadar",
         "bn_name": "সিরাজগঞ্জ সদর",
-        "url": "sirajganjsadar.sirajganj.gov.bd"
+        "url": "sirajganjsadar.sirajganj.gov.bd",
+        "lat": "24.4577",
+        "lon": "89.7080"
       },
       {
         "id": "111",
         "district_id": "12",
         "name": "Tarash",
-        "bn_name": "তাড়াশ",
-        "url": "tarash.sirajganj.gov.bd"
+        "bn_name": "তাড়াশ",
+        "url": "tarash.sirajganj.gov.bd",
+        "lat": "24.4333",
+        "lon": "89.3667"
       },
       {
         "id": "112",
         "district_id": "12",
         "name": "Ullapara",
-        "bn_name": "উল্লাপাড়া",
-        "url": "ullapara.sirajganj.gov.bd"
+        "bn_name": "উল্লাপাড়া",
+        "url": "ullapara.sirajganj.gov.bd",
+        "lat": "24.2917",
+        "lon": "89.5667"
       },
       {
         "id": "113",
         "district_id": "13",
         "name": "Sujanagar",
         "bn_name": "সুজানগর",
-        "url": "sujanagar.pabna.gov.bd"
+        "url": "sujanagar.pabna.gov.bd",
+        "lat": "23.9167",
+        "lon": "89.4333"
       },
       {
         "id": "114",
         "district_id": "13",
         "name": "Ishurdi",
         "bn_name": "ঈশ্বরদী",
-        "url": "ishurdi.pabna.gov.bd"
+        "url": "ishurdi.pabna.gov.bd",
+        "lat": "24.1286",
+        "lon": "89.1172"
       },
       {
         "id": "115",
         "district_id": "13",
         "name": "Bhangura",
-        "bn_name": "ভাঙ্গুড়া",
-        "url": "bhangura.pabna.gov.bd"
+        "bn_name": "ভাঙ্গুড়া",
+        "url": "bhangura.pabna.gov.bd",
+        "lat": "24.2236",
+        "lon": "89.3903"
       },
       {
         "id": "116",
         "district_id": "13",
         "name": "Pabna Sadar",
         "bn_name": "পাবনা সদর",
-        "url": "pabnasadar.pabna.gov.bd"
+        "url": "pabnasadar.pabna.gov.bd",
+        "lat": "24.0104",
+        "lon": "89.2447"
       },
       {
         "id": "117",
         "district_id": "13",
         "name": "Bera",
-        "bn_name": "বেড়া",
-        "url": "bera.pabna.gov.bd"
+        "bn_name": "বেড়া",
+        "url": "bera.pabna.gov.bd",
+        "lat": "24.0667",
+        "lon": "89.6167"
       },
       {
         "id": "118",
         "district_id": "13",
         "name": "Atghoria",
-        "bn_name": "আটঘরিয়া",
-        "url": "atghoria.pabna.gov.bd"
+        "bn_name": "আটঘরিয়া",
+        "url": "atghoria.pabna.gov.bd",
+        "lat": "24.1250",
+        "lon": "89.2500"
       },
       {
         "id": "119",
         "district_id": "13",
         "name": "Chatmohar",
         "bn_name": "চাটমোহর",
-        "url": "chatmohar.pabna.gov.bd"
+        "url": "chatmohar.pabna.gov.bd",
+        "lat": "24.2250",
+        "lon": "89.2833"
       },
       {
         "id": "120",
         "district_id": "13",
         "name": "Santhia",
-        "bn_name": "সাঁথিয়া",
-        "url": "santhia.pabna.gov.bd"
+        "bn_name": "সাঁথিয়া",
+        "url": "santhia.pabna.gov.bd",
+        "lat": "24.0583",
+        "lon": "89.5333"
       },
       {
         "id": "121",
         "district_id": "13",
         "name": "Faridpur",
         "bn_name": "ফরিদপুর",
-        "url": "faridpur.pabna.gov.bd"
+        "url": "faridpur.pabna.gov.bd",
+        "lat": "24.1583",
+        "lon": "89.4528"
       },
       {
         "id": "122",
         "district_id": "14",
         "name": "Kahaloo",
         "bn_name": "কাহালু",
-        "url": "kahaloo.bogra.gov.bd"
+        "url": "kahaloo.bogra.gov.bd",
+        "lat": "24.8167",
+        "lon": "89.2667"
       },
       {
         "id": "123",
         "district_id": "14",
         "name": "Bogra Sadar",
-        "bn_name": "বগুড়া সদর",
-        "url": "sadar.bogra.gov.bd"
+        "bn_name": "বগুড়া সদর",
+        "url": "sadar.bogra.gov.bd",
+        "lat": "24.8500",
+        "lon": "89.3722"
       },
       {
         "id": "124",
         "district_id": "14",
         "name": "Shariakandi",
-        "bn_name": "সারিয়াকান্দি",
-        "url": "shariakandi.bogra.gov.bd"
+        "bn_name": "সারিয়াকান্দি",
+        "url": "shariakandi.bogra.gov.bd",
+        "lat": "24.8833",
+        "lon": "89.5667"
       },
       {
         "id": "125",
         "district_id": "14",
         "name": "Shajahanpur",
         "bn_name": "শাজাহানপুর",
-        "url": "shajahanpur.bogra.gov.bd"
+        "url": "shajahanpur.bogra.gov.bd",
+        "lat": "24.7665",
+        "lon": "89.3750"
       },
       {
         "id": "126",
         "district_id": "14",
         "name": "Dupchanchia",
-        "bn_name": "দুপচাচিঁয়া",
-        "url": "dupchanchia.bogra.gov.bd"
+        "bn_name": "দুপচাচিঁয়া",
+        "url": "dupchanchia.bogra.gov.bd",
+        "lat": "24.8458",
+        "lon": "89.1708"
       },
       {
         "id": "127",
         "district_id": "14",
         "name": "Adamdighi",
         "bn_name": "আদমদিঘি",
-        "url": "adamdighi.bogra.gov.bd"
+        "url": "adamdighi.bogra.gov.bd",
+        "lat": "24.8167",
+        "lon": "89.0500"
       },
       {
         "id": "128",
         "district_id": "14",
         "name": "Nondigram",
         "bn_name": "নন্দিগ্রাম",
-        "url": "nondigram.bogra.gov.bd"
+        "url": "nondigram.bogra.gov.bd",
+        "lat": "24.6083",
+        "lon": "89.2167"
       },
       {
         "id": "129",
         "district_id": "14",
         "name": "Sonatala",
         "bn_name": "সোনাতলা",
-        "url": "sonatala.bogra.gov.bd"
+        "url": "sonatala.bogra.gov.bd",
+        "lat": "25.0417",
+        "lon": "89.4444"
       },
       {
         "id": "130",
         "district_id": "14",
         "name": "Dhunot",
         "bn_name": "ধুনট",
-        "url": "dhunot.bogra.gov.bd"
+        "url": "dhunot.bogra.gov.bd",
+        "lat": "24.6806",
+        "lon": "89.5361"
       },
       {
         "id": "131",
         "district_id": "14",
         "name": "Gabtali",
         "bn_name": "গাবতলী",
-        "url": "gabtali.bogra.gov.bd"
+        "url": "gabtali.bogra.gov.bd",
+        "lat": "24.8833",
+        "lon": "89.4667"
       },
       {
         "id": "132",
         "district_id": "14",
         "name": "Sherpur",
         "bn_name": "শেরপুর",
-        "url": "sherpur.bogra.gov.bd"
+        "url": "sherpur.bogra.gov.bd",
+        "lat": "24.6750",
+        "lon": "89.4167"
       },
       {
         "id": "133",
         "district_id": "14",
         "name": "Shibganj",
         "bn_name": "শিবগঞ্জ",
-        "url": "shibganj.bogra.gov.bd"
+        "url": "shibganj.bogra.gov.bd",
+        "lat": "25.0000",
+        "lon": "89.3167"
       },
       {
         "id": "134",
         "district_id": "15",
         "name": "Paba",
         "bn_name": "পবা",
-        "url": "paba.rajshahi.gov.bd"
+        "url": "paba.rajshahi.gov.bd",
+        "lat": "24.4167",
+        "lon": "88.6083"
       },
       {
         "id": "135",
         "district_id": "15",
         "name": "Durgapur",
         "bn_name": "দুর্গাপুর",
-        "url": "durgapur.rajshahi.gov.bd"
+        "url": "durgapur.rajshahi.gov.bd",
+        "lat": "24.4542",
+        "lon": "88.7667"
       },
       {
         "id": "136",
         "district_id": "15",
         "name": "Mohonpur",
         "bn_name": "মোহনপুর",
-        "url": "mohonpur.rajshahi.gov.bd"
+        "url": "mohonpur.rajshahi.gov.bd",
+        "lat": "24.5667",
+        "lon": "88.6500"
       },
       {
         "id": "137",
         "district_id": "15",
         "name": "Charghat",
         "bn_name": "চারঘাট",
-        "url": "charghat.rajshahi.gov.bd"
+        "url": "charghat.rajshahi.gov.bd",
+        "lat": "24.2833",
+        "lon": "88.7500"
       },
       {
         "id": "138",
         "district_id": "15",
         "name": "Puthia",
         "bn_name": "পুঠিয়া",
-        "url": "puthia.rajshahi.gov.bd"
+        "url": "puthia.rajshahi.gov.bd",
+        "lat": "24.3667",
+        "lon": "88.8500"
       },
       {
         "id": "139",
         "district_id": "15",
         "name": "Bagha",
         "bn_name": "বাঘা",
-        "url": "bagha.rajshahi.gov.bd"
+        "url": "bagha.rajshahi.gov.bd",
+        "lat": "24.2333",
+        "lon": "88.8333"
       },
       {
         "id": "140",
         "district_id": "15",
         "name": "Godagari",
         "bn_name": "গোদাগাড়ী",
-        "url": "godagari.rajshahi.gov.bd"
+        "url": "godagari.rajshahi.gov.bd",
+        "lat": "24.4667",
+        "lon": "88.3306"
       },
       {
         "id": "141",
         "district_id": "15",
         "name": "Tanore",
         "bn_name": "তানোর",
-        "url": "tanore.rajshahi.gov.bd"
+        "url": "tanore.rajshahi.gov.bd",
+        "lat": "24.6042",
+        "lon": "88.5792"
       },
       {
         "id": "142",
         "district_id": "15",
         "name": "Bagmara",
         "bn_name": "বাগমারা",
-        "url": "bagmara.rajshahi.gov.bd"
+        "url": "bagmara.rajshahi.gov.bd",
+        "lat": "24.5625",
+        "lon": "88.8125"
       },
       {
         "id": "143",
         "district_id": "16",
         "name": "Natore Sadar",
         "bn_name": "নাটোর সদর",
-        "url": "natoresadar.natore.gov.bd"
+        "url": "natoresadar.natore.gov.bd",
+        "lat": "24.4144",
+        "lon": "88.9803"
       },
       {
         "id": "144",
         "district_id": "16",
         "name": "Singra",
         "bn_name": "সিংড়া",
-        "url": "singra.natore.gov.bd"
+        "url": "singra.natore.gov.bd",
+        "lat": "24.5000",
+        "lon": "89.1500"
       },
       {
         "id": "145",
         "district_id": "16",
         "name": "Baraigram",
         "bn_name": "বড়াইগ্রাম",
-        "url": "baraigram.natore.gov.bd"
+        "url": "baraigram.natore.gov.bd",
+        "lat": "24.3000",
+        "lon": "89.1667"
       },
       {
         "id": "146",
         "district_id": "16",
         "name": "Bagatipara",
         "bn_name": "বাগাতিপাড়া",
-        "url": "bagatipara.natore.gov.bd"
+        "url": "bagatipara.natore.gov.bd",
+        "lat": "24.3167",
+        "lon": "88.9500"
       },
       {
         "id": "147",
         "district_id": "16",
         "name": "Lalpur",
         "bn_name": "লালপুর",
-        "url": "lalpur.natore.gov.bd"
+        "url": "lalpur.natore.gov.bd",
+        "lat": "24.1833",
+        "lon": "88.9750"
       },
       {
         "id": "148",
         "district_id": "16",
         "name": "Gurudaspur",
         "bn_name": "গুরুদাসপুর",
-        "url": "gurudaspur.natore.gov.bd"
+        "url": "gurudaspur.natore.gov.bd",
+        "lat": "24.4250",
+        "lon": "89.2417"
       },
       {
         "id": "149",
         "district_id": "16",
         "name": "Naldanga",
         "bn_name": "নলডাঙ্গা",
-        "url": "naldanga.natore.gov.bd"
+        "url": "naldanga.natore.gov.bd",
+        "lat": "24.4795",
+        "lon": "88.9248"
       },
       {
         "id": "150",
         "district_id": "17",
         "name": "Akkelpur",
         "bn_name": "আক্কেলপুর",
-        "url": "akkelpur.joypurhat.gov.bd"
+        "url": "akkelpur.joypurhat.gov.bd",
+        "lat": "24.9750",
+        "lon": "89.0208"
       },
       {
         "id": "151",
         "district_id": "17",
         "name": "Kalai",
         "bn_name": "কালাই",
-        "url": "kalai.joypurhat.gov.bd"
+        "url": "kalai.joypurhat.gov.bd",
+        "lat": "25.0583",
+        "lon": "89.1833"
       },
       {
         "id": "152",
         "district_id": "17",
         "name": "Khetlal",
         "bn_name": "ক্ষেতলাল",
-        "url": "khetlal.joypurhat.gov.bd"
+        "url": "khetlal.joypurhat.gov.bd",
+        "lat": "24.9833",
+        "lon": "89.1167"
       },
       {
         "id": "153",
         "district_id": "17",
         "name": "Panchbibi",
         "bn_name": "পাঁচবিবি",
-        "url": "panchbibi.joypurhat.gov.bd"
+        "url": "panchbibi.joypurhat.gov.bd",
+        "lat": "25.1917",
+        "lon": "89.0208"
       },
       {
         "id": "154",
         "district_id": "17",
         "name": "Joypurhat Sadar",
-        "bn_name": "জয়পুরহাট সদর",
-        "url": "joypurhatsadar.joypurhat.gov.bd"
+        "bn_name": "জয়পুরহাট সদর",
+        "url": "joypurhatsadar.joypurhat.gov.bd",
+        "lat": "25.0967",
+        "lon": "89.0225"
       },
       {
         "id": "155",
         "district_id": "18",
         "name": "Chapainawabganj Sadar",
         "bn_name": "চাঁপাইনবাবগঞ্জ সদর",
-        "url": "chapainawabganjsadar.chapainawabganj.gov.bd"
+        "url": "chapainawabganjsadar.chapainawabganj.gov.bd",
+        "lat": "24.5961",
+        "lon": "88.2708"
       },
       {
         "id": "156",
         "district_id": "18",
         "name": "Gomostapur",
         "bn_name": "গোমস্তাপুর",
-        "url": "gomostapur.chapainawabganj.gov.bd"
+        "url": "gomostapur.chapainawabganj.gov.bd",
+        "lat": "24.7750",
+        "lon": "88.2833"
       },
       {
         "id": "157",
         "district_id": "18",
         "name": "Nachol",
         "bn_name": "নাচোল",
-        "url": "nachol.chapainawabganj.gov.bd"
+        "url": "nachol.chapainawabganj.gov.bd",
+        "lat": "24.7292",
+        "lon": "88.4167"
       },
       {
         "id": "158",
         "district_id": "18",
         "name": "Bholahat",
         "bn_name": "ভোলাহাট",
-        "url": "bholahat.chapainawabganj.gov.bd"
+        "url": "bholahat.chapainawabganj.gov.bd",
+        "lat": "24.9333",
+        "lon": "88.1667"
       },
       {
         "id": "159",
         "district_id": "18",
         "name": "Shibganj",
         "bn_name": "শিবগঞ্জ",
-        "url": "shibganj.chapainawabganj.gov.bd"
+        "url": "shibganj.chapainawabganj.gov.bd",
+        "lat": "24.6833",
+        "lon": "88.1667"
       },
       {
         "id": "160",
         "district_id": "19",
         "name": "Mohadevpur",
         "bn_name": "মহাদেবপুর",
-        "url": "mohadevpur.naogaon.gov.bd"
+        "url": "mohadevpur.naogaon.gov.bd",
+        "lat": "24.9333",
+        "lon": "88.7500"
       },
       {
         "id": "161",
         "district_id": "19",
         "name": "Badalgachi",
         "bn_name": "বদলগাছী",
-        "url": "badalgachi.naogaon.gov.bd"
+        "url": "badalgachi.naogaon.gov.bd",
+        "lat": "24.9667",
+        "lon": "88.9167"
       },
       {
         "id": "162",
         "district_id": "19",
         "name": "Patnitala",
         "bn_name": "পত্নিতলা",
-        "url": "patnitala.naogaon.gov.bd"
+        "url": "patnitala.naogaon.gov.bd",
+        "lat": "25.0500",
+        "lon": "88.8333"
       },
       {
         "id": "163",
         "district_id": "19",
         "name": "Dhamoirhat",
         "bn_name": "ধামইরহাট",
-        "url": "dhamoirhat.naogaon.gov.bd"
+        "url": "dhamoirhat.naogaon.gov.bd",
+        "lat": "25.1417",
+        "lon": "88.8500"
       },
       {
         "id": "164",
         "district_id": "19",
         "name": "Niamatpur",
-        "bn_name": "নিয়ামতপুর",
-        "url": "niamatpur.naogaon.gov.bd"
+        "bn_name": "নিয়ামতপুর",
+        "url": "niamatpur.naogaon.gov.bd",
+        "lat": "24.8583",
+        "lon": "88.5667"
       },
       {
         "id": "165",
         "district_id": "19",
         "name": "Manda",
         "bn_name": "মান্দা",
-        "url": "manda.naogaon.gov.bd"
+        "url": "manda.naogaon.gov.bd",
+        "lat": "24.7833",
+        "lon": "88.6667"
       },
       {
         "id": "166",
         "district_id": "19",
         "name": "Atrai",
         "bn_name": "আত্রাই",
-        "url": "atrai.naogaon.gov.bd"
+        "url": "atrai.naogaon.gov.bd",
+        "lat": "24.6167",
+        "lon": "88.9667"
       },
       {
         "id": "167",
         "district_id": "19",
         "name": "Raninagar",
         "bn_name": "রাণীনগর",
-        "url": "raninagar.naogaon.gov.bd"
+        "url": "raninagar.naogaon.gov.bd",
+        "lat": "24.7333",
+        "lon": "88.9583"
       },
       {
         "id": "168",
         "district_id": "19",
         "name": "Naogaon Sadar",
         "bn_name": "নওগাঁ সদর",
-        "url": "naogaonsadar.naogaon.gov.bd"
+        "url": "naogaonsadar.naogaon.gov.bd",
+        "lat": "24.8092",
+        "lon": "88.9511"
       },
       {
         "id": "169",
         "district_id": "19",
         "name": "Porsha",
         "bn_name": "পোরশা",
-        "url": "porsha.naogaon.gov.bd"
+        "url": "porsha.naogaon.gov.bd",
+        "lat": "25.0250",
+        "lon": "88.5167"
       },
       {
         "id": "170",
         "district_id": "19",
         "name": "Sapahar",
         "bn_name": "সাপাহার",
-        "url": "sapahar.naogaon.gov.bd"
+        "url": "sapahar.naogaon.gov.bd",
+        "lat": "25.1250",
+        "lon": "88.5833"
       },
       {
         "id": "171",
         "district_id": "20",
         "name": "Manirampur",
         "bn_name": "মণিরামপুর",
-        "url": "manirampur.jessore.gov.bd"
+        "url": "manirampur.jessore.gov.bd",
+        "lat": "23.0167",
+        "lon": "89.2333"
       },
       {
         "id": "172",
         "district_id": "20",
         "name": "Abhaynagar",
-        "bn_name": "অভয়নগর",
-        "url": "abhaynagar.jessore.gov.bd"
+        "bn_name": "অভয়নগর",
+        "url": "abhaynagar.jessore.gov.bd",
+        "lat": "23.0167",
+        "lon": "89.4333"
       },
       {
         "id": "173",
         "district_id": "20",
         "name": "Bagherpara",
-        "bn_name": "বাঘারপাড়া",
-        "url": "bagherpara.jessore.gov.bd"
+        "bn_name": "বাঘারপাড়া",
+        "url": "bagherpara.jessore.gov.bd",
+        "lat": "23.2167",
+        "lon": "89.3500"
       },
       {
         "id": "174",
         "district_id": "20",
         "name": "Chougachha",
         "bn_name": "চৌগাছা",
-        "url": "chougachha.jessore.gov.bd"
+        "url": "chougachha.jessore.gov.bd",
+        "lat": "23.2667",
+        "lon": "89.0250"
       },
       {
         "id": "175",
         "district_id": "20",
         "name": "Jhikargacha",
         "bn_name": "ঝিকরগাছা",
-        "url": "jhikargacha.jessore.gov.bd"
+        "url": "jhikargacha.jessore.gov.bd",
+        "lat": "23.1000",
+        "lon": "89.1333"
       },
       {
         "id": "176",
         "district_id": "20",
         "name": "Keshabpur",
         "bn_name": "কেশবপুর",
-        "url": "keshabpur.jessore.gov.bd"
+        "url": "keshabpur.jessore.gov.bd",
+        "lat": "22.9083",
+        "lon": "89.2167"
       },
       {
         "id": "177",
         "district_id": "20",
         "name": "Jessore Sadar",
         "bn_name": "যশোর সদর",
-        "url": "sadar.jessore.gov.bd"
+        "url": "sadar.jessore.gov.bd",
+        "lat": "23.1691",
+        "lon": "89.2136"
       },
       {
         "id": "178",
         "district_id": "20",
         "name": "Sharsha",
         "bn_name": "শার্শা",
-        "url": "sharsha.jessore.gov.bd"
+        "url": "sharsha.jessore.gov.bd",
+        "lat": "23.0750",
+        "lon": "88.9083"
       },
       {
         "id": "179",
         "district_id": "21",
         "name": "Assasuni",
         "bn_name": "আশাশুনি",
-        "url": "assasuni.satkhira.gov.bd"
+        "url": "assasuni.satkhira.gov.bd",
+        "lat": "22.5500",
+        "lon": "89.1667"
       },
       {
         "id": "180",
         "district_id": "21",
         "name": "Debhata",
         "bn_name": "দেবহাটা",
-        "url": "debhata.satkhira.gov.bd"
+        "url": "debhata.satkhira.gov.bd",
+        "lat": "22.5667",
+        "lon": "88.9667"
       },
       {
         "id": "181",
         "district_id": "21",
         "name": "Kalaroa",
-        "bn_name": "কলারোয়া",
-        "url": "kalaroa.satkhira.gov.bd"
+        "bn_name": "কলারোয়া",
+        "url": "kalaroa.satkhira.gov.bd",
+        "lat": "22.8750",
+        "lon": "89.0417"
       },
       {
         "id": "182",
         "district_id": "21",
         "name": "Satkhira Sadar",
         "bn_name": "সাতক্ষীরা সদর",
-        "url": "satkhirasadar.satkhira.gov.bd"
+        "url": "satkhirasadar.satkhira.gov.bd",
+        "lat": "22.7077",
+        "lon": "89.0720"
       },
       {
         "id": "183",
         "district_id": "21",
         "name": "Shyamnagar",
         "bn_name": "শ্যামনগর",
-        "url": "shyamnagar.satkhira.gov.bd"
+        "url": "shyamnagar.satkhira.gov.bd",
+        "lat": "22.3306",
+        "lon": "89.1028"
       },
       {
         "id": "184",
         "district_id": "21",
         "name": "Tala",
         "bn_name": "তালা",
-        "url": "tala.satkhira.gov.bd"
+        "url": "tala.satkhira.gov.bd",
+        "lat": "22.7542",
+        "lon": "89.2542"
       },
       {
         "id": "185",
         "district_id": "21",
         "name": "Kaliganj",
         "bn_name": "কালিগঞ্জ",
-        "url": "kaliganj.satkhira.gov.bd"
+        "url": "kaliganj.satkhira.gov.bd",
+        "lat": "22.4500",
+        "lon": "89.0417"
       },
       {
         "id": "186",
         "district_id": "22",
         "name": "Mujibnagar",
         "bn_name": "মুজিবনগর",
-        "url": "mujibnagar.meherpur.gov.bd"
+        "url": "mujibnagar.meherpur.gov.bd",
+        "lat": "23.6528",
+        "lon": "88.5833"
       },
       {
         "id": "187",
         "district_id": "22",
         "name": "Meherpur Sadar",
         "bn_name": "মেহেরপুর সদর",
-        "url": "meherpursadar.meherpur.gov.bd"
+        "url": "meherpursadar.meherpur.gov.bd",
+        "lat": "23.7667",
+        "lon": "88.6333"
       },
       {
         "id": "188",
         "district_id": "22",
         "name": "Gangni",
         "bn_name": "গাংনী",
-        "url": "gangni.meherpur.gov.bd"
+        "url": "gangni.meherpur.gov.bd",
+        "lat": "23.8333",
+        "lon": "88.6833"
       },
       {
         "id": "189",
         "district_id": "23",
         "name": "Narail Sadar",
-        "bn_name": "নড়াইল সদর",
-        "url": "narailsadar.narail.gov.bd"
+        "bn_name": "নড়াইল সদর",
+        "url": "narailsadar.narail.gov.bd",
+        "lat": "23.1691",
+        "lon": "89.5000"
       },
       {
         "id": "190",
         "district_id": "23",
         "name": "Lohagara",
-        "bn_name": "লোহাগড়া",
-        "url": "lohagara.narail.gov.bd"
+        "bn_name": "লোহাগড়া",
+        "url": "lohagara.narail.gov.bd",
+        "lat": "23.1972",
+        "lon": "89.6458"
       },
       {
         "id": "191",
         "district_id": "23",
         "name": "Kalia",
-        "bn_name": "কালিয়া",
-        "url": "kalia.narail.gov.bd"
+        "bn_name": "কালিয়া",
+        "url": "kalia.narail.gov.bd",
+        "lat": "23.0417",
+        "lon": "89.6250"
       },
       {
         "id": "192",
         "district_id": "24",
         "name": "Chuadanga Sadar",
         "bn_name": "চুয়াডাঙ্গা সদর",
-        "url": "chuadangasadar.chuadanga.gov.bd"
+        "url": "chuadangasadar.chuadanga.gov.bd",
+        "lat": "23.6401",
+        "lon": "88.8418"
       },
       {
         "id": "193",
         "district_id": "24",
         "name": "Alamdanga",
         "bn_name": "আলমডাঙ্গা",
-        "url": "alamdanga.chuadanga.gov.bd"
+        "url": "alamdanga.chuadanga.gov.bd",
+        "lat": "23.7583",
+        "lon": "88.9500"
       },
       {
         "id": "194",
         "district_id": "24",
         "name": "Damurhuda",
         "bn_name": "দামুড়হুদা",
-        "url": "damurhuda.chuadanga.gov.bd"
+        "url": "damurhuda.chuadanga.gov.bd",
+        "lat": "23.6167",
+        "lon": "88.7833"
       },
       {
         "id": "195",
         "district_id": "24",
         "name": "Jibannagar",
         "bn_name": "জীবননগর",
-        "url": "jibannagar.chuadanga.gov.bd"
+        "url": "jibannagar.chuadanga.gov.bd",
+        "lat": "23.4167",
+        "lon": "88.8167"
       },
       {
         "id": "196",
         "district_id": "25",
         "name": "Kushtia Sadar",
-        "bn_name": "কুষ্টিয়া সদর",
-        "url": "kushtiasadar.kushtia.gov.bd"
+        "bn_name": "কুষ্টিয়া সদর",
+        "url": "kushtiasadar.kushtia.gov.bd",
+        "lat": "23.9014",
+        "lon": "89.1204"
       },
       {
         "id": "197",
         "district_id": "25",
         "name": "Kumarkhali",
         "bn_name": "কুমারখালী",
-        "url": "kumarkhali.kushtia.gov.bd"
+        "url": "kumarkhali.kushtia.gov.bd",
+        "lat": "23.8667",
+        "lon": "89.2500"
       },
       {
         "id": "198",
         "district_id": "25",
         "name": "Khoksa",
         "bn_name": "খোকসা",
-        "url": "khoksa.kushtia.gov.bd"
+        "url": "khoksa.kushtia.gov.bd",
+        "lat": "23.8000",
+        "lon": "89.2833"
       },
       {
         "id": "199",
         "district_id": "25",
         "name": "Mirpur",
         "bn_name": "মিরপুর",
-        "url": "mirpurkushtia.kushtia.gov.bd"
+        "url": "mirpurkushtia.kushtia.gov.bd",
+        "lat": "23.9333",
+        "lon": "88.9833"
       },
       {
         "id": "200",
         "district_id": "25",
         "name": "Daulatpur",
         "bn_name": "দৌলতপুর",
-        "url": "daulatpur.kushtia.gov.bd"
+        "url": "daulatpur.kushtia.gov.bd",
+        "lat": "24.0000",
+        "lon": "88.8667"
       },
       {
         "id": "201",
         "district_id": "25",
         "name": "Bheramara",
         "bn_name": "ভেড়ামারা",
-        "url": "bheramara.kushtia.gov.bd"
+        "url": "bheramara.kushtia.gov.bd",
+        "lat": "24.0167",
+        "lon": "88.9917"
       },
       {
         "id": "202",
         "district_id": "26",
         "name": "Shalikha",
         "bn_name": "শালিখা",
-        "url": "shalikha.magura.gov.bd"
+        "url": "shalikha.magura.gov.bd",
+        "lat": "23.3000",
+        "lon": "89.3333"
       },
       {
         "id": "203",
         "district_id": "26",
         "name": "Sreepur",
         "bn_name": "শ্রীপুর",
-        "url": "sreepur.magura.gov.bd"
+        "url": "sreepur.magura.gov.bd",
+        "lat": "23.5931",
+        "lon": "89.3833"
       },
       {
         "id": "204",
         "district_id": "26",
         "name": "Magura Sadar",
         "bn_name": "মাগুরা সদর",
-        "url": "magurasadar.magura.gov.bd"
+        "url": "magurasadar.magura.gov.bd",
+        "lat": "23.4875",
+        "lon": "89.4194"
       },
       {
         "id": "205",
         "district_id": "26",
         "name": "Mohammadpur",
         "bn_name": "মহম্মদপুর",
-        "url": "mohammadpur.magura.gov.bd"
+        "url": "mohammadpur.magura.gov.bd",
+        "lat": "23.4042",
+        "lon": "89.5917"
       },
       {
         "id": "206",
         "district_id": "27",
         "name": "Paikgasa",
         "bn_name": "পাইকগাছা",
-        "url": "paikgasa.khulna.gov.bd"
+        "url": "paikgasa.khulna.gov.bd",
+        "lat": "22.5889",
+        "lon": "89.3361"
       },
       {
         "id": "207",
         "district_id": "27",
         "name": "Fultola",
         "bn_name": "ফুলতলা",
-        "url": "fultola.khulna.gov.bd"
+        "url": "fultola.khulna.gov.bd",
+        "lat": "22.9708",
+        "lon": "89.4667"
       },
       {
         "id": "208",
         "district_id": "27",
         "name": "Digholia",
-        "bn_name": "দিঘলিয়া",
-        "url": "digholia.khulna.gov.bd"
+        "bn_name": "দিঘলিয়া",
+        "url": "digholia.khulna.gov.bd",
+        "lat": "22.9069",
+        "lon": "89.5347"
       },
       {
         "id": "209",
         "district_id": "27",
         "name": "Rupsha",
         "bn_name": "রূপসা",
-        "url": "rupsha.khulna.gov.bd"
+        "url": "rupsha.khulna.gov.bd",
+        "lat": "22.8250",
+        "lon": "89.5833"
       },
       {
         "id": "210",
         "district_id": "27",
         "name": "Terokhada",
         "bn_name": "তেরখাদা",
-        "url": "terokhada.khulna.gov.bd"
+        "url": "terokhada.khulna.gov.bd",
+        "lat": "22.9417",
+        "lon": "89.6667"
       },
       {
         "id": "211",
         "district_id": "27",
         "name": "Dumuria",
-        "bn_name": "ডুমুরিয়া",
-        "url": "dumuria.khulna.gov.bd"
+        "bn_name": "ডুমুরিয়া",
+        "url": "dumuria.khulna.gov.bd",
+        "lat": "22.8083",
+        "lon": "89.4250"
       },
       {
         "id": "212",
         "district_id": "27",
         "name": "Botiaghata",
         "bn_name": "বটিয়াঘাটা",
-        "url": "botiaghata.khulna.gov.bd"
+        "url": "botiaghata.khulna.gov.bd",
+        "lat": "22.7417",
+        "lon": "89.5167"
       },
       {
         "id": "213",
         "district_id": "27",
         "name": "Dakop",
         "bn_name": "দাকোপ",
-        "url": "dakop.khulna.gov.bd"
+        "url": "dakop.khulna.gov.bd",
+        "lat": "22.5722",
+        "lon": "89.5111"
       },
       {
         "id": "214",
         "district_id": "27",
         "name": "Koyra",
-        "bn_name": "কয়রা",
-        "url": "koyra.khulna.gov.bd"
+        "bn_name": "কয়রা",
+        "url": "koyra.khulna.gov.bd",
+        "lat": "22.3417",
+        "lon": "89.3000"
       },
       {
         "id": "215",
         "district_id": "28",
         "name": "Fakirhat",
         "bn_name": "ফকিরহাট",
-        "url": "fakirhat.bagerhat.gov.bd"
+        "url": "fakirhat.bagerhat.gov.bd",
+        "lat": "22.7806",
+        "lon": "89.7083"
       },
       {
         "id": "216",
         "district_id": "28",
         "name": "Bagerhat Sadar",
         "bn_name": "বাগেরহাট সদর",
-        "url": "sadar.bagerhat.gov.bd"
+        "url": "sadar.bagerhat.gov.bd",
+        "lat": "22.6603",
+        "lon": "89.7894"
       },
       {
         "id": "217",
         "district_id": "28",
         "name": "Mollahat",
         "bn_name": "মোল্লাহাট",
-        "url": "mollahat.bagerhat.gov.bd"
+        "url": "mollahat.bagerhat.gov.bd",
+        "lat": "22.9417",
+        "lon": "89.8000"
       },
       {
         "id": "218",
         "district_id": "28",
         "name": "Sarankhola",
         "bn_name": "শরণখোলা",
-        "url": "sarankhola.bagerhat.gov.bd"
+        "url": "sarankhola.bagerhat.gov.bd",
+        "lat": "22.3167",
+        "lon": "89.7917"
       },
       {
         "id": "219",
         "district_id": "28",
         "name": "Rampal",
         "bn_name": "রামপাল",
-        "url": "rampal.bagerhat.gov.bd"
+        "url": "rampal.bagerhat.gov.bd",
+        "lat": "22.5667",
+        "lon": "89.6639"
       },
       {
         "id": "220",
         "district_id": "28",
         "name": "Morrelganj",
-        "bn_name": "মোড়েলগঞ্জ",
-        "url": "morrelganj.bagerhat.gov.bd"
+        "bn_name": "মোড়েলগঞ্জ",
+        "url": "morrelganj.bagerhat.gov.bd",
+        "lat": "22.4500",
+        "lon": "89.8583"
       },
       {
         "id": "221",
         "district_id": "28",
         "name": "Kachua",
-        "bn_name": "কচুয়া",
-        "url": "kachua.bagerhat.gov.bd"
+        "bn_name": "কচুয়া",
+        "url": "kachua.bagerhat.gov.bd",
+        "lat": "22.6500",
+        "lon": "89.8833"
       },
       {
         "id": "222",
         "district_id": "28",
         "name": "Mongla",
         "bn_name": "মোংলা",
-        "url": "mongla.bagerhat.gov.bd"
+        "url": "mongla.bagerhat.gov.bd",
+        "lat": "22.4833",
+        "lon": "89.6083"
       },
       {
         "id": "223",
         "district_id": "28",
         "name": "Chitalmari",
         "bn_name": "চিতলমারী",
-        "url": "chitalmari.bagerhat.gov.bd"
+        "url": "chitalmari.bagerhat.gov.bd",
+        "lat": "22.7833",
+        "lon": "89.8750"
       },
       {
         "id": "224",
         "district_id": "29",
         "name": "Jhenaidah Sadar",
         "bn_name": "ঝিনাইদহ সদর",
-        "url": "sadar.jhenaidah.gov.bd"
+        "url": "sadar.jhenaidah.gov.bd",
+        "lat": "23.5422",
+        "lon": "89.1722"
       },
       {
         "id": "225",
         "district_id": "29",
         "name": "Shailkupa",
         "bn_name": "শৈলকুপা",
-        "url": "shailkupa.jhenaidah.gov.bd"
+        "url": "shailkupa.jhenaidah.gov.bd",
+        "lat": "23.6917",
+        "lon": "89.2500"
       },
       {
         "id": "226",
         "district_id": "29",
         "name": "Harinakundu",
         "bn_name": "হরিণাকুন্ডু",
-        "url": "harinakundu.jhenaidah.gov.bd"
+        "url": "harinakundu.jhenaidah.gov.bd",
+        "lat": "23.6417",
+        "lon": "89.0500"
       },
       {
         "id": "227",
         "district_id": "29",
         "name": "Kaliganj",
         "bn_name": "কালীগঞ্জ",
-        "url": "kaliganj.jhenaidah.gov.bd"
+        "url": "kaliganj.jhenaidah.gov.bd",
+        "lat": "23.4125",
+        "lon": "89.1333"
       },
       {
         "id": "228",
         "district_id": "29",
         "name": "Kotchandpur",
         "bn_name": "কোটচাঁদপুর",
-        "url": "kotchandpur.jhenaidah.gov.bd"
+        "url": "kotchandpur.jhenaidah.gov.bd",
+        "lat": "23.4000",
+        "lon": "89.0167"
       },
       {
         "id": "229",
         "district_id": "29",
         "name": "Moheshpur",
         "bn_name": "মহেশপুর",
-        "url": "moheshpur.jhenaidah.gov.bd"
+        "url": "moheshpur.jhenaidah.gov.bd",
+        "lat": "23.3500",
+        "lon": "88.9125"
       },
       {
         "id": "230",
         "district_id": "30",
         "name": "Jhalakathi Sadar",
         "bn_name": "ঝালকাঠি সদর",
-        "url": "sadar.jhalakathi.gov.bd"
+        "url": "sadar.jhalakathi.gov.bd",
+        "lat": "22.6417",
+        "lon": "90.2000"
       },
       {
         "id": "231",
         "district_id": "30",
         "name": "Kathalia",
-        "bn_name": "কাঠালিয়া",
-        "url": "kathalia.jhalakathi.gov.bd"
+        "bn_name": "কাঠালিয়া",
+        "url": "kathalia.jhalakathi.gov.bd",
+        "lat": "22.3917",
+        "lon": "90.1500"
       },
       {
         "id": "232",
         "district_id": "30",
         "name": "Nalchity",
         "bn_name": "নলছিটি",
-        "url": "nalchity.jhalakathi.gov.bd"
+        "url": "nalchity.jhalakathi.gov.bd",
+        "lat": "22.6417",
+        "lon": "90.2667"
       },
       {
         "id": "233",
         "district_id": "30",
         "name": "Rajapur",
         "bn_name": "রাজাপুর",
-        "url": "rajapur.jhalakathi.gov.bd"
+        "url": "rajapur.jhalakathi.gov.bd",
+        "lat": "22.5083",
+        "lon": "90.1417"
       },
       {
         "id": "234",
         "district_id": "31",
         "name": "Bauphal",
         "bn_name": "বাউফল",
-        "url": "bauphal.patuakhali.gov.bd"
+        "url": "bauphal.patuakhali.gov.bd",
+        "lat": "22.4167",
+        "lon": "90.5667"
       },
       {
         "id": "235",
         "district_id": "31",
         "name": "Patuakhali Sadar",
-        "bn_name": "পটুয়াখালী সদর",
-        "url": "sadar.patuakhali.gov.bd"
+        "bn_name": "পটুয়াখালী সদর",
+        "url": "sadar.patuakhali.gov.bd",
+        "lat": "22.3542",
+        "lon": "90.3347"
       },
       {
         "id": "236",
         "district_id": "31",
         "name": "Dumki",
         "bn_name": "দুমকি",
-        "url": "dumki.patuakhali.gov.bd"
+        "url": "dumki.patuakhali.gov.bd",
+        "lat": "22.4500",
+        "lon": "90.3833"
       },
       {
         "id": "237",
         "district_id": "31",
         "name": "Dashmina",
         "bn_name": "দশমিনা",
-        "url": "dashmina.patuakhali.gov.bd"
+        "url": "dashmina.patuakhali.gov.bd",
+        "lat": "22.1625",
+        "lon": "90.5917"
       },
       {
         "id": "238",
         "district_id": "31",
         "name": "Kalapara",
         "bn_name": "কলাপাড়া",
-        "url": "kalapara.patuakhali.gov.bd"
+        "url": "kalapara.patuakhali.gov.bd",
+        "lat": "21.9833",
+        "lon": "90.2417"
       },
       {
         "id": "239",
         "district_id": "31",
         "name": "Mirzaganj",
         "bn_name": "মির্জাগঞ্জ",
-        "url": "mirzaganj.patuakhali.gov.bd"
+        "url": "mirzaganj.patuakhali.gov.bd",
+        "lat": "22.3667",
+        "lon": "90.2333"
       },
       {
         "id": "240",
         "district_id": "31",
         "name": "Galachipa",
         "bn_name": "গলাচিপা",
-        "url": "galachipa.patuakhali.gov.bd"
+        "url": "galachipa.patuakhali.gov.bd",
+        "lat": "22.1639",
+        "lon": "90.4306"
       },
       {
         "id": "241",
         "district_id": "31",
         "name": "Rangabali",
         "bn_name": "রাঙ্গাবালী",
-        "url": "rangabali.patuakhali.gov.bd"
+        "url": "rangabali.patuakhali.gov.bd",
+        "lat": "21.9167",
+        "lon": "90.4667"
       },
       {
         "id": "242",
         "district_id": "32",
         "name": "Pirojpur Sadar",
         "bn_name": "পিরোজপুর সদর",
-        "url": "sadar.pirojpur.gov.bd"
+        "url": "sadar.pirojpur.gov.bd",
+        "lat": "22.5792",
+        "lon": "89.9750"
       },
       {
         "id": "243",
         "district_id": "32",
         "name": "Nazirpur",
         "bn_name": "নাজিরপুর",
-        "url": "nazirpur.pirojpur.gov.bd"
+        "url": "nazirpur.pirojpur.gov.bd",
+        "lat": "22.7500",
+        "lon": "89.9667"
       },
       {
         "id": "244",
         "district_id": "32",
         "name": "Kawkhali",
         "bn_name": "কাউখালী",
-        "url": "kawkhali.pirojpur.gov.bd"
+        "url": "kawkhali.pirojpur.gov.bd",
+        "lat": "22.6167",
+        "lon": "90.0667"
       },
       {
         "id": "245",
         "district_id": "32",
         "name": "Zianagar",
-        "bn_name": "জিয়ানগর",
-        "url": "zianagar.pirojpur.gov.bd"
+        "bn_name": "জিয়ানগর",
+        "url": "zianagar.pirojpur.gov.bd",
+        "lat": "22.5333",
+        "lon": "89.9167"
       },
       {
         "id": "246",
         "district_id": "32",
         "name": "Bhandaria",
-        "bn_name": "ভান্ডারিয়া",
-        "url": "bhandaria.pirojpur.gov.bd"
+        "bn_name": "ভান্ডারিয়া",
+        "url": "bhandaria.pirojpur.gov.bd",
+        "lat": "22.4833",
+        "lon": "90.0667"
       },
       {
         "id": "247",
         "district_id": "32",
         "name": "Mathbaria",
-        "bn_name": "মঠবাড়ীয়া",
-        "url": "mathbaria.pirojpur.gov.bd"
+        "bn_name": "মঠবাড়ীয়া",
+        "url": "mathbaria.pirojpur.gov.bd",
+        "lat": "22.2833",
+        "lon": "89.9583"
       },
       {
         "id": "248",
         "district_id": "32",
         "name": "Nesarabad",
         "bn_name": "নেছারাবাদ",
-        "url": "nesarabad.pirojpur.gov.bd"
+        "url": "nesarabad.pirojpur.gov.bd",
+        "lat": "22.7500",
+        "lon": "90.0500"
       },
       {
         "id": "249",
         "district_id": "33",
         "name": "Barisal Sadar",
         "bn_name": "বরিশাল সদর",
-        "url": "barisalsadar.barisal.gov.bd"
+        "url": "barisalsadar.barisal.gov.bd",
+        "lat": "22.7011",
+        "lon": "90.3542"
       },
       {
         "id": "250",
         "district_id": "33",
         "name": "Bakerganj",
         "bn_name": "বাকেরগঞ্জ",
-        "url": "bakerganj.barisal.gov.bd"
+        "url": "bakerganj.barisal.gov.bd",
+        "lat": "22.5500",
+        "lon": "90.3389"
       },
       {
         "id": "251",
         "district_id": "33",
         "name": "Babuganj",
         "bn_name": "বাবুগঞ্জ",
-        "url": "babuganj.barisal.gov.bd"
+        "url": "babuganj.barisal.gov.bd",
+        "lat": "22.8250",
+        "lon": "90.3208"
       },
       {
         "id": "252",
         "district_id": "33",
         "name": "Wazirpur",
         "bn_name": "উজিরপুর",
-        "url": "wazirpur.barisal.gov.bd"
+        "url": "wazirpur.barisal.gov.bd",
+        "lat": "22.8125",
+        "lon": "90.2417"
       },
       {
         "id": "253",
         "district_id": "33",
         "name": "Banaripara",
-        "bn_name": "বানারীপাড়া",
-        "url": "banaripara.barisal.gov.bd"
+        "bn_name": "বানারীপাড়া",
+        "url": "banaripara.barisal.gov.bd",
+        "lat": "22.7833",
+        "lon": "90.1667"
       },
       {
         "id": "254",
         "district_id": "33",
         "name": "Gournadi",
         "bn_name": "গৌরনদী",
-        "url": "gournadi.barisal.gov.bd"
+        "url": "gournadi.barisal.gov.bd",
+        "lat": "22.9736",
+        "lon": "90.2306"
       },
       {
         "id": "255",
         "district_id": "33",
         "name": "Agailjhara",
-        "bn_name": "আগৈলঝাড়া",
-        "url": "agailjhara.barisal.gov.bd"
+        "bn_name": "আগৈলঝাড়া",
+        "url": "agailjhara.barisal.gov.bd",
+        "lat": "22.9542",
+        "lon": "90.1514"
       },
       {
         "id": "256",
         "district_id": "33",
         "name": "Mehendiganj",
         "bn_name": "মেহেন্দিগঞ্জ",
-        "url": "mehendiganj.barisal.gov.bd"
+        "url": "mehendiganj.barisal.gov.bd",
+        "lat": "22.8250",
+        "lon": "90.5333"
       },
       {
         "id": "257",
         "district_id": "33",
         "name": "Muladi",
         "bn_name": "মুলাদী",
-        "url": "muladi.barisal.gov.bd"
+        "url": "muladi.barisal.gov.bd",
+        "lat": "22.9167",
+        "lon": "90.4167"
       },
       {
         "id": "258",
         "district_id": "33",
         "name": "Hizla",
         "bn_name": "হিজলা",
-        "url": "hizla.barisal.gov.bd"
+        "url": "hizla.barisal.gov.bd",
+        "lat": "22.9833",
+        "lon": "90.5111"
       },
       {
         "id": "259",
         "district_id": "34",
         "name": "Bhola Sadar",
         "bn_name": "ভোলা সদর",
-        "url": "sadar.bhola.gov.bd"
+        "url": "sadar.bhola.gov.bd",
+        "lat": "22.6875",
+        "lon": "90.6444"
       },
       {
         "id": "260",
         "district_id": "34",
         "name": "Borhan Sddin",
         "bn_name": "বোরহান উদ্দিন",
-        "url": "borhanuddin.bhola.gov.bd"
+        "url": "borhanuddin.bhola.gov.bd",
+        "lat": "22.5000",
+        "lon": "90.7167"
       },
       {
         "id": "261",
         "district_id": "34",
         "name": "Charfesson",
         "bn_name": "চরফ্যাশন",
-        "url": "charfesson.bhola.gov.bd"
+        "url": "charfesson.bhola.gov.bd",
+        "lat": "22.1847",
+        "lon": "90.7500"
       },
       {
         "id": "262",
         "district_id": "34",
         "name": "Doulatkhan",
         "bn_name": "দৌলতখান",
-        "url": "doulatkhan.bhola.gov.bd"
+        "url": "doulatkhan.bhola.gov.bd",
+        "lat": "22.6111",
+        "lon": "90.7417"
       },
       {
         "id": "263",
         "district_id": "34",
         "name": "Monpura",
         "bn_name": "মনপুরা",
-        "url": "monpura.bhola.gov.bd"
+        "url": "monpura.bhola.gov.bd",
+        "lat": "22.3000",
+        "lon": "90.9667"
       },
       {
         "id": "264",
         "district_id": "34",
         "name": "Tazumuddin",
         "bn_name": "তজুমদ্দিন",
-        "url": "tazumuddin.bhola.gov.bd"
+        "url": "tazumuddin.bhola.gov.bd",
+        "lat": "22.4167",
+        "lon": "90.8500"
       },
       {
         "id": "265",
         "district_id": "34",
         "name": "Lalmohan",
         "bn_name": "লালমোহন",
-        "url": "lalmohan.bhola.gov.bd"
+        "url": "lalmohan.bhola.gov.bd",
+        "lat": "22.3375",
+        "lon": "90.7347"
       },
       {
         "id": "266",
         "district_id": "35",
         "name": "Amtali",
         "bn_name": "আমতলী",
-        "url": "amtali.barguna.gov.bd"
+        "url": "amtali.barguna.gov.bd",
+        "lat": "22.1278",
+        "lon": "90.2306"
       },
       {
         "id": "267",
         "district_id": "35",
         "name": "Barguna Sadar",
         "bn_name": "বরগুনা সদর",
-        "url": "sadar.barguna.gov.bd"
+        "url": "sadar.barguna.gov.bd",
+        "lat": "22.1556",
+        "lon": "90.1250"
       },
       {
         "id": "268",
         "district_id": "35",
         "name": "Betagi",
         "bn_name": "বেতাগী",
-        "url": "betagi.barguna.gov.bd"
+        "url": "betagi.barguna.gov.bd",
+        "lat": "22.4167",
+        "lon": "90.1667"
       },
       {
         "id": "269",
         "district_id": "35",
         "name": "Bamna",
         "bn_name": "বামনা",
-        "url": "bamna.barguna.gov.bd"
+        "url": "bamna.barguna.gov.bd",
+        "lat": "22.2500",
+        "lon": "90.1000"
       },
       {
         "id": "270",
         "district_id": "35",
         "name": "Pathorghata",
         "bn_name": "পাথরঘাটা",
-        "url": "pathorghata.barguna.gov.bd"
+        "url": "pathorghata.barguna.gov.bd",
+        "lat": "22.0458",
+        "lon": "89.9694"
       },
       {
         "id": "271",
         "district_id": "35",
         "name": "Taltali",
         "bn_name": "তালতলি",
-        "url": "taltali.barguna.gov.bd"
+        "url": "taltali.barguna.gov.bd",
+        "lat": "22.0167",
+        "lon": "90.1833"
       },
       {
         "id": "272",
         "district_id": "36",
         "name": "Balaganj",
         "bn_name": "বালাগঞ্জ",
-        "url": "balaganj.sylhet.gov.bd"
+        "url": "balaganj.sylhet.gov.bd",
+        "lat": "24.6417",
+        "lon": "91.8333"
       },
       {
         "id": "273",
         "district_id": "36",
         "name": "Beanibazar",
-        "bn_name": "বিয়ানীবাজার",
-        "url": "beanibazar.sylhet.gov.bd"
+        "bn_name": "বিয়ানীবাজার",
+        "url": "beanibazar.sylhet.gov.bd",
+        "lat": "24.8250",
+        "lon": "92.1625"
       },
       {
         "id": "274",
         "district_id": "36",
         "name": "Bishwanath",
         "bn_name": "বিশ্বনাথ",
-        "url": "bishwanath.sylhet.gov.bd"
+        "url": "bishwanath.sylhet.gov.bd",
+        "lat": "24.8500",
+        "lon": "91.7333"
       },
       {
         "id": "275",
         "district_id": "36",
         "name": "Companiganj",
         "bn_name": "কোম্পানীগঞ্জ",
-        "url": "companiganj.sylhet.gov.bd"
+        "url": "companiganj.sylhet.gov.bd",
+        "lat": "24.9917",
+        "lon": "91.7500"
       },
       {
         "id": "276",
         "district_id": "36",
         "name": "Fenchuganj",
         "bn_name": "ফেঞ্চুগঞ্জ",
-        "url": "fenchuganj.sylhet.gov.bd"
+        "url": "fenchuganj.sylhet.gov.bd",
+        "lat": "24.7083",
+        "lon": "91.9417"
       },
       {
         "id": "277",
         "district_id": "36",
         "name": "Golapganj",
         "bn_name": "গোলাপগঞ্জ",
-        "url": "golapganj.sylhet.gov.bd"
+        "url": "golapganj.sylhet.gov.bd",
+        "lat": "24.8583",
+        "lon": "92.0250"
       },
       {
         "id": "278",
         "district_id": "36",
         "name": "Gowainghat",
-        "bn_name": "গোয়াইনঘাট",
-        "url": "gowainghat.sylhet.gov.bd"
+        "bn_name": "গোয়াইনঘাট",
+        "url": "gowainghat.sylhet.gov.bd",
+        "lat": "25.0750",
+        "lon": "91.9583"
       },
       {
         "id": "279",
         "district_id": "36",
         "name": "Jaintiapur",
         "bn_name": "জৈন্তাপুর",
-        "url": "jaintiapur.sylhet.gov.bd"
+        "url": "jaintiapur.sylhet.gov.bd",
+        "lat": "25.1333",
+        "lon": "92.1292"
       },
       {
         "id": "280",
         "district_id": "36",
         "name": "Kanaighat",
         "bn_name": "কানাইঘাট",
-        "url": "kanaighat.sylhet.gov.bd"
+        "url": "kanaighat.sylhet.gov.bd",
+        "lat": "25.0111",
+        "lon": "92.2472"
       },
       {
         "id": "281",
         "district_id": "36",
         "name": "Sylhet Sadar",
         "bn_name": "সিলেট সদর",
-        "url": "sylhetsadar.sylhet.gov.bd"
+        "url": "sylhetsadar.sylhet.gov.bd",
+        "lat": "24.8917",
+        "lon": "91.8667"
       },
       {
         "id": "282",
         "district_id": "36",
         "name": "Zakiganj",
         "bn_name": "জকিগঞ্জ",
-        "url": "zakiganj.sylhet.gov.bd"
+        "url": "zakiganj.sylhet.gov.bd",
+        "lat": "24.8833",
+        "lon": "92.3750"
       },
       {
         "id": "283",
         "district_id": "36",
         "name": "Dakshinsurma",
         "bn_name": "দক্ষিণ সুরমা",
-        "url": "dakshinsurma.sylhet.gov.bd"
+        "url": "dakshinsurma.sylhet.gov.bd",
+        "lat": "24.8583",
+        "lon": "91.8667"
       },
       {
         "id": "284",
         "district_id": "36",
         "name": "Osmaninagar",
         "bn_name": "ওসমানী নগর",
-        "url": "osmaninagar.sylhet.gov.bd"
+        "url": "osmaninagar.sylhet.gov.bd",
+        "lat": "24.7167",
+        "lon": "91.7583"
       },
       {
         "id": "285",
         "district_id": "37",
         "name": "Barlekha",
-        "bn_name": "বড়লেখা",
-        "url": "barlekha.moulvibazar.gov.bd"
+        "bn_name": "বড়লেখা",
+        "url": "barlekha.moulvibazar.gov.bd",
+        "lat": "24.6833",
+        "lon": "92.1958"
       },
       {
         "id": "286",
         "district_id": "37",
         "name": "Kamolganj",
         "bn_name": "কমলগঞ্জ",
-        "url": "kamolganj.moulvibazar.gov.bd"
+        "url": "kamolganj.moulvibazar.gov.bd",
+        "lat": "24.3167",
+        "lon": "91.8667"
       },
       {
         "id": "287",
         "district_id": "37",
         "name": "Kulaura",
-        "bn_name": "কুলাউড়া",
-        "url": "kulaura.moulvibazar.gov.bd"
+        "bn_name": "কুলাউড়া",
+        "url": "kulaura.moulvibazar.gov.bd",
+        "lat": "24.5167",
+        "lon": "92.0333"
       },
       {
         "id": "288",
         "district_id": "37",
         "name": "Moulvibazar Sadar",
         "bn_name": "মৌলভীবাজার সদর",
-        "url": "moulvibazarsadar.moulvibazar.gov.bd"
+        "url": "moulvibazarsadar.moulvibazar.gov.bd",
+        "lat": "24.4842",
+        "lon": "91.7694"
       },
       {
         "id": "289",
         "district_id": "37",
         "name": "Rajnagar",
         "bn_name": "রাজনগর",
-        "url": "rajnagar.moulvibazar.gov.bd"
+        "url": "rajnagar.moulvibazar.gov.bd",
+        "lat": "24.5583",
+        "lon": "91.8667"
       },
       {
         "id": "290",
         "district_id": "37",
         "name": "Sreemangal",
         "bn_name": "শ্রীমঙ্গল",
-        "url": "sreemangal.moulvibazar.gov.bd"
+        "url": "sreemangal.moulvibazar.gov.bd",
+        "lat": "24.3083",
+        "lon": "91.7333"
       },
       {
         "id": "291",
         "district_id": "37",
         "name": "Juri",
-        "bn_name": "জুড়ী",
-        "url": "juri.moulvibazar.gov.bd"
+        "bn_name": "জুড়ী",
+        "url": "juri.moulvibazar.gov.bd",
+        "lat": "24.5917",
+        "lon": "92.1167"
       },
       {
         "id": "292",
         "district_id": "38",
         "name": "Nabiganj",
         "bn_name": "নবীগঞ্জ",
-        "url": "nabiganj.habiganj.gov.bd"
+        "url": "nabiganj.habiganj.gov.bd",
+        "lat": "24.5667",
+        "lon": "91.5167"
       },
       {
         "id": "293",
         "district_id": "38",
         "name": "Bahubal",
         "bn_name": "বাহুবল",
-        "url": "bahubal.habiganj.gov.bd"
+        "url": "bahubal.habiganj.gov.bd",
+        "lat": "24.3500",
+        "lon": "91.5333"
       },
       {
         "id": "294",
         "district_id": "38",
         "name": "Ajmiriganj",
         "bn_name": "আজমিরীগঞ্জ",
-        "url": "ajmiriganj.habiganj.gov.bd"
+        "url": "ajmiriganj.habiganj.gov.bd",
+        "lat": "24.5500",
+        "lon": "91.2417"
       },
       {
         "id": "295",
         "district_id": "38",
         "name": "Baniachong",
-        "bn_name": "বানিয়াচং",
-        "url": "baniachong.habiganj.gov.bd"
+        "bn_name": "বানিয়াচং",
+        "url": "baniachong.habiganj.gov.bd",
+        "lat": "24.5167",
+        "lon": "91.3583"
       },
       {
         "id": "296",
         "district_id": "38",
         "name": "Lakhai",
         "bn_name": "লাখাই",
-        "url": "lakhai.habiganj.gov.bd"
+        "url": "lakhai.habiganj.gov.bd",
+        "lat": "24.2889",
+        "lon": "91.2167"
       },
       {
         "id": "297",
         "district_id": "38",
         "name": "Chunarughat",
         "bn_name": "চুনারুঘাট",
-        "url": "chunarughat.habiganj.gov.bd"
+        "url": "chunarughat.habiganj.gov.bd",
+        "lat": "24.2083",
+        "lon": "91.5167"
       },
       {
         "id": "298",
         "district_id": "38",
         "name": "Habiganj Sadar",
         "bn_name": "হবিগঞ্জ সদর",
-        "url": "habiganjsadar.habiganj.gov.bd"
+        "url": "habiganjsadar.habiganj.gov.bd",
+        "lat": "24.3792",
+        "lon": "91.4125"
       },
       {
         "id": "299",
         "district_id": "38",
         "name": "Madhabpur",
         "bn_name": "মাধবপুর",
-        "url": "madhabpur.habiganj.gov.bd"
+        "url": "madhabpur.habiganj.gov.bd",
+        "lat": "24.1125",
+        "lon": "91.2958"
       },
       {
         "id": "300",
         "district_id": "39",
         "name": "Sunamganj Sadar",
         "bn_name": "সুনামগঞ্জ সদর",
-        "url": "sadar.sunamganj.gov.bd"
+        "url": "sadar.sunamganj.gov.bd",
+        "lat": "25.0667",
+        "lon": "91.4000"
       },
       {
         "id": "301",
         "district_id": "39",
         "name": "South Sunamganj",
         "bn_name": "দক্ষিণ সুনামগঞ্জ",
-        "url": "southsunamganj.sunamganj.gov.bd"
+        "url": "southsunamganj.sunamganj.gov.bd",
+        "lat": "24.9333",
+        "lon": "91.4833"
       },
       {
         "id": "302",
         "district_id": "39",
         "name": "Bishwambarpur",
         "bn_name": "বিশ্বম্ভরপুর",
-        "url": "bishwambarpur.sunamganj.gov.bd"
+        "url": "bishwambarpur.sunamganj.gov.bd",
+        "lat": "25.1000",
+        "lon": "91.3000"
       },
       {
         "id": "303",
         "district_id": "39",
         "name": "Chhatak",
         "bn_name": "ছাতক",
-        "url": "chhatak.sunamganj.gov.bd"
+        "url": "chhatak.sunamganj.gov.bd",
+        "lat": "25.0417",
+        "lon": "91.6708"
       },
       {
         "id": "304",
         "district_id": "39",
         "name": "Jagannathpur",
         "bn_name": "জগন্নাথপুর",
-        "url": "jagannathpur.sunamganj.gov.bd"
+        "url": "jagannathpur.sunamganj.gov.bd",
+        "lat": "24.7667",
+        "lon": "91.5458"
       },
       {
         "id": "305",
         "district_id": "39",
         "name": "Dowarabazar",
         "bn_name": "দোয়ারাবাজার",
-        "url": "dowarabazar.sunamganj.gov.bd"
+        "url": "dowarabazar.sunamganj.gov.bd",
+        "lat": "25.0500",
+        "lon": "91.5667"
       },
       {
         "id": "306",
         "district_id": "39",
         "name": "Tahirpur",
         "bn_name": "তাহিরপুর",
-        "url": "tahirpur.sunamganj.gov.bd"
+        "url": "tahirpur.sunamganj.gov.bd",
+        "lat": "25.1000",
+        "lon": "91.1750"
       },
       {
         "id": "307",
         "district_id": "39",
         "name": "Dharmapasha",
         "bn_name": "ধর্মপাশা",
-        "url": "dharmapasha.sunamganj.gov.bd"
+        "url": "dharmapasha.sunamganj.gov.bd",
+        "lat": "24.9000",
+        "lon": "91.0167"
       },
       {
         "id": "308",
         "district_id": "39",
         "name": "Jamalganj",
         "bn_name": "জামালগঞ্জ",
-        "url": "jamalganj.sunamganj.gov.bd"
+        "url": "jamalganj.sunamganj.gov.bd",
+        "lat": "24.9958",
+        "lon": "91.2333"
       },
       {
         "id": "309",
         "district_id": "39",
         "name": "Shalla",
         "bn_name": "শাল্লা",
-        "url": "shalla.sunamganj.gov.bd"
+        "url": "shalla.sunamganj.gov.bd",
+        "lat": "24.6417",
+        "lon": "91.2458"
       },
       {
         "id": "310",
         "district_id": "39",
         "name": "Derai",
         "bn_name": "দিরাই",
-        "url": "derai.sunamganj.gov.bd"
+        "url": "derai.sunamganj.gov.bd",
+        "lat": "24.7917",
+        "lon": "91.3500"
       },
       {
         "id": "311",
         "district_id": "40",
         "name": "Belabo",
         "bn_name": "বেলাবো",
-        "url": "belabo.narsingdi.gov.bd"
+        "url": "belabo.narsingdi.gov.bd",
+        "lat": "24.0944",
+        "lon": "90.8500"
       },
       {
         "id": "312",
         "district_id": "40",
         "name": "Monohardi",
         "bn_name": "মনোহরদী",
-        "url": "monohardi.narsingdi.gov.bd"
+        "url": "monohardi.narsingdi.gov.bd",
+        "lat": "24.1333",
+        "lon": "90.7000"
       },
       {
         "id": "313",
         "district_id": "40",
         "name": "Narsingdi Sadar",
         "bn_name": "নরসিংদী সদর",
-        "url": "narsingdisadar.narsingdi.gov.bd"
+        "url": "narsingdisadar.narsingdi.gov.bd",
+        "lat": "23.9167",
+        "lon": "90.7167"
       },
       {
         "id": "314",
         "district_id": "40",
         "name": "Palash",
         "bn_name": "পলাশ",
-        "url": "palash.narsingdi.gov.bd"
+        "url": "palash.narsingdi.gov.bd",
+        "lat": "23.9500",
+        "lon": "90.6333"
       },
       {
         "id": "315",
         "district_id": "40",
         "name": "Raipura",
         "bn_name": "রায়পুরা",
-        "url": "raipura.narsingdi.gov.bd"
+        "url": "raipura.narsingdi.gov.bd",
+        "lat": "23.9917",
+        "lon": "90.8750"
       },
       {
         "id": "316",
         "district_id": "40",
         "name": "Shibpur",
         "bn_name": "শিবপুর",
-        "url": "shibpur.narsingdi.gov.bd"
+        "url": "shibpur.narsingdi.gov.bd",
+        "lat": "24.0056",
+        "lon": "90.7389"
       },
       {
         "id": "317",
         "district_id": "41",
         "name": "Kaliganj",
         "bn_name": "কালীগঞ্জ",
-        "url": "kaliganj.gazipur.gov.bd"
+        "url": "kaliganj.gazipur.gov.bd",
+        "lat": "23.9250",
+        "lon": "90.5833"
       },
       {
         "id": "318",
         "district_id": "41",
         "name": "Kaliakair",
-        "bn_name": "কালিয়াকৈর",
-        "url": "kaliakair.gazipur.gov.bd"
+        "bn_name": "কালিয়াকৈর",
+        "url": "kaliakair.gazipur.gov.bd",
+        "lat": "24.0750",
+        "lon": "90.2333"
       },
       {
         "id": "319",
         "district_id": "41",
         "name": "Kapasia",
-        "bn_name": "কাপাসিয়া",
-        "url": "kapasia.gazipur.gov.bd"
+        "bn_name": "কাপাসিয়া",
+        "url": "kapasia.gazipur.gov.bd",
+        "lat": "24.1000",
+        "lon": "90.5667"
       },
       {
         "id": "320",
         "district_id": "41",
         "name": "Gazipur Sadar",
         "bn_name": "গাজীপুর সদর",
-        "url": "sadar.gazipur.gov.bd"
+        "url": "sadar.gazipur.gov.bd",
+        "lat": "24.0022",
+        "lon": "90.4264"
       },
       {
         "id": "321",
         "district_id": "41",
         "name": "Sreepur",
         "bn_name": "শ্রীপুর",
-        "url": "sreepur.gazipur.gov.bd"
+        "url": "sreepur.gazipur.gov.bd",
+        "lat": "24.2000",
+        "lon": "90.4667"
       },
       {
         "id": "322",
         "district_id": "42",
         "name": "Shariatpur Sadar",
-        "bn_name": "শরিয়তপুর সদর",
-        "url": "sadar.shariatpur.gov.bd"
+        "bn_name": "শরিয়তপুর সদর",
+        "url": "sadar.shariatpur.gov.bd",
+        "lat": "23.2423",
+        "lon": "90.3441"
       },
       {
         "id": "323",
         "district_id": "42",
         "name": "Naria",
-        "bn_name": "নড়িয়া",
-        "url": "naria.shariatpur.gov.bd"
+        "bn_name": "নড়িয়া",
+        "url": "naria.shariatpur.gov.bd",
+        "lat": "23.3000",
+        "lon": "90.4167"
       },
       {
         "id": "324",
         "district_id": "42",
         "name": "Zajira",
         "bn_name": "জাজিরা",
-        "url": "zajira.shariatpur.gov.bd"
+        "url": "zajira.shariatpur.gov.bd",
+        "lat": "23.3667",
+        "lon": "90.3500"
       },
       {
         "id": "325",
         "district_id": "42",
         "name": "Gosairhat",
         "bn_name": "গোসাইরহাট",
-        "url": "gosairhat.shariatpur.gov.bd"
+        "url": "gosairhat.shariatpur.gov.bd",
+        "lat": "23.0833",
+        "lon": "90.4500"
       },
       {
         "id": "326",
         "district_id": "42",
         "name": "Bhedarganj",
         "bn_name": "ভেদরগঞ্জ",
-        "url": "bhedarganj.shariatpur.gov.bd"
+        "url": "bhedarganj.shariatpur.gov.bd",
+        "lat": "23.2000",
+        "lon": "90.4500"
       },
       {
         "id": "327",
         "district_id": "42",
         "name": "Damudya",
         "bn_name": "ডামুড্যা",
-        "url": "damudya.shariatpur.gov.bd"
+        "url": "damudya.shariatpur.gov.bd",
+        "lat": "23.1333",
+        "lon": "90.4167"
       },
       {
         "id": "328",
         "district_id": "43",
         "name": "Araihazar",
         "bn_name": "আড়াইহাজার",
-        "url": "araihazar.narayanganj.gov.bd"
+        "url": "araihazar.narayanganj.gov.bd",
+        "lat": "23.7917",
+        "lon": "90.6500"
       },
       {
         "id": "329",
         "district_id": "43",
         "name": "Bandar",
         "bn_name": "বন্দর",
-        "url": "bandar.narayanganj.gov.bd"
+        "url": "bandar.narayanganj.gov.bd",
+        "lat": "23.5958",
+        "lon": "90.5167"
       },
       {
         "id": "330",
         "district_id": "43",
         "name": "Narayanganj Sadar",
-        "bn_name": "নারায়নগঞ্জ সদর",
-        "url": "narayanganjsadar.narayanganj.gov.bd"
+        "bn_name": "নারায়নগঞ্জ সদর",
+        "url": "narayanganjsadar.narayanganj.gov.bd",
+        "lat": "23.6167",
+        "lon": "90.5000"
       },
       {
         "id": "331",
         "district_id": "43",
         "name": "Rupganj",
         "bn_name": "রূপগঞ্জ",
-        "url": "rupganj.narayanganj.gov.bd"
+        "url": "rupganj.narayanganj.gov.bd",
+        "lat": "23.7917",
+        "lon": "90.5167"
       },
       {
         "id": "332",
         "district_id": "43",
         "name": "Sonargaon",
         "bn_name": "সোনারগাঁ",
-        "url": "sonargaon.narayanganj.gov.bd"
+        "url": "sonargaon.narayanganj.gov.bd",
+        "lat": "23.6500",
+        "lon": "90.6000"
       },
       {
         "id": "333",
         "district_id": "44",
         "name": "Basail",
         "bn_name": "বাসাইল",
-        "url": "basail.tangail.gov.bd"
+        "url": "basail.tangail.gov.bd",
+        "lat": "24.2167",
+        "lon": "90.0500"
       },
       {
         "id": "334",
         "district_id": "44",
         "name": "Bhuapur",
         "bn_name": "ভুয়াপুর",
-        "url": "bhuapur.tangail.gov.bd"
+        "url": "bhuapur.tangail.gov.bd",
+        "lat": "24.4583",
+        "lon": "89.8667"
       },
       {
         "id": "335",
         "district_id": "44",
         "name": "Delduar",
         "bn_name": "দেলদুয়ার",
-        "url": "delduar.tangail.gov.bd"
+        "url": "delduar.tangail.gov.bd",
+        "lat": "24.1458",
+        "lon": "89.9667"
       },
       {
         "id": "336",
         "district_id": "44",
         "name": "Ghatail",
         "bn_name": "ঘাটাইল",
-        "url": "ghatail.tangail.gov.bd"
+        "url": "ghatail.tangail.gov.bd",
+        "lat": "24.4792",
+        "lon": "90.0000"
       },
       {
         "id": "337",
         "district_id": "44",
         "name": "Gopalpur",
         "bn_name": "গোপালপুর",
-        "url": "gopalpur.tangail.gov.bd"
+        "url": "gopalpur.tangail.gov.bd",
+        "lat": "24.5583",
+        "lon": "89.9167"
       },
       {
         "id": "338",
         "district_id": "44",
         "name": "Madhupur",
         "bn_name": "মধুপুর",
-        "url": "madhupur.tangail.gov.bd"
+        "url": "madhupur.tangail.gov.bd",
+        "lat": "24.6167",
+        "lon": "90.0250"
       },
       {
         "id": "339",
         "district_id": "44",
         "name": "Mirzapur",
         "bn_name": "মির্জাপুর",
-        "url": "mirzapur.tangail.gov.bd"
+        "url": "mirzapur.tangail.gov.bd",
+        "lat": "24.1028",
+        "lon": "90.1000"
       },
       {
         "id": "340",
         "district_id": "44",
         "name": "Nagarpur",
         "bn_name": "নাগরপুর",
-        "url": "nagarpur.tangail.gov.bd"
+        "url": "nagarpur.tangail.gov.bd",
+        "lat": "24.0500",
+        "lon": "89.8750"
       },
       {
         "id": "341",
         "district_id": "44",
         "name": "Sakhipur",
         "bn_name": "সখিপুর",
-        "url": "sakhipur.tangail.gov.bd"
+        "url": "sakhipur.tangail.gov.bd",
+        "lat": "24.3167",
+        "lon": "90.1667"
       },
       {
         "id": "342",
         "district_id": "44",
         "name": "Tangail Sadar",
         "bn_name": "টাঙ্গাইল সদর",
-        "url": "tangailsadar.tangail.gov.bd"
+        "url": "tangailsadar.tangail.gov.bd",
+        "lat": "24.2500",
+        "lon": "89.9167"
       },
       {
         "id": "343",
         "district_id": "44",
         "name": "Kalihati",
         "bn_name": "কালিহাতী",
-        "url": "kalihati.tangail.gov.bd"
+        "url": "kalihati.tangail.gov.bd",
+        "lat": "24.3833",
+        "lon": "90.0083"
       },
       {
         "id": "344",
         "district_id": "44",
         "name": "Dhanbari",
-        "bn_name": "ধনবাড়ী",
-        "url": "dhanbari.tangail.gov.bd"
+        "bn_name": "ধনবাড়ী",
+        "url": "dhanbari.tangail.gov.bd",
+        "lat": "24.6710",
+        "lon": "89.9700"
       },
       {
         "id": "345",
         "district_id": "45",
         "name": "Itna",
         "bn_name": "ইটনা",
-        "url": "itna.kishoreganj.gov.bd"
+        "url": "itna.kishoreganj.gov.bd",
+        "lat": "24.5333",
+        "lon": "91.0833"
       },
       {
         "id": "346",
         "district_id": "45",
         "name": "Katiadi",
-        "bn_name": "কটিয়াদী",
-        "url": "katiadi.kishoreganj.gov.bd"
+        "bn_name": "কটিয়াদী",
+        "url": "katiadi.kishoreganj.gov.bd",
+        "lat": "24.2500",
+        "lon": "90.8083"
       },
       {
         "id": "347",
         "district_id": "45",
         "name": "Bhairab",
         "bn_name": "ভৈরব",
-        "url": "bhairab.kishoreganj.gov.bd"
+        "url": "bhairab.kishoreganj.gov.bd",
+        "lat": "24.0500",
+        "lon": "90.9833"
       },
       {
         "id": "348",
         "district_id": "45",
         "name": "Tarail",
-        "bn_name": "তাড়াইল",
-        "url": "tarail.kishoreganj.gov.bd"
+        "bn_name": "তাড়াইল",
+        "url": "tarail.kishoreganj.gov.bd",
+        "lat": "24.5500",
+        "lon": "90.8833"
       },
       {
         "id": "349",
         "district_id": "45",
         "name": "Hossainpur",
         "bn_name": "হোসেনপুর",
-        "url": "hossainpur.kishoreganj.gov.bd"
+        "url": "hossainpur.kishoreganj.gov.bd",
+        "lat": "24.4167",
+        "lon": "90.6500"
       },
       {
         "id": "350",
         "district_id": "45",
         "name": "Pakundia",
-        "bn_name": "পাকুন্দিয়া",
-        "url": "pakundia.kishoreganj.gov.bd"
+        "bn_name": "পাকুন্দিয়া",
+        "url": "pakundia.kishoreganj.gov.bd",
+        "lat": "24.2833",
+        "lon": "90.6833"
       },
       {
         "id": "351",
         "district_id": "45",
         "name": "Kuliarchar",
-        "bn_name": "কুলিয়ারচর",
-        "url": "kuliarchar.kishoreganj.gov.bd"
+        "bn_name": "কুলিয়ারচর",
+        "url": "kuliarchar.kishoreganj.gov.bd",
+        "lat": "24.1514",
+        "lon": "90.8917"
       },
       {
         "id": "352",
         "district_id": "45",
         "name": "Kishoreganj Sadar",
         "bn_name": "কিশোরগঞ্জ সদর",
-        "url": "kishoreganjsadar.kishoreganj.gov.bd"
+        "url": "kishoreganjsadar.kishoreganj.gov.bd",
+        "lat": "24.4333",
+        "lon": "90.7833"
       },
       {
         "id": "353",
         "district_id": "45",
         "name": "Karimgonj",
         "bn_name": "করিমগঞ্জ",
-        "url": "karimgonj.kishoreganj.gov.bd"
+        "url": "karimgonj.kishoreganj.gov.bd",
+        "lat": "24.4583",
+        "lon": "90.8833"
       },
       {
         "id": "354",
         "district_id": "45",
         "name": "Bajitpur",
         "bn_name": "বাজিতপুর",
-        "url": "bajitpur.kishoreganj.gov.bd"
+        "url": "bajitpur.kishoreganj.gov.bd",
+        "lat": "24.2167",
+        "lon": "90.9583"
       },
       {
         "id": "355",
         "district_id": "45",
         "name": "Austagram",
         "bn_name": "অষ্টগ্রাম",
-        "url": "austagram.kishoreganj.gov.bd"
+        "url": "austagram.kishoreganj.gov.bd",
+        "lat": "24.2667",
+        "lon": "91.1250"
       },
       {
         "id": "356",
         "district_id": "45",
         "name": "Mithamoin",
         "bn_name": "মিঠামইন",
-        "url": "mithamoin.kishoreganj.gov.bd"
+        "url": "mithamoin.kishoreganj.gov.bd",
+        "lat": "24.4167",
+        "lon": "91.1167"
       },
       {
         "id": "357",
         "district_id": "45",
         "name": "Nikli",
         "bn_name": "নিকলী",
-        "url": "nikli.kishoreganj.gov.bd"
+        "url": "nikli.kishoreganj.gov.bd",
+        "lat": "24.3167",
+        "lon": "90.9500"
       },
       {
         "id": "358",
         "district_id": "46",
         "name": "Harirampur",
         "bn_name": "হরিরামপুর",
-        "url": "harirampur.manikganj.gov.bd"
+        "url": "harirampur.manikganj.gov.bd",
+        "lat": "23.7417",
+        "lon": "89.9667"
       },
       {
         "id": "359",
         "district_id": "46",
         "name": "Saturia",
-        "bn_name": "সাটুরিয়া",
-        "url": "saturia.manikganj.gov.bd"
+        "bn_name": "সাটুরিয়া",
+        "url": "saturia.manikganj.gov.bd",
+        "lat": "23.9583",
+        "lon": "90.0333"
       },
       {
         "id": "360",
         "district_id": "46",
         "name": "Manikganj Sadar",
         "bn_name": "মানিকগঞ্জ সদর",
-        "url": "sadar.manikganj.gov.bd"
+        "url": "sadar.manikganj.gov.bd",
+        "lat": "23.8500",
+        "lon": "90.0083"
       },
       {
         "id": "361",
         "district_id": "46",
         "name": "Gior",
         "bn_name": "ঘিওর",
-        "url": "gior.manikganj.gov.bd"
+        "url": "gior.manikganj.gov.bd",
+        "lat": "23.8833",
+        "lon": "89.9167"
       },
       {
         "id": "362",
         "district_id": "46",
         "name": "Shibaloy",
-        "bn_name": "শিবালয়",
-        "url": "shibaloy.manikganj.gov.bd"
+        "bn_name": "শিবালয়",
+        "url": "shibaloy.manikganj.gov.bd",
+        "lat": "23.8333",
+        "lon": "89.8167"
       },
       {
         "id": "363",
         "district_id": "46",
         "name": "Doulatpur",
         "bn_name": "দৌলতপুর",
-        "url": "doulatpur.manikganj.gov.bd"
+        "url": "doulatpur.manikganj.gov.bd",
+        "lat": "23.9667",
+        "lon": "89.8500"
       },
       {
         "id": "364",
         "district_id": "46",
         "name": "Singiar",
         "bn_name": "সিংগাইর",
-        "url": "singiar.manikganj.gov.bd"
+        "url": "singiar.manikganj.gov.bd",
+        "lat": "23.8167",
+        "lon": "90.1500"
       },
       {
         "id": "365",
         "district_id": "47",
         "name": "Savar",
         "bn_name": "সাভার",
-        "url": "savar.dhaka.gov.bd"
+        "url": "savar.dhaka.gov.bd",
+        "lat": "23.8583",
+        "lon": "90.2667"
       },
       {
         "id": "366",
         "district_id": "47",
         "name": "Dhamrai",
         "bn_name": "ধামরাই",
-        "url": "dhamrai.dhaka.gov.bd"
+        "url": "dhamrai.dhaka.gov.bd",
+        "lat": "23.9167",
+        "lon": "90.2167"
       },
       {
         "id": "367",
         "district_id": "47",
         "name": "Keraniganj",
         "bn_name": "কেরাণীগঞ্জ",
-        "url": "keraniganj.dhaka.gov.bd"
+        "url": "keraniganj.dhaka.gov.bd",
+        "lat": "23.6833",
+        "lon": "90.3333"
       },
       {
         "id": "368",
         "district_id": "47",
         "name": "Nawabganj",
         "bn_name": "নবাবগঞ্জ",
-        "url": "nawabganj.dhaka.gov.bd"
+        "url": "nawabganj.dhaka.gov.bd",
+        "lat": "23.6667",
+        "lon": "90.1667"
       },
       {
         "id": "369",
         "district_id": "47",
         "name": "Dohar",
         "bn_name": "দোহার",
-        "url": "dohar.dhaka.gov.bd"
+        "url": "dohar.dhaka.gov.bd",
+        "lat": "23.6000",
+        "lon": "90.1333"
       },
       {
         "id": "370",
         "district_id": "48",
         "name": "Munshiganj Sadar",
         "bn_name": "মুন্সিগঞ্জ সদর",
-        "url": "sadar.munshiganj.gov.bd"
+        "url": "sadar.munshiganj.gov.bd",
+        "lat": "23.4500",
+        "lon": "90.5333"
       },
       {
         "id": "371",
         "district_id": "48",
         "name": "Sreenagar",
         "bn_name": "শ্রীনগর",
-        "url": "sreenagar.munshiganj.gov.bd"
+        "url": "sreenagar.munshiganj.gov.bd",
+        "lat": "23.5333",
+        "lon": "90.2833"
       },
       {
         "id": "372",
         "district_id": "48",
         "name": "Sirajdikhan",
         "bn_name": "সিরাজদিখান",
-        "url": "sirajdikhan.munshiganj.gov.bd"
+        "url": "sirajdikhan.munshiganj.gov.bd",
+        "lat": "23.5500",
+        "lon": "90.3500"
       },
       {
         "id": "373",
         "district_id": "48",
         "name": "Louhajanj",
         "bn_name": "লৌহজং",
-        "url": "louhajanj.munshiganj.gov.bd"
+        "url": "louhajanj.munshiganj.gov.bd",
+        "lat": "23.4667",
+        "lon": "90.3417"
       },
       {
         "id": "374",
         "district_id": "48",
         "name": "Gajaria",
-        "bn_name": "গজারিয়া",
-        "url": "gajaria.munshiganj.gov.bd"
+        "bn_name": "গজারিয়া",
+        "url": "gajaria.munshiganj.gov.bd",
+        "lat": "23.5417",
+        "lon": "90.6167"
       },
       {
         "id": "375",
         "district_id": "48",
         "name": "Tongibari",
-        "bn_name": "টংগীবাড়ি",
-        "url": "tongibari.munshiganj.gov.bd"
+        "bn_name": "টংগীবাড়ি",
+        "url": "tongibari.munshiganj.gov.bd",
+        "lat": "23.5000",
+        "lon": "90.4583"
       },
       {
         "id": "376",
         "district_id": "49",
         "name": "Rajbari Sadar",
         "bn_name": "রাজবাড়ী সদর",
-        "url": "sadar.rajbari.gov.bd"
+        "url": "sadar.rajbari.gov.bd",
+        "lat": "23.7500",
+        "lon": "89.6500"
       },
       {
         "id": "377",
         "district_id": "49",
         "name": "Goalanda",
         "bn_name": "গোয়ালন্দ",
-        "url": "goalanda.rajbari.gov.bd"
+        "url": "goalanda.rajbari.gov.bd",
+        "lat": "23.7333",
+        "lon": "89.7667"
       },
       {
         "id": "378",
         "district_id": "49",
         "name": "Pangsa",
         "bn_name": "পাংশা",
-        "url": "pangsa.rajbari.gov.bd"
+        "url": "pangsa.rajbari.gov.bd",
+        "lat": "23.7917",
+        "lon": "89.4167"
       },
       {
         "id": "379",
         "district_id": "49",
         "name": "Baliakandi",
         "bn_name": "বালিয়াকান্দি",
-        "url": "baliakandi.rajbari.gov.bd"
+        "url": "baliakandi.rajbari.gov.bd",
+        "lat": "23.6333",
+        "lon": "89.5500"
       },
       {
         "id": "380",
         "district_id": "49",
         "name": "Kalukhali",
         "bn_name": "কালুখালী",
-        "url": "kalukhali.rajbari.gov.bd"
+        "url": "kalukhali.rajbari.gov.bd",
+        "lat": "23.7431",
+        "lon": "89.4975"
       },
       {
         "id": "381",
         "district_id": "50",
         "name": "Madaripur Sadar",
         "bn_name": "মাদারীপুর সদর",
-        "url": "sadar.madaripur.gov.bd"
+        "url": "sadar.madaripur.gov.bd",
+        "lat": "23.1667",
+        "lon": "90.2083"
       },
       {
         "id": "382",
         "district_id": "50",
         "name": "Shibchar",
         "bn_name": "শিবচর",
-        "url": "shibchar.madaripur.gov.bd"
+        "url": "shibchar.madaripur.gov.bd",
+        "lat": "23.3500",
+        "lon": "90.2167"
       },
       {
         "id": "383",
         "district_id": "50",
         "name": "Kalkini",
         "bn_name": "কালকিনি",
-        "url": "kalkini.madaripur.gov.bd"
+        "url": "kalkini.madaripur.gov.bd",
+        "lat": "23.0667",
+        "lon": "90.2417"
       },
       {
         "id": "384",
         "district_id": "50",
         "name": "Rajoir",
         "bn_name": "রাজৈর",
-        "url": "rajoir.madaripur.gov.bd"
+        "url": "rajoir.madaripur.gov.bd",
+        "lat": "23.2083",
+        "lon": "90.0333"
       },
       {
         "id": "385",
         "district_id": "51",
         "name": "Gopalganj Sadar",
         "bn_name": "গোপালগঞ্জ সদর",
-        "url": "sadar.gopalganj.gov.bd"
+        "url": "sadar.gopalganj.gov.bd",
+        "lat": "23.0083",
+        "lon": "89.8250"
       },
       {
         "id": "386",
         "district_id": "51",
         "name": "Kashiani",
         "bn_name": "কাশিয়ানী",
-        "url": "kashiani.gopalganj.gov.bd"
+        "url": "kashiani.gopalganj.gov.bd",
+        "lat": "23.2167",
+        "lon": "89.7000"
       },
       {
         "id": "387",
         "district_id": "51",
         "name": "Tungipara",
         "bn_name": "টুংগীপাড়া",
-        "url": "tungipara.gopalganj.gov.bd"
+        "url": "tungipara.gopalganj.gov.bd",
+        "lat": "22.9000",
+        "lon": "89.8833"
       },
       {
         "id": "388",
         "district_id": "51",
         "name": "Kotalipara",
         "bn_name": "কোটালীপাড়া",
-        "url": "kotalipara.gopalganj.gov.bd"
+        "url": "kotalipara.gopalganj.gov.bd",
+        "lat": "22.9833",
+        "lon": "90.0167"
       },
       {
         "id": "389",
         "district_id": "51",
         "name": "Muksudpur",
         "bn_name": "মুকসুদপুর",
-        "url": "muksudpur.gopalganj.gov.bd"
+        "url": "muksudpur.gopalganj.gov.bd",
+        "lat": "23.2500",
+        "lon": "89.8667"
       },
       {
         "id": "390",
         "district_id": "52",
         "name": "Faridpur Sadar",
         "bn_name": "ফরিদপুর সদর",
-        "url": "sadar.faridpur.gov.bd"
+        "url": "sadar.faridpur.gov.bd",
+        "lat": "23.6000",
+        "lon": "89.8333"
       },
       {
         "id": "391",
         "district_id": "52",
         "name": "Alfadanga",
         "bn_name": "আলফাডাঙ্গা",
-        "url": "alfadanga.faridpur.gov.bd"
+        "url": "alfadanga.faridpur.gov.bd",
+        "lat": "23.2833",
+        "lon": "89.7167"
       },
       {
         "id": "392",
         "district_id": "52",
         "name": "Boalmari",
-        "bn_name": "বোয়ালমারী",
-        "url": "boalmari.faridpur.gov.bd"
+        "bn_name": "বোয়ালমারী",
+        "url": "boalmari.faridpur.gov.bd",
+        "lat": "23.3833",
+        "lon": "89.6833"
       },
       {
         "id": "393",
         "district_id": "52",
         "name": "Sadarpur",
         "bn_name": "সদরপুর",
-        "url": "sadarpur.faridpur.gov.bd"
+        "url": "sadarpur.faridpur.gov.bd",
+        "lat": "23.4750",
+        "lon": "90.0333"
       },
       {
         "id": "394",
         "district_id": "52",
         "name": "Nagarkanda",
         "bn_name": "নগরকান্দা",
-        "url": "nagarkanda.faridpur.gov.bd"
+        "url": "nagarkanda.faridpur.gov.bd",
+        "lat": "23.4167",
+        "lon": "89.9167"
       },
       {
         "id": "395",
         "district_id": "52",
         "name": "Bhanga",
         "bn_name": "ভাঙ্গা",
-        "url": "bhanga.faridpur.gov.bd"
+        "url": "bhanga.faridpur.gov.bd",
+        "lat": "23.3833",
+        "lon": "89.9833"
       },
       {
         "id": "396",
         "district_id": "52",
         "name": "Charbhadrasan",
         "bn_name": "চরভদ্রাসন",
-        "url": "charbhadrasan.faridpur.gov.bd"
+        "url": "charbhadrasan.faridpur.gov.bd",
+        "lat": "23.5583",
+        "lon": "90.0333"
       },
       {
         "id": "397",
         "district_id": "52",
         "name": "Madhukhali",
         "bn_name": "মধুখালী",
-        "url": "madhukhali.faridpur.gov.bd"
+        "url": "madhukhali.faridpur.gov.bd",
+        "lat": "23.5500",
+        "lon": "89.6333"
       },
       {
         "id": "398",
         "district_id": "52",
         "name": "Saltha",
         "bn_name": "সালথা",
-        "url": "saltha.faridpur.gov.bd"
+        "url": "saltha.faridpur.gov.bd",
+        "lat": "23.3861",
+        "lon": "89.8294"
       },
       {
         "id": "399",
         "district_id": "53",
         "name": "Panchagarh Sadar",
         "bn_name": "পঞ্চগড় সদর",
-        "url": "panchagarhsadar.panchagarh.gov.bd"
+        "url": "panchagarhsadar.panchagarh.gov.bd",
+        "lat": "26.3333",
+        "lon": "88.5583"
       },
       {
         "id": "400",
         "district_id": "53",
         "name": "Debiganj",
         "bn_name": "দেবীগঞ্জ",
-        "url": "debiganj.panchagarh.gov.bd"
+        "url": "debiganj.panchagarh.gov.bd",
+        "lat": "26.1167",
+        "lon": "88.7583"
       },
       {
         "id": "401",
         "district_id": "53",
         "name": "Boda",
         "bn_name": "বোদা",
-        "url": "boda.panchagarh.gov.bd"
+        "url": "boda.panchagarh.gov.bd",
+        "lat": "26.1833",
+        "lon": "88.6000"
       },
       {
         "id": "402",
         "district_id": "53",
         "name": "Atwari",
         "bn_name": "আটোয়ারী",
-        "url": "atwari.panchagarh.gov.bd"
+        "url": "atwari.panchagarh.gov.bd",
+        "lat": "26.3083",
+        "lon": "88.4583"
       },
       {
         "id": "403",
         "district_id": "53",
         "name": "Tetulia",
         "bn_name": "তেতুলিয়া",
-        "url": "tetulia.panchagarh.gov.bd"
+        "url": "tetulia.panchagarh.gov.bd",
+        "lat": "26.4833",
+        "lon": "88.3417"
       },
       {
         "id": "404",
         "district_id": "54",
         "name": "Nawabganj",
         "bn_name": "নবাবগঞ্জ",
-        "url": "nawabganj.dinajpur.gov.bd"
+        "url": "nawabganj.dinajpur.gov.bd",
+        "lat": "25.4167",
+        "lon": "89.0833"
       },
       {
         "id": "405",
         "district_id": "54",
         "name": "Birganj",
         "bn_name": "বীরগঞ্জ",
-        "url": "birganj.dinajpur.gov.bd"
+        "url": "birganj.dinajpur.gov.bd",
+        "lat": "25.8500",
+        "lon": "88.6667"
       },
       {
         "id": "406",
         "district_id": "54",
         "name": "Ghoraghat",
-        "bn_name": "ঘোড়াঘাট",
-        "url": "ghoraghat.dinajpur.gov.bd"
+        "bn_name": "ঘোড়াঘাট",
+        "url": "ghoraghat.dinajpur.gov.bd",
+        "lat": "25.2417",
+        "lon": "89.2167"
       },
       {
         "id": "407",
         "district_id": "54",
         "name": "Birampur",
         "bn_name": "বিরামপুর",
-        "url": "birampur.dinajpur.gov.bd"
+        "url": "birampur.dinajpur.gov.bd",
+        "lat": "25.3833",
+        "lon": "88.9500"
       },
       {
         "id": "408",
         "district_id": "54",
         "name": "Parbatipur",
         "bn_name": "পার্বতীপুর",
-        "url": "parbatipur.dinajpur.gov.bd"
+        "url": "parbatipur.dinajpur.gov.bd",
+        "lat": "25.6500",
+        "lon": "88.9167"
       },
       {
         "id": "409",
         "district_id": "54",
         "name": "Bochaganj",
         "bn_name": "বোচাগঞ্জ",
-        "url": "bochaganj.dinajpur.gov.bd"
+        "url": "bochaganj.dinajpur.gov.bd",
+        "lat": "25.8000",
+        "lon": "88.4667"
       },
       {
         "id": "410",
         "district_id": "54",
         "name": "Kaharol",
         "bn_name": "কাহারোল",
-        "url": "kaharol.dinajpur.gov.bd"
+        "url": "kaharol.dinajpur.gov.bd",
+        "lat": "25.7917",
+        "lon": "88.6000"
       },
       {
         "id": "411",
         "district_id": "54",
         "name": "Fulbari",
-        "bn_name": "ফুলবাড়ী",
-        "url": "fulbari.dinajpur.gov.bd"
+        "bn_name": "ফুলবাড়ী",
+        "url": "fulbari.dinajpur.gov.bd",
+        "lat": "25.5167",
+        "lon": "88.8833"
       },
       {
         "id": "412",
         "district_id": "54",
         "name": "Dinajpur Sadar",
         "bn_name": "দিনাজপুর সদর",
-        "url": "dinajpursadar.dinajpur.gov.bd"
+        "url": "dinajpursadar.dinajpur.gov.bd",
+        "lat": "25.6250",
+        "lon": "88.6389"
       },
       {
         "id": "413",
         "district_id": "54",
         "name": "Hakimpur",
         "bn_name": "হাকিমপুর",
-        "url": "hakimpur.dinajpur.gov.bd"
+        "url": "hakimpur.dinajpur.gov.bd",
+        "lat": "25.2833",
+        "lon": "89.0167"
       },
       {
         "id": "414",
         "district_id": "54",
         "name": "Khansama",
         "bn_name": "খানসামা",
-        "url": "khansama.dinajpur.gov.bd"
+        "url": "khansama.dinajpur.gov.bd",
+        "lat": "25.9250",
+        "lon": "88.7333"
       },
       {
         "id": "415",
         "district_id": "54",
         "name": "Birol",
         "bn_name": "বিরল",
-        "url": "birol.dinajpur.gov.bd"
+        "url": "birol.dinajpur.gov.bd",
+        "lat": "25.6333",
+        "lon": "88.5500"
       },
       {
         "id": "416",
         "district_id": "54",
         "name": "Chirirbandar",
         "bn_name": "চিরিরবন্দর",
-        "url": "chirirbandar.dinajpur.gov.bd"
+        "url": "chirirbandar.dinajpur.gov.bd",
+        "lat": "25.6583",
+        "lon": "88.7833"
       },
       {
         "id": "417",
         "district_id": "55",
         "name": "Lalmonirhat Sadar",
         "bn_name": "লালমনিরহাট সদর",
-        "url": "sadar.lalmonirhat.gov.bd"
+        "url": "sadar.lalmonirhat.gov.bd",
+        "lat": "25.9111",
+        "lon": "89.4472"
       },
       {
         "id": "418",
         "district_id": "55",
         "name": "Kaliganj",
         "bn_name": "কালীগঞ্জ",
-        "url": "kaliganj.lalmonirhat.gov.bd"
+        "url": "kaliganj.lalmonirhat.gov.bd",
+        "lat": "25.9750",
+        "lon": "89.2167"
       },
       {
         "id": "419",
         "district_id": "55",
         "name": "Hatibandha",
         "bn_name": "হাতীবান্ধা",
-        "url": "hatibandha.lalmonirhat.gov.bd"
+        "url": "hatibandha.lalmonirhat.gov.bd",
+        "lat": "26.1167",
+        "lon": "89.1333"
       },
       {
         "id": "420",
         "district_id": "55",
         "name": "Patgram",
         "bn_name": "পাটগ্রাম",
-        "url": "patgram.lalmonirhat.gov.bd"
+        "url": "patgram.lalmonirhat.gov.bd",
+        "lat": "26.3500",
+        "lon": "89.0167"
       },
       {
         "id": "421",
         "district_id": "55",
         "name": "Aditmari",
         "bn_name": "আদিতমারী",
-        "url": "aditmari.lalmonirhat.gov.bd"
+        "url": "aditmari.lalmonirhat.gov.bd",
+        "lat": "25.9250",
+        "lon": "89.3500"
       },
       {
         "id": "422",
         "district_id": "56",
         "name": "Syedpur",
         "bn_name": "সৈয়দপুর",
-        "url": "syedpur.nilphamari.gov.bd"
+        "url": "syedpur.nilphamari.gov.bd",
+        "lat": "25.7778",
+        "lon": "88.8917"
       },
       {
         "id": "423",
         "district_id": "56",
         "name": "Domar",
         "bn_name": "ডোমার",
-        "url": "domar.nilphamari.gov.bd"
+        "url": "domar.nilphamari.gov.bd",
+        "lat": "26.1000",
+        "lon": "88.8333"
       },
       {
         "id": "424",
         "district_id": "56",
         "name": "Dimla",
         "bn_name": "ডিমলা",
-        "url": "dimla.nilphamari.gov.bd"
+        "url": "dimla.nilphamari.gov.bd",
+        "lat": "26.1250",
+        "lon": "88.9250"
       },
       {
         "id": "425",
         "district_id": "56",
         "name": "Jaldhaka",
         "bn_name": "জলঢাকা",
-        "url": "jaldhaka.nilphamari.gov.bd"
+        "url": "jaldhaka.nilphamari.gov.bd",
+        "lat": "25.9667",
+        "lon": "89.0250"
       },
       {
         "id": "426",
         "district_id": "56",
         "name": "Kishorganj",
         "bn_name": "কিশোরগঞ্জ",
-        "url": "kishorganj.nilphamari.gov.bd"
+        "url": "kishorganj.nilphamari.gov.bd",
+        "lat": "25.9167",
+        "lon": "88.9583"
       },
       {
         "id": "427",
         "district_id": "56",
         "name": "Nilphamari Sadar",
         "bn_name": "নীলফামারী সদর",
-        "url": "nilphamarisadar.nilphamari.gov.bd"
+        "url": "nilphamarisadar.nilphamari.gov.bd",
+        "lat": "25.9417",
+        "lon": "88.8444"
       },
       {
         "id": "428",
         "district_id": "57",
         "name": "Sadullapur",
         "bn_name": "সাদুল্লাপুর",
-        "url": "sadullapur.gaibandha.gov.bd"
+        "url": "sadullapur.gaibandha.gov.bd",
+        "lat": "25.3833",
+        "lon": "89.4667"
       },
       {
         "id": "429",
         "district_id": "57",
         "name": "Gaibandha Sadar",
         "bn_name": "গাইবান্ধা সদর",
-        "url": "gaibandhasadar.gaibandha.gov.bd"
+        "url": "gaibandhasadar.gaibandha.gov.bd",
+        "lat": "25.3333",
+        "lon": "89.5417"
       },
       {
         "id": "430",
         "district_id": "57",
         "name": "Palashbari",
-        "bn_name": "পলাশবাড়ী",
-        "url": "palashbari.gaibandha.gov.bd"
+        "bn_name": "পলাশবাড়ী",
+        "url": "palashbari.gaibandha.gov.bd",
+        "lat": "25.2917",
+        "lon": "89.3500"
       },
       {
         "id": "431",
         "district_id": "57",
         "name": "Saghata",
         "bn_name": "সাঘাটা",
-        "url": "saghata.gaibandha.gov.bd"
+        "url": "saghata.gaibandha.gov.bd",
+        "lat": "25.1083",
+        "lon": "89.5917"
       },
       {
         "id": "432",
         "district_id": "57",
         "name": "Gobindaganj",
         "bn_name": "গোবিন্দগঞ্জ",
-        "url": "gobindaganj.gaibandha.gov.bd"
+        "url": "gobindaganj.gaibandha.gov.bd",
+        "lat": "25.1333",
+        "lon": "89.3917"
       },
       {
         "id": "433",
         "district_id": "57",
         "name": "Sundarganj",
         "bn_name": "সুন্দরগঞ্জ",
-        "url": "sundarganj.gaibandha.gov.bd"
+        "url": "sundarganj.gaibandha.gov.bd",
+        "lat": "25.5333",
+        "lon": "89.5167"
       },
       {
         "id": "434",
         "district_id": "57",
         "name": "Phulchari",
-        "bn_name": "ফুলছড়ি",
-        "url": "phulchari.gaibandha.gov.bd"
+        "bn_name": "ফুলছড়ি",
+        "url": "phulchari.gaibandha.gov.bd",
+        "lat": "25.1917",
+        "lon": "89.6167"
       },
       {
         "id": "435",
         "district_id": "58",
         "name": "Thakurgaon Sadar",
         "bn_name": "ঠাকুরগাঁও সদর",
-        "url": "thakurgaonsadar.thakurgaon.gov.bd"
+        "url": "thakurgaonsadar.thakurgaon.gov.bd",
+        "lat": "26.0333",
+        "lon": "88.4667"
       },
       {
         "id": "436",
         "district_id": "58",
         "name": "Pirganj",
         "bn_name": "পীরগঞ্জ",
-        "url": "pirganj.thakurgaon.gov.bd"
+        "url": "pirganj.thakurgaon.gov.bd",
+        "lat": "25.8500",
+        "lon": "88.3583"
       },
       {
         "id": "437",
         "district_id": "58",
         "name": "Ranisankail",
         "bn_name": "রাণীশংকৈল",
-        "url": "ranisankail.thakurgaon.gov.bd"
+        "url": "ranisankail.thakurgaon.gov.bd",
+        "lat": "25.8917",
+        "lon": "88.2500"
       },
       {
         "id": "438",
         "district_id": "58",
         "name": "Haripur",
         "bn_name": "হরিপুর",
-        "url": "haripur.thakurgaon.gov.bd"
+        "url": "haripur.thakurgaon.gov.bd",
+        "lat": "25.9333",
+        "lon": "88.1667"
       },
       {
         "id": "439",
         "district_id": "58",
         "name": "Baliadangi",
         "bn_name": "বালিয়াডাঙ্গী",
-        "url": "baliadangi.thakurgaon.gov.bd"
+        "url": "baliadangi.thakurgaon.gov.bd",
+        "lat": "26.1000",
+        "lon": "88.2667"
       },
       {
         "id": "440",
         "district_id": "59",
         "name": "Rangpur Sadar",
         "bn_name": "রংপুর সদর",
-        "url": "rangpursadar.rangpur.gov.bd"
+        "url": "rangpursadar.rangpur.gov.bd",
+        "lat": "25.7500",
+        "lon": "89.2500"
       },
       {
         "id": "441",
         "district_id": "59",
         "name": "Gangachara",
         "bn_name": "গংগাচড়া",
-        "url": "gangachara.rangpur.gov.bd"
+        "url": "gangachara.rangpur.gov.bd",
+        "lat": "25.8500",
+        "lon": "89.2167"
       },
       {
         "id": "442",
         "district_id": "59",
         "name": "Taragonj",
         "bn_name": "তারাগঞ্জ",
-        "url": "taragonj.rangpur.gov.bd"
+        "url": "taragonj.rangpur.gov.bd",
+        "lat": "25.8167",
+        "lon": "89.0167"
       },
       {
         "id": "443",
         "district_id": "59",
         "name": "Badargonj",
         "bn_name": "বদরগঞ্জ",
-        "url": "badargonj.rangpur.gov.bd"
+        "url": "badargonj.rangpur.gov.bd",
+        "lat": "25.6750",
+        "lon": "89.0500"
       },
       {
         "id": "444",
         "district_id": "59",
         "name": "Mithapukur",
         "bn_name": "মিঠাপুকুর",
-        "url": "mithapukur.rangpur.gov.bd"
+        "url": "mithapukur.rangpur.gov.bd",
+        "lat": "25.5833",
+        "lon": "89.2667"
       },
       {
         "id": "445",
         "district_id": "59",
         "name": "Pirgonj",
         "bn_name": "পীরগঞ্জ",
-        "url": "pirgonj.rangpur.gov.bd"
+        "url": "pirgonj.rangpur.gov.bd",
+        "lat": "25.4167",
+        "lon": "89.3167"
       },
       {
         "id": "446",
         "district_id": "59",
         "name": "Kaunia",
         "bn_name": "কাউনিয়া",
-        "url": "kaunia.rangpur.gov.bd"
+        "url": "kaunia.rangpur.gov.bd",
+        "lat": "25.7167",
+        "lon": "89.4167"
       },
       {
         "id": "447",
         "district_id": "59",
         "name": "Pirgacha",
         "bn_name": "পীরগাছা",
-        "url": "pirgacha.rangpur.gov.bd"
+        "url": "pirgacha.rangpur.gov.bd",
+        "lat": "25.5833",
+        "lon": "89.4000"
       },
       {
         "id": "448",
         "district_id": "60",
         "name": "Kurigram Sadar",
         "bn_name": "কুড়িগ্রাম সদর",
-        "url": "kurigramsadar.kurigram.gov.bd"
+        "url": "kurigramsadar.kurigram.gov.bd",
+        "lat": "25.8167",
+        "lon": "89.6500"
       },
       {
         "id": "449",
         "district_id": "60",
         "name": "Nageshwari",
         "bn_name": "নাগেশ্বরী",
-        "url": "nageshwari.kurigram.gov.bd"
+        "url": "nageshwari.kurigram.gov.bd",
+        "lat": "25.9667",
+        "lon": "89.7000"
       },
       {
         "id": "450",
         "district_id": "60",
         "name": "Bhurungamari",
         "bn_name": "ভুরুঙ্গামারী",
-        "url": "bhurungamari.kurigram.gov.bd"
+        "url": "bhurungamari.kurigram.gov.bd",
+        "lat": "26.1333",
+        "lon": "89.6833"
       },
       {
         "id": "451",
         "district_id": "60",
         "name": "Phulbari",
-        "bn_name": "ফুলবাড়ী",
-        "url": "phulbari.kurigram.gov.bd"
+        "bn_name": "ফুলবাড়ী",
+        "url": "phulbari.kurigram.gov.bd",
+        "lat": "25.8833",
+        "lon": "89.5167"
       },
       {
         "id": "452",
         "district_id": "60",
         "name": "Rajarhat",
         "bn_name": "রাজারহাট",
-        "url": "rajarhat.kurigram.gov.bd"
+        "url": "rajarhat.kurigram.gov.bd",
+        "lat": "25.8000",
+        "lon": "89.5167"
       },
       {
         "id": "453",
         "district_id": "60",
         "name": "Ulipur",
         "bn_name": "উলিপুর",
-        "url": "ulipur.kurigram.gov.bd"
+        "url": "ulipur.kurigram.gov.bd",
+        "lat": "25.6667",
+        "lon": "89.6250"
       },
       {
         "id": "454",
         "district_id": "60",
         "name": "Chilmari",
         "bn_name": "চিলমারী",
-        "url": "chilmari.kurigram.gov.bd"
+        "url": "chilmari.kurigram.gov.bd",
+        "lat": "25.5667",
+        "lon": "89.6833"
       },
       {
         "id": "455",
         "district_id": "60",
         "name": "Rowmari",
         "bn_name": "রৌমারী",
-        "url": "rowmari.kurigram.gov.bd"
+        "url": "rowmari.kurigram.gov.bd",
+        "lat": "25.5625",
+        "lon": "89.8500"
       },
       {
         "id": "456",
         "district_id": "60",
         "name": "Charrajibpur",
         "bn_name": "চর রাজিবপুর",
-        "url": "charrajibpur.kurigram.gov.bd"
+        "url": "charrajibpur.kurigram.gov.bd",
+        "lat": "25.4000",
+        "lon": "89.7833"
       },
       {
         "id": "457",
         "district_id": "61",
         "name": "Sherpur Sadar",
         "bn_name": "শেরপুর সদর",
-        "url": "sherpursadar.sherpur.gov.bd"
+        "url": "sherpursadar.sherpur.gov.bd",
+        "lat": "25.0167",
+        "lon": "90.0167"
       },
       {
         "id": "458",
         "district_id": "61",
         "name": "Nalitabari",
         "bn_name": "নালিতাবাড়ী",
-        "url": "nalitabari.sherpur.gov.bd"
+        "url": "nalitabari.sherpur.gov.bd",
+        "lat": "25.0833",
+        "lon": "90.1833"
       },
       {
         "id": "459",
         "district_id": "61",
         "name": "Sreebordi",
         "bn_name": "শ্রীবরদী",
-        "url": "sreebordi.sherpur.gov.bd"
+        "url": "sreebordi.sherpur.gov.bd",
+        "lat": "25.1500",
+        "lon": "89.9333"
       },
       {
         "id": "460",
         "district_id": "61",
         "name": "Nokla",
         "bn_name": "নকলা",
-        "url": "nokla.sherpur.gov.bd"
+        "url": "nokla.sherpur.gov.bd",
+        "lat": "24.9833",
+        "lon": "90.1833"
       },
       {
         "id": "461",
         "district_id": "61",
         "name": "Jhenaigati",
         "bn_name": "ঝিনাইগাতী",
-        "url": "jhenaigati.sherpur.gov.bd"
+        "url": "jhenaigati.sherpur.gov.bd",
+        "lat": "25.1833",
+        "lon": "90.0667"
       },
       {
         "id": "462",
         "district_id": "62",
         "name": "Fulbaria",
-        "bn_name": "ফুলবাড়ীয়া",
-        "url": "fulbaria.mymensingh.gov.bd"
+        "bn_name": "ফুলবাড়ীয়া",
+        "url": "fulbaria.mymensingh.gov.bd",
+        "lat": "24.6333",
+        "lon": "90.2667"
       },
       {
         "id": "463",
         "district_id": "62",
         "name": "Trishal",
         "bn_name": "ত্রিশাল",
-        "url": "trishal.mymensingh.gov.bd"
+        "url": "trishal.mymensingh.gov.bd",
+        "lat": "24.5833",
+        "lon": "90.4167"
       },
       {
         "id": "464",
         "district_id": "62",
         "name": "Bhaluka",
         "bn_name": "ভালুকা",
-        "url": "bhaluka.mymensingh.gov.bd"
+        "url": "bhaluka.mymensingh.gov.bd",
+        "lat": "24.3750",
+        "lon": "90.3667"
       },
       {
         "id": "465",
         "district_id": "62",
         "name": "Muktagacha",
         "bn_name": "মুক্তাগাছা",
-        "url": "muktagacha.mymensingh.gov.bd"
+        "url": "muktagacha.mymensingh.gov.bd",
+        "lat": "24.7583",
+        "lon": "90.2667"
       },
       {
         "id": "466",
         "district_id": "62",
         "name": "Mymensingh Sadar",
-        "bn_name": "ময়মনসিংহ সদর",
-        "url": "mymensinghsadar.mymensingh.gov.bd"
+        "bn_name": "ময়মনসিংহ সদর",
+        "url": "mymensinghsadar.mymensingh.gov.bd",
+        "lat": "24.7500",
+        "lon": "90.4167"
       },
       {
         "id": "467",
         "district_id": "62",
         "name": "Dhobaura",
-        "bn_name": "ধোবাউড়া",
-        "url": "dhobaura.mymensingh.gov.bd"
+        "bn_name": "ধোবাউড়া",
+        "url": "dhobaura.mymensingh.gov.bd",
+        "lat": "25.1167",
+        "lon": "90.5333"
       },
       {
         "id": "468",
         "district_id": "62",
         "name": "Phulpur",
         "bn_name": "ফুলপুর",
-        "url": "phulpur.mymensingh.gov.bd"
+        "url": "phulpur.mymensingh.gov.bd",
+        "lat": "24.9583",
+        "lon": "90.3500"
       },
       {
         "id": "469",
         "district_id": "62",
         "name": "Haluaghat",
-        "bn_name": "হালুয়াঘাট",
-        "url": "haluaghat.mymensingh.gov.bd"
+        "bn_name": "হালুয়াঘাট",
+        "url": "haluaghat.mymensingh.gov.bd",
+        "lat": "25.1250",
+        "lon": "90.3500"
       },
       {
         "id": "470",
         "district_id": "62",
         "name": "Gouripur",
         "bn_name": "গৌরীপুর",
-        "url": "gouripur.mymensingh.gov.bd"
+        "url": "gouripur.mymensingh.gov.bd",
+        "lat": "24.7583",
+        "lon": "90.5833"
       },
       {
         "id": "471",
         "district_id": "62",
         "name": "Gafargaon",
         "bn_name": "গফরগাঁও",
-        "url": "gafargaon.mymensingh.gov.bd"
+        "url": "gafargaon.mymensingh.gov.bd",
+        "lat": "24.4167",
+        "lon": "90.5500"
       },
       {
         "id": "472",
         "district_id": "62",
         "name": "Iswarganj",
         "bn_name": "ঈশ্বরগঞ্জ",
-        "url": "iswarganj.mymensingh.gov.bd"
+        "url": "iswarganj.mymensingh.gov.bd",
+        "lat": "24.7000",
+        "lon": "90.6000"
       },
       {
         "id": "473",
         "district_id": "62",
         "name": "Nandail",
         "bn_name": "নান্দাইল",
-        "url": "nandail.mymensingh.gov.bd"
+        "url": "nandail.mymensingh.gov.bd",
+        "lat": "24.5750",
+        "lon": "90.7000"
       },
       {
         "id": "474",
         "district_id": "62",
         "name": "Tarakanda",
         "bn_name": "তারাকান্দা",
-        "url": "tarakanda.mymensingh.gov.bd"
+        "url": "tarakanda.mymensingh.gov.bd",
+        "lat": "24.8911",
+        "lon": "90.3475"
       },
       {
         "id": "475",
         "district_id": "63",
         "name": "Jamalpur Sadar",
         "bn_name": "জামালপুর সদর",
-        "url": "jamalpursadar.jamalpur.gov.bd"
+        "url": "jamalpursadar.jamalpur.gov.bd",
+        "lat": "24.9167",
+        "lon": "89.9500"
       },
       {
         "id": "476",
         "district_id": "63",
         "name": "Melandah",
         "bn_name": "মেলান্দহ",
-        "url": "melandah.jamalpur.gov.bd"
+        "url": "melandah.jamalpur.gov.bd",
+        "lat": "24.9667",
+        "lon": "89.8333"
       },
       {
         "id": "477",
         "district_id": "63",
         "name": "Islampur",
         "bn_name": "ইসলামপুর",
-        "url": "islampur.jamalpur.gov.bd"
+        "url": "islampur.jamalpur.gov.bd",
+        "lat": "25.0167",
+        "lon": "89.7833"
       },
       {
         "id": "478",
         "district_id": "63",
         "name": "Dewangonj",
         "bn_name": "দেওয়ানগঞ্জ",
-        "url": "dewangonj.jamalpur.gov.bd"
+        "url": "dewangonj.jamalpur.gov.bd",
+        "lat": "25.1417",
+        "lon": "89.7833"
       },
       {
         "id": "479",
         "district_id": "63",
         "name": "Sarishabari",
         "bn_name": "সরিষাবাড়ী",
-        "url": "sarishabari.jamalpur.gov.bd"
+        "url": "sarishabari.jamalpur.gov.bd",
+        "lat": "24.7417",
+        "lon": "89.8333"
       },
       {
         "id": "480",
         "district_id": "63",
         "name": "Madarganj",
         "bn_name": "মাদারগঞ্জ",
-        "url": "madarganj.jamalpur.gov.bd"
+        "url": "madarganj.jamalpur.gov.bd",
+        "lat": "24.9167",
+        "lon": "89.7500"
       },
       {
         "id": "481",
         "district_id": "63",
         "name": "Bokshiganj",
         "bn_name": "বকশীগঞ্জ",
-        "url": "bokshiganj.jamalpur.gov.bd"
+        "url": "bokshiganj.jamalpur.gov.bd",
+        "lat": "25.1833",
+        "lon": "89.8667"
       },
       {
         "id": "482",
         "district_id": "64",
         "name": "Barhatta",
         "bn_name": "বারহাট্টা",
-        "url": "barhatta.netrokona.gov.bd"
+        "url": "barhatta.netrokona.gov.bd",
+        "lat": "24.9083",
+        "lon": "90.8667"
       },
       {
         "id": "483",
         "district_id": "64",
         "name": "Durgapur",
         "bn_name": "দুর্গাপুর",
-        "url": "durgapur.netrokona.gov.bd"
+        "url": "durgapur.netrokona.gov.bd",
+        "lat": "25.1250",
+        "lon": "90.6833"
       },
       {
         "id": "484",
         "district_id": "64",
         "name": "Kendua",
-        "bn_name": "কেন্দুয়া",
-        "url": "kendua.netrokona.gov.bd"
+        "bn_name": "কেন্দুয়া",
+        "url": "kendua.netrokona.gov.bd",
+        "lat": "24.6500",
+        "lon": "90.8417"
       },
       {
         "id": "485",
         "district_id": "64",
         "name": "Atpara",
-        "bn_name": "আটপাড়া",
-        "url": "atpara.netrokona.gov.bd"
+        "bn_name": "আটপাড়া",
+        "url": "atpara.netrokona.gov.bd",
+        "lat": "24.8000",
+        "lon": "90.8667"
       },
       {
         "id": "486",
         "district_id": "64",
         "name": "Madan",
         "bn_name": "মদন",
-        "url": "madan.netrokona.gov.bd"
+        "url": "madan.netrokona.gov.bd",
+        "lat": "24.6500",
+        "lon": "90.9667"
       },
       {
         "id": "487",
         "district_id": "64",
         "name": "Khaliajuri",
-        "bn_name": "খালিয়াজুরী",
-        "url": "khaliajuri.netrokona.gov.bd"
+        "bn_name": "খালিয়াজুরী",
+        "url": "khaliajuri.netrokona.gov.bd",
+        "lat": "24.7000",
+        "lon": "91.1167"
       },
       {
         "id": "488",
         "district_id": "64",
         "name": "Kalmakanda",
         "bn_name": "কলমাকান্দা",
-        "url": "kalmakanda.netrokona.gov.bd"
+        "url": "kalmakanda.netrokona.gov.bd",
+        "lat": "25.0833",
+        "lon": "90.8917"
       },
       {
         "id": "489",
         "district_id": "64",
         "name": "Mohongonj",
         "bn_name": "মোহনগঞ্জ",
-        "url": "mohongonj.netrokona.gov.bd"
+        "url": "mohongonj.netrokona.gov.bd",
+        "lat": "24.8667",
+        "lon": "90.9667"
       },
       {
         "id": "490",
         "district_id": "64",
         "name": "Purbadhala",
         "bn_name": "পূর্বধলা",
-        "url": "purbadhala.netrokona.gov.bd"
+        "url": "purbadhala.netrokona.gov.bd",
+        "lat": "24.9333",
+        "lon": "90.6083"
       },
       {
         "id": "491",
         "district_id": "64",
         "name": "Netrokona Sadar",
         "bn_name": "নেত্রকোণা সদর",
-        "url": "netrokonasadar.netrokona.gov.bd"
+        "url": "netrokonasadar.netrokona.gov.bd",
+        "lat": "24.8750",
+        "lon": "90.7333"
       },
       {
         "id": "492",
         "district_id": "9",
         "name": "Eidgaon",
         "bn_name": "ঈদগাঁও",
-        "url": "null"
+        "url": "null",
+        "lat": "21.5167",
+        "lon": "92.0333"
       },
       {
         "id": "493",
         "district_id": "39",
         "name": "Madhyanagar",
         "bn_name": "মধ্যনগর",
-        "url": "null"
+        "url": "null",
+        "lat": "25.0931",
+        "lon": "91.0361"
       },
       {
         "id": "494",
         "district_id": "50",
         "name": "Dasar",
         "bn_name": "ডাসার",
-        "url": "null"
+        "url": "null",
+        "lat": "23.1360",
+        "lon": "90.1700"
       }
     ]
   }

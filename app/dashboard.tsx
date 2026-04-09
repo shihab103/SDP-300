@@ -85,7 +85,8 @@ export default function Dashboard() {
           {role === "admin" ? "🛡️ Admin Panel" : "🩸 Donor Dashboard"}
         </Text>
         <Text style={styles.headerSubtitle}>
-          Welcome back, <Text style={styles.boldText}>{role?.toUpperCase()}</Text>
+          Welcome back,{" "}
+          <Text style={styles.boldText}>{role?.toUpperCase()}</Text>
         </Text>
       </View>
 
@@ -100,6 +101,18 @@ export default function Dashboard() {
         {/* Admin Only Routes */}
         {role === "admin" && (
           <>
+            <MenuCard
+              title="Donation Request"
+              subtitle="Create a new blood request"
+              screen="/donation-request"
+              icon="hand-heart-outline"
+            />
+            <MenuCard
+              title="My Donation Requests"
+              subtitle="View your request history"
+              screen="/my_donation_request"
+              icon="history"
+            />
             <MenuCard
               title="All Users"
               subtitle="Manage all registered users"
@@ -121,18 +134,17 @@ export default function Dashboard() {
             <MenuCard
               title="Donation Request"
               subtitle="Create a new blood request"
-              screen="/create-donation-request"
+              screen="/donation-request"
               icon="hand-heart-outline"
             />
             <MenuCard
               title="My Donation Requests"
               subtitle="View your request history"
-              screen="/my-donation-requests"
+              screen="/my_donation_request"
               icon="history"
             />
           </>
         )}
-
       </View>
     </ScrollView>
   );
