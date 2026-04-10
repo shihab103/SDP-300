@@ -7,11 +7,12 @@ import {
   ScrollView,
   StatusBar,
   ActivityIndicator,
+  Platform,
 } from "react-native";
 import { useRouter } from "expo-router";
 import axios from "axios";
 import { AuthContext } from "../src/Provider/AuthContext";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
 
 export default function Dashboard() {
   const router = useRouter();
@@ -77,18 +78,26 @@ export default function Dashboard() {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <StatusBar backgroundColor="#b71c1c" barStyle="light-content" />
+      <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
 
       {/* Header Section */}
-      <View style={styles.header}>
-        <Text style={styles.headerTitle}>
-          {role === "admin" ? "🛡️ Admin Panel" : "🩸 Donor Dashboard"}
-        </Text>
+      <TouchableOpacity 
+        activeOpacity={0.9} 
+        onPress={() => router.push("/home")}
+        style={styles.header}
+      >
+        <View style={styles.headerTopRow}>
+          <Ionicons name="chevron-back" size={28} color="#fff" style={styles.backIcon} />
+          <Text style={styles.headerTitle}>
+            {role === "admin" ? " Admin Panel" : " Donor Dashboard"}
+          </Text>
+        </View>
+        
         <Text style={styles.headerSubtitle}>
           Welcome back,{" "}
           <Text style={styles.boldText}>{role?.toUpperCase()}</Text>
         </Text>
-      </View>
+      </TouchableOpacity>
 
       <View style={styles.menuWrapper}>
         <MenuCard
@@ -156,15 +165,29 @@ const styles = StyleSheet.create({
   loaderText: { marginTop: 10, color: "#666", fontWeight: "500" },
   header: {
     backgroundColor: "#d32f2f",
-    paddingTop: 60,
+    paddingTop: Platform.OS === "android" ? (StatusBar.currentHeight ? StatusBar.currentHeight + 20 : 50) : 60,
     paddingBottom: 40,
     paddingHorizontal: 25,
     borderBottomLeftRadius: 35,
     borderBottomRightRadius: 35,
     elevation: 5,
   },
-  headerTitle: { fontSize: 26, fontWeight: "bold", color: "#fff" },
-  headerSubtitle: { marginTop: 5, color: "#ffcdd2", fontSize: 14 },
+  headerTopRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 5,
+  },
+  backIcon: {
+    marginRight: 8,
+    marginLeft: -5,
+  },
+  headerTitle: { 
+    fontSize: 24, 
+    fontWeight: "bold", 
+    color: "#fff",
+    flexShrink: 1, 
+  },
+  headerSubtitle: { color: "#ffcdd2", fontSize: 14, marginLeft: 35 },
   boldText: { fontWeight: "bold", color: "#fff" },
   menuWrapper: { padding: 20 },
   card: {

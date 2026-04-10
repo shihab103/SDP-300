@@ -20,7 +20,7 @@ const TypeWriterText = ({ sequence }: { sequence: string[] }) => {
         setTypingSpeed(150);
 
         if (displayText === currentFullText) {
-          setTypingSpeed(2000); // পুরো লেখা শেষ হলে ২ সেকেন্ড থামবে
+          setTypingSpeed(2000); 
           setIsDeleting(true);
         }
       } else {
@@ -43,14 +43,6 @@ const TypeWriterText = ({ sequence }: { sequence: string[] }) => {
 
 const Banner = () => {
   const router = useRouter();
-
-//   const handleJoin = () => {
-//     router.push("/registration"); 
-//   };
-
-//   const handleSearch = () => {
-//     router.push("/search-page");
-//   };
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -78,16 +70,6 @@ const Banner = () => {
           you're donating or searching, we're here to help.
         </Text>
 
-        {/* Buttons */}
-        {/* <View style={styles.buttonGroup}>
-          <TouchableOpacity style={styles.joinBtn} onPress={handleJoin}>
-            <Text style={styles.joinBtnText}>Join as a Donor</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.searchBtn} onPress={handleSearch}>
-            <Text style={styles.searchBtnText}>Search Donors</Text>
-          </TouchableOpacity>
-        </View> */}
       </View>
     </ScrollView>
   );

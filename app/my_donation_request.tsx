@@ -12,6 +12,7 @@ import {
 import axios from "axios";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { AuthContext } from "../src/Provider/AuthContext";
+import { useRouter } from "expo-router"; 
 
 interface DonationRequest {
   _id: string;
@@ -25,6 +26,7 @@ interface DonationRequest {
 }
 
 const MyDonationRequests = () => {
+  const router = useRouter(); 
   const { user }: any = useContext(AuthContext);
   const [requests, setRequests] = useState<DonationRequest[]>([]);
   const [loading, setLoading] = useState(true);
@@ -70,7 +72,6 @@ const MyDonationRequests = () => {
           <View style={styles.bloodBadge}>
             <Text style={styles.bloodText}>{item.bloodGroup}</Text>
           </View>
-          {/* Style Object Fix */}
           <View style={[styles.statusBadgeBase, { backgroundColor: statusColors.bg }]}>
             <Text style={[styles.statusTextBase, { color: statusColors.text }]}>
               {item.donationStatus.toUpperCase()}
@@ -97,12 +98,19 @@ const MyDonationRequests = () => {
     <View style={styles.container}>
       <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
 
-      <View style={styles.stickyHeader}>
-        <Text style={styles.headerTitle}>🩸 My Requests</Text>
+      <TouchableOpacity 
+        activeOpacity={0.9} 
+        onPress={() => router.push("/dashboard")} 
+        style={styles.stickyHeader}
+      >
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <MaterialCommunityIcons name="chevron-left" size={28} color="#fff" style={{marginRight: 5}} />
+          <Text style={styles.headerTitle}>My Requests</Text>
+        </View>
         <Text style={styles.headerSubtitle}>
           Track your blood <Text style={styles.boldText}>donation posts</Text>
         </Text>
-      </View>
+      </TouchableOpacity>
 
       {loading ? (
         <View style={styles.loader}>
@@ -142,19 +150,14 @@ const styles = StyleSheet.create({
   headerTitle: { fontSize: 26, fontWeight: "bold", color: "#fff" },
   headerSubtitle: { marginTop: 4, color: "#ffcdd2", fontSize: 14 },
   boldText: { fontWeight: "bold", color: "#fff" },
-  
   listContainer: { padding: 20, paddingBottom: 40 },
   loader: { flex: 1, justifyContent: "center", alignItems: "center" },
-  
   card: {
     backgroundColor: "#fff",
     borderRadius: 20,
     padding: 18,
     marginBottom: 16,
     elevation: 3,
-    shadowColor: "#000",
-    shadowOpacity: 0.05,
-    shadowRadius: 5,
   },
   cardHeader: {
     flexDirection: "row",
@@ -169,8 +172,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   bloodText: { color: "#ef4444", fontWeight: "bold", fontSize: 14 },
-  
-  // স্টাইল ফাংশনের পরিবর্তে বেস স্টাইল ব্যবহার
   statusBadgeBase: {
     paddingHorizontal: 10,
     paddingVertical: 4,
@@ -180,7 +181,6 @@ const styles = StyleSheet.create({
     fontSize: 10,
     fontWeight: "900",
   },
-  
   recipientName: {
     fontSize: 18,
     fontWeight: "bold",

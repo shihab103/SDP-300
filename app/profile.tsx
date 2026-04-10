@@ -1,8 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
-import { View, Text, ScrollView, ActivityIndicator, Image, TouchableOpacity, StyleSheet, Dimensions } from "react-native";
+import { View, Text, ScrollView, ActivityIndicator, Image, TouchableOpacity, StyleSheet, Dimensions, StatusBar, Platform } from "react-native";
 import axios from "axios";
 import { AuthContext } from "../src/Provider/AuthContext";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
+import { useRouter } from "expo-router"; // ১. useRouter ইমপোর্ট করা হয়েছে
 
 const { width } = Dimensions.get("window");
 
@@ -21,6 +22,7 @@ interface UserProfile {
 const Profile = () => {
   const auth = useContext(AuthContext);
   const user = auth?.user;
+  const router = useRouter(); // ২. রাউটার ডিক্লেয়ার করা হয়েছে
 
   const [userData, setUserData] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -53,8 +55,19 @@ const Profile = () => {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      {/* Header Section */}
-      <View style={styles.header}>
+      <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
+      
+      {/* Header Section - এখন এখানে ক্লিক করলে হোম এ যাবে */}
+      <TouchableOpacity 
+        activeOpacity={0.9}
+        onPress={() => router.push("/dashboard")}
+        style={styles.header}
+      >
+        {/* ৩. ব্যাক আইকন যোগ করা হয়েছে */}
+        <View style={styles.backIconContainer}>
+          <Ionicons name="chevron-back" size={28} color="#fff" />
+        </View>
+
         <View style={styles.imageWrapper}>
           <Image
             source={{ uri: userData?.photoURL || "https://cdn-icons-png.flaticon.com/512/3135/3135715.png" }}
@@ -70,7 +83,7 @@ const Profile = () => {
             <Text style={styles.roleText}>{userData?.role}</Text>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
 
       {/* Info Cards Row */}
       <View style={styles.statsContainer}>
@@ -122,11 +135,16 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#F8F9FA" },
   header: {
     backgroundColor: "#ef4444",
-    paddingTop: 60,
+    paddingTop: Platform.OS === "android" ? 50 : 60,
     paddingBottom: 40,
     alignItems: "center",
     borderBottomLeftRadius: 40,
     borderBottomRightRadius: 40,
+  },
+  backIconContainer: {
+    position: 'absolute',
+    top: Platform.OS === "android" ? 45 : 55,
+    left: 20,
   },
   imageWrapper: {
     width: 110,

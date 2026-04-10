@@ -17,6 +17,7 @@ import {
 } from "react-native";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { AuthContext } from "../src/Provider/AuthContext";
+import { MaterialCommunityIcons } from "@expo/vector-icons"; 
 
 const districtsData = require("../assets/data/districts.json");
 const upazilasData = require("../assets/data/upazilas.json");
@@ -137,7 +138,7 @@ export default function DonationRequest() {
 
       if (response.data.insertedId) {
         Alert.alert("Success!", "Request posted successfully.", [
-          { text: "OK", onPress: () => router.push("/home") },
+          { text: "OK", onPress: () => router.push("/dashboard") },
         ]);
       }
     } catch (error: any) {
@@ -192,13 +193,20 @@ export default function DonationRequest() {
     <View style={styles.mainContainer}>
       <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
 
-      {/* --- Sticky Header (Same as Management Page) --- */}
-      <View style={styles.stickyHeader}>
-        <Text style={styles.headerTitle}>🩸 Blood Request</Text>
+      {/* --- Sticky Header (Home Back with Icon) --- */}
+      <TouchableOpacity 
+        activeOpacity={0.9} 
+        onPress={() => router.push("/dashboard")}
+        style={styles.stickyHeader}
+      >
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <MaterialCommunityIcons name="chevron-left" size={28} color="#fff" style={{marginRight: 5}} />
+          <Text style={styles.headerTitle}>Blood Request</Text>
+        </View>
         <Text style={styles.headerSubtitle}>
           Fill the form to find a <Text style={styles.boldText}>Hero Donor</Text>
         </Text>
-      </View>
+      </TouchableOpacity>
 
       <ScrollView
         contentContainerStyle={styles.scrollContainer}
@@ -366,7 +374,7 @@ export default function DonationRequest() {
         </View>
       </ScrollView>
 
-      {/* DateTimePickerModals */}
+      {/* Modals এবং বাকি অংশ আগের মতোই থাকবে */}
       <DateTimePickerModal
         isVisible={isDatePickerVisible}
         mode="date"
@@ -381,7 +389,6 @@ export default function DonationRequest() {
         onCancel={() => setTimePickerVisibility(false)}
       />
 
-      {/* Selection Modals */}
       <SelectionModal
         visible={bloodModal}
         setVisible={setBloodModal}
@@ -422,8 +429,6 @@ export default function DonationRequest() {
 
 const styles = StyleSheet.create({
   mainContainer: { flex: 1, backgroundColor: "#f8f9fa" },
-  
-  // Sticky Header Style
   stickyHeader: {
     backgroundColor: "#d32f2f",
     paddingTop: Platform.OS === "android" ? (StatusBar.currentHeight ? StatusBar.currentHeight + 20 : 50) : 60,
@@ -432,117 +437,33 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 35,
     borderBottomRightRadius: 35,
     elevation: 10,
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowRadius: 10,
     zIndex: 1000,
   },
-  headerTitle: { 
-    fontSize: 26, 
-    fontWeight: "bold", 
-    color: "#fff" 
-  },
-  headerSubtitle: { 
-    marginTop: 4, 
-    color: "#ffcdd2", 
-    fontSize: 14 
-  },
-  boldText: { 
-    fontWeight: "bold", 
-    color: "#fff" 
-  },
-
-  scrollContainer: { 
-    padding: 18, 
-    paddingTop: 20, 
-    paddingBottom: 40 
-  },
+  headerTitle: { fontSize: 26, fontWeight: "bold", color: "#fff" },
+  headerSubtitle: { marginTop: 4, color: "#ffcdd2", fontSize: 14 },
+  boldText: { fontWeight: "bold", color: "#fff" },
+  scrollContainer: { padding: 18, paddingTop: 20, paddingBottom: 40 },
   card: {
     backgroundColor: "#fff",
     padding: 20,
     borderRadius: 22,
     marginBottom: 20,
     elevation: 4,
-    shadowColor: "#000",
-    shadowOpacity: 0.08,
-    shadowRadius: 8
   },
-  sectionTitle: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: "#1e293b",
-    marginBottom: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#f1f5f9",
-    paddingBottom: 5,
-  },
+  sectionTitle: { fontSize: 18, fontWeight: "bold", color: "#1e293b", marginBottom: 15, borderBottomWidth: 1, borderBottomColor: "#f1f5f9", paddingBottom: 5 },
   inputGroup: { marginBottom: 15 },
-  label: {
-    fontSize: 13,
-    fontWeight: "bold",
-    color: "#475569",
-    marginBottom: 6,
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: "#e2e8f0",
-    borderRadius: 12,
-    padding: 12,
-    fontSize: 15,
-    backgroundColor: "#f9f9f9",
-  },
+  label: { fontSize: 13, fontWeight: "bold", color: "#475569", marginBottom: 6 },
+  input: { borderWidth: 1, borderColor: "#e2e8f0", borderRadius: 12, padding: 12, fontSize: 15, backgroundColor: "#f9f9f9" },
   readOnly: { backgroundColor: "#f1f5f9", color: "#64748b" },
-  selectorTrigger: {
-    borderWidth: 1,
-    borderColor: "#e2e8f0",
-    borderRadius: 12,
-    padding: 14,
-    backgroundColor: "#f9f9f9",
-  },
+  selectorTrigger: { borderWidth: 1, borderColor: "#e2e8f0", borderRadius: 12, padding: 14, backgroundColor: "#f9f9f9" },
   row: { flexDirection: "row", marginBottom: 15 },
   textArea: { height: 90, textAlignVertical: "top" },
-  submitBtn: {
-    backgroundColor: "#d32f2f",
-    paddingVertical: 16,
-    borderRadius: 14,
-    alignItems: "center",
-    marginTop: 10,
-    elevation: 2,
-  },
+  submitBtn: { backgroundColor: "#d32f2f", paddingVertical: 16, borderRadius: 14, alignItems: "center", marginTop: 10 },
   submitBtnText: { color: "#fff", fontSize: 18, fontWeight: "bold" },
-  
-  // Modal Styles
-  modalOverlay: {
-    flex: 1,
-    backgroundColor: "rgba(0,0,0,0.5)",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  modalContent: {
-    width: "85%",
-    backgroundColor: "#fff",
-    borderRadius: 20,
-    padding: 20,
-    maxHeight: "75%",
-  },
-  modalTitle: {
-    fontSize: 18,
-    fontWeight: "bold",
-    marginBottom: 15,
-    textAlign: "center",
-    color: "#d32f2f",
-  },
-  modalItem: {
-    padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#f1f5f9",
-  },
+  modalOverlay: { flex: 1, backgroundColor: "rgba(0,0,0,0.5)", justifyContent: "center", alignItems: "center" },
+  modalContent: { width: "85%", backgroundColor: "#fff", borderRadius: 20, padding: 20, maxHeight: "75%" },
+  modalTitle: { fontSize: 18, fontWeight: "bold", marginBottom: 15, textAlign: "center", color: "#d32f2f" },
+  modalItem: { padding: 15, borderBottomWidth: 1, borderBottomColor: "#f1f5f9" },
   modalItemText: { fontSize: 16, textAlign: "center" },
-  closeButton: {
-    backgroundColor: "#334155",
-    padding: 12,
-    borderRadius: 10,
-    marginTop: 15,
-    alignItems: "center",
-  },
+  closeButton: { backgroundColor: "#334155", padding: 12, borderRadius: 10, marginTop: 15, alignItems: "center" },
 });
