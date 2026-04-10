@@ -12,7 +12,8 @@ import {
   Dimensions,
 } from "react-native";
 import axios from "axios";
-import { MaterialCommunityIcons, FontAwesome5 } from "@expo/vector-icons";
+import { MaterialCommunityIcons, FontAwesome5, Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const { width } = Dimensions.get("window");
 
@@ -29,6 +30,7 @@ interface DonationRequest {
 }
 
 const AdminDonationManagement = () => {
+  const navigation = useNavigation();
   const [inProgressRequests, setInProgressRequests] = useState<DonationRequest[]>([]);
   const [historyRequests, setHistoryRequests] = useState<DonationRequest[]>([]);
   const [loading, setLoading] = useState(true);
@@ -94,6 +96,7 @@ const AdminDonationManagement = () => {
         <MaterialCommunityIcons name="hospital-building" size={14} color="#ef4444" />
         <Text style={styles.hospitalText}>{item.hospitalName}</Text>
       </View>
+      {/* Corrected: Using View instead of div */}
       <View style={styles.actionRow}>
         <TouchableOpacity 
           style={[styles.actionBtn, styles.doneBtn]} 
@@ -151,9 +154,17 @@ const AdminDonationManagement = () => {
     <View style={styles.container}>
       <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
 
-      {/* --- Sticky Header --- */}
+      {/* --- Sticky Header with Back Button --- */}
       <View style={styles.stickyHeader}>
-        <Text style={styles.headerTitle}>📊 Management</Text>
+        <View style={styles.headerTopRow}>
+          <TouchableOpacity 
+            onPress={() => navigation.goBack()} 
+            style={styles.backButton}
+          >
+            <Ionicons name="arrow-back" size={24} color="#fff" />
+          </TouchableOpacity>
+          <Text style={styles.headerTitle}> Management</Text>
+        </View>
         <Text style={styles.headerSubtitle}>
           Review and update blood <Text style={styles.boldText}>donation requests</Text>
         </Text>
@@ -165,7 +176,6 @@ const AdminDonationManagement = () => {
         showsVerticalScrollIndicator={false}
         renderItem={() => (
           <View style={styles.contentWrapper}>
-            {/* In-Progress Section */}
             <Text style={styles.sectionTitle}>
               IN-PROGRESS <Text style={{ color: "#ef4444" }}>DONATIONS</Text>
             </Text>
@@ -177,7 +187,6 @@ const AdminDonationManagement = () => {
               inProgressRequests.map(renderInProgressItem)
             )}
 
-            {/* History Section */}
             <View style={styles.historySection}>
               <Text style={styles.sectionTitle}>
                 PREVIOUS <Text style={{ color: "#3b82f6" }}>HISTORY</Text>
@@ -198,28 +207,15 @@ const AdminDonationManagement = () => {
 };
 
 const styles = StyleSheet.create({
-  container: { 
-    flex: 1, 
-    backgroundColor: "#f8f9fa" 
-  },
-  loaderContainer: { 
-    flex: 1, 
-    justifyContent: "center", 
-    alignItems: "center", 
-    backgroundColor: "#fff" 
-  },
-  loaderText: { 
-    marginTop: 10, 
-    color: "#666", 
-    fontWeight: "600" 
-  },
+  container: { flex: 1, backgroundColor: "#f8f9fa" },
+  loaderContainer: { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: "#fff" },
+  loaderText: { marginTop: 10, color: "#666", fontWeight: "600" },
   
-  // Sticky Header with Status Bar Integration
   stickyHeader: {
     backgroundColor: "#d32f2f",
-    paddingTop: Platform.OS === "android" ? (StatusBar.currentHeight ? StatusBar.currentHeight + 20 : 50) : 60,
-    paddingBottom: 30,
-    paddingHorizontal: 25,
+    paddingTop: Platform.OS === "android" ? (StatusBar.currentHeight ? StatusBar.currentHeight + 15 : 50) : 60,
+    paddingBottom: 25,
+    paddingHorizontal: 20,
     borderBottomLeftRadius: 35,
     borderBottomRightRadius: 35,
     elevation: 10,
@@ -228,190 +224,53 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     zIndex: 1000,
   },
-  headerTitle: { 
-    fontSize: 26, 
-    fontWeight: "bold", 
-    color: "#fff" 
+  headerTopRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 5,
   },
-  headerSubtitle: { 
-    marginTop: 4, 
-    color: "#ffcdd2", 
-    fontSize: 14 
+  backButton: {
+    marginRight: 12,
+    padding: 8,
+    backgroundColor: 'rgba(255, 255, 255, 0.15)',
+    borderRadius: 12,
   },
-  boldText: { 
-    fontWeight: "bold", 
-    color: "#fff" 
-  },
+  headerTitle: { fontSize: 24, fontWeight: "bold", color: "#fff" },
+  headerSubtitle: { marginTop: 4, color: "#ffcdd2", fontSize: 13, marginLeft: 52 },
+  boldText: { fontWeight: "bold", color: "#fff" },
 
-  contentWrapper: { 
-    paddingHorizontal: 18, 
-    paddingTop: 20, 
-    paddingBottom: 40 
-  },
-  sectionTitle: { 
-    fontSize: 16, 
-    fontWeight: "900", 
-    color: "#1F2937", 
-    marginBottom: 15, 
-    letterSpacing: 0.5,
-    textTransform: 'uppercase'
-  },
-  emptyBox: {
-    padding: 20,
-    backgroundColor: '#fff',
-    borderRadius: 15,
-    borderStyle: 'dashed',
-    borderWidth: 1,
-    borderColor: '#ccc',
-    alignItems: 'center'
-  },
-  emptyText: { 
-    color: "#9CA3AF", 
-    fontStyle: "italic" 
-  },
+  contentWrapper: { paddingHorizontal: 18, paddingTop: 20, paddingBottom: 40 },
+  sectionTitle: { fontSize: 16, fontWeight: "900", color: "#1F2937", marginBottom: 15, letterSpacing: 0.5, textTransform: 'uppercase' },
+  emptyBox: { padding: 20, backgroundColor: '#fff', borderRadius: 15, borderStyle: 'dashed', borderWidth: 1, borderColor: '#ccc', alignItems: 'center' },
+  emptyText: { color: "#9CA3AF", fontStyle: "italic" },
   
-  // Card Styles
-  card: { 
-    backgroundColor: "#fff", 
-    borderRadius: 22, 
-    padding: 18, 
-    marginBottom: 16, 
-    elevation: 4, 
-    shadowColor: "#000", 
-    shadowOpacity: 0.08, 
-    shadowRadius: 8 
-  },
-  cardHeader: { 
-    flexDirection: "row", 
-    alignItems: "center", 
-    marginBottom: 10 
-  },
-  bloodBadge: { 
-    backgroundColor: "#fee2e2", 
-    paddingHorizontal: 12, 
-    paddingVertical: 5, 
-    borderRadius: 10 
-  },
-  bloodText: { 
-    color: "#ef4444", 
-    fontWeight: "900", 
-    fontSize: 13 
-  },
-  recipientName: { 
-    fontSize: 17, 
-    fontWeight: "bold", 
-    color: "#1f2937" 
-  },
-  donorInfo: { 
-    fontSize: 12, 
-    color: "#6B7280", 
-    marginTop: 2 
-  },
-  detailsRow: { 
-    flexDirection: "row", 
-    alignItems: "center", 
-    marginTop: 5 
-  },
-  hospitalText: { 
-    fontSize: 12, 
-    color: "#9CA3AF", 
-    marginLeft: 6, 
-    fontStyle: "italic" 
-  },
+  card: { backgroundColor: "#fff", borderRadius: 22, padding: 18, marginBottom: 16, elevation: 4, shadowColor: "#000", shadowOpacity: 0.08, shadowRadius: 8 },
+  cardHeader: { flexDirection: "row", alignItems: "center", marginBottom: 10 },
+  bloodBadge: { backgroundColor: "#fee2e2", paddingHorizontal: 12, paddingVertical: 5, borderRadius: 10 },
+  bloodText: { color: "#ef4444", fontWeight: "900", fontSize: 13 },
+  recipientName: { fontSize: 17, fontWeight: "bold", color: "#1f2937" },
+  donorInfo: { fontSize: 12, color: "#6B7280", marginTop: 2 },
+  detailsRow: { flexDirection: "row", alignItems: "center", marginTop: 5 },
+  hospitalText: { fontSize: 12, color: "#9CA3AF", marginLeft: 6, fontStyle: "italic" },
   
-  // Buttons
-  actionRow: { 
-    flexDirection: "row", 
-    justifyContent: "flex-end", 
-    gap: 10, 
-    marginTop: 15 
-  },
-  actionBtn: { 
-    flexDirection: "row", 
-    alignItems: "center", 
-    paddingVertical: 10, 
-    paddingHorizontal: 18, 
-    borderRadius: 14 
-  },
-  doneBtn: { 
-    backgroundColor: "#10B981" 
-  },
-  cancelBtn: { 
-    backgroundColor: "#F3F4F6" 
-  },
-  btnText: { 
-    color: "#fff", 
-    fontSize: 12, 
-    fontWeight: "bold", 
-    marginLeft: 6, 
-    textTransform: "uppercase" 
-  },
+  actionRow: { flexDirection: "row", justifyContent: "flex-end", gap: 10, marginTop: 15 },
+  actionBtn: { flexDirection: "row", alignItems: "center", paddingVertical: 10, paddingHorizontal: 18, borderRadius: 14 },
+  doneBtn: { backgroundColor: "#10B981" },
+  cancelBtn: { backgroundColor: "#F3F4F6" },
+  btnText: { color: "#fff", fontSize: 12, fontWeight: "bold", marginLeft: 6, textTransform: "uppercase" },
 
-  // History Specifics
-  historySection: { 
-    borderTopWidth: 1, 
-    borderTopColor: "#E5E7EB", 
-    marginTop: 30, 
-    paddingTop: 20 
-  },
-  historyCard: { 
-    backgroundColor: "#fff", 
-    borderLeftWidth: 5, 
-    borderLeftColor: "#3b82f6" 
-  },
-  historyGrid: { 
-    flexDirection: "row", 
-    justifyContent: "space-between" 
-  },
-  historyCol: { 
-    flex: 1 
-  },
-  label: { 
-    fontSize: 9, 
-    fontWeight: "900", 
-    color: "#9CA3AF", 
-    letterSpacing: 0.8, 
-    marginBottom: 4 
-  },
-  historyName: { 
-    fontSize: 14, 
-    fontWeight: "bold", 
-    color: "#374151" 
-  },
-  historyBlood: { 
-    fontSize: 12, 
-    color: "#ef4444", 
-    fontWeight: "bold" 
-  },
-  historyEmail: { 
-    fontSize: 10, 
-    color: "#9CA3AF" 
-  },
-  historyFooter: { 
-    flexDirection: "row", 
-    justifyContent: "space-between", 
-    alignItems: "center", 
-    marginTop: 15, 
-    borderTopWidth: 1, 
-    borderTopColor: "#F3F4F6", 
-    paddingTop: 10 
-  },
-  historyDetails: { 
-    fontSize: 11, 
-    color: "#6B7280", 
-    fontWeight: "500" 
-  },
-  completedBadge: { 
-    backgroundColor: "#dcfce7", 
-    paddingHorizontal: 10, 
-    paddingVertical: 3, 
-    borderRadius: 20 
-  },
-  completedText: { 
-    color: "#166534", 
-    fontSize: 9, 
-    fontWeight: "900" 
-  }
+  historySection: { borderTopWidth: 1, borderTopColor: "#E5E7EB", marginTop: 30, paddingTop: 20 },
+  historyCard: { backgroundColor: "#fff", borderLeftWidth: 5, borderLeftColor: "#3b82f6" },
+  historyGrid: { flexDirection: "row", justifyContent: "space-between" },
+  historyCol: { flex: 1 },
+  label: { fontSize: 9, fontWeight: "900", color: "#9CA3AF", letterSpacing: 0.8, marginBottom: 4 },
+  historyName: { fontSize: 14, fontWeight: "bold", color: "#374151" },
+  historyBlood: { fontSize: 12, color: "#ef4444", fontWeight: "bold" },
+  historyEmail: { fontSize: 10, color: "#9CA3AF" },
+  historyFooter: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginTop: 15, borderTopWidth: 1, borderTopColor: "#F3F4F6", paddingTop: 10 },
+  historyDetails: { fontSize: 11, color: "#6B7280", fontWeight: "500" },
+  completedBadge: { backgroundColor: "#dcfce7", paddingHorizontal: 10, paddingVertical: 3, borderRadius: 20 },
+  completedText: { color: "#166534", fontSize: 9, fontWeight: "900" }
 });
 
 export default AdminDonationManagement;

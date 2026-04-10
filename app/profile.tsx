@@ -3,7 +3,7 @@ import { View, Text, ScrollView, ActivityIndicator, Image, TouchableOpacity, Sty
 import axios from "axios";
 import { AuthContext } from "../src/Provider/AuthContext";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
-import { useRouter } from "expo-router"; // ১. useRouter ইমপোর্ট করা হয়েছে
+import { useRouter } from "expo-router";
 
 const { width } = Dimensions.get("window");
 
@@ -22,7 +22,7 @@ interface UserProfile {
 const Profile = () => {
   const auth = useContext(AuthContext);
   const user = auth?.user;
-  const router = useRouter(); // ২. রাউটার ডিক্লেয়ার করা হয়েছে
+  const router = useRouter();
 
   const [userData, setUserData] = useState<UserProfile | null>(null);
   const [loading, setLoading] = useState<boolean>(true);

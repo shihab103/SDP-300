@@ -1,17 +1,17 @@
-import React, { useState, useRef } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableOpacity,
-  Dimensions,
-  Pressable,
-  Animated,
-  StatusBar,
-  Platform,
-} from "react-native";
+import { FontAwesome5, Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import { Ionicons, FontAwesome5 } from "@expo/vector-icons";
+import React, { useRef, useState } from "react";
+import {
+  Animated,
+  Dimensions,
+  Platform,
+  Pressable,
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 const { width } = Dimensions.get("window");
 
@@ -39,7 +39,11 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      <StatusBar translucent backgroundColor="transparent" barStyle="light-content" />
+      <StatusBar
+        translucent
+        backgroundColor="transparent"
+        barStyle="light-content"
+      />
 
       {/* --- ROUNDED HEADER --- */}
       <View style={styles.stickyHeader}>
@@ -53,15 +57,19 @@ export default function HomeScreen() {
           </TouchableOpacity>
         </View>
         <Text style={styles.headerSubtitle}>
-          Save lives by <Text style={{ fontWeight: "bold", color: "#fff" }}>sharing blood</Text>
+          Save lives by{" "}
+          <Text style={{ fontWeight: "bold", color: "#fff" }}>
+            sharing blood
+          </Text>
         </Text>
       </View>
 
       {/* --- ACTION SECTION --- */}
       <View style={styles.actionSection}>
-        <TouchableOpacity 
-          style={[styles.squareBtn, styles.findDonorBtn]} 
-          onPress={() => router.push("/find-donor")}
+        <TouchableOpacity
+          style={[styles.squareBtn, styles.findDonorBtn]}
+          // onPress={() => router.push("/find-donor")}
+          onPress={() => router.push("/profile")}
         >
           <View style={styles.iconCircle}>
             <Ionicons name="search" size={28} color="#d32f2f" />
@@ -69,31 +77,36 @@ export default function HomeScreen() {
           <Text style={styles.btnLabel}>Find Donor</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity 
-          style={[styles.squareBtn, styles.donateBloodBtn]} 
+        <TouchableOpacity
+          style={[styles.squareBtn, styles.donateBloodBtn]}
           onPress={() => router.push("/donate_blood")}
         >
           <View style={[styles.iconCircle, styles.donateBloodBtnIcon]}>
             <Ionicons name="water" size={28} color="#fff" />
           </View>
-          <Text style={[styles.btnLabel, {color: '#fff'}]}>Donate Blood</Text>
+          <Text style={[styles.btnLabel, { color: "#fff" }]}>Donate Blood</Text>
         </TouchableOpacity>
       </View>
 
       {/* --- SELFLESS CONTRIBUTION BUTTON (Full Width Dual Color) --- */}
-      <TouchableOpacity 
+      <TouchableOpacity
         style={styles.contributionContainer}
         onPress={() => router.push("/selfless-contribution")}
       >
         <View style={styles.dualBtn}>
           {/* Left Red Half */}
           <View style={styles.leftHalf}>
-             <FontAwesome5 name="hands-helping" size={20} color="#fff" />
+            <FontAwesome5 name="hands-helping" size={20} color="#fff" />
           </View>
           {/* Right White Half */}
           <View style={styles.rightHalf}>
-             <Text style={styles.contributionText}>Selfless Contribution</Text>
-             <Ionicons name="chevron-forward" size={18} color="#d32f2f" style={{marginLeft: 5}}/>
+            <Text style={styles.contributionText}>Selfless Contribution</Text>
+            <Ionicons
+              name="chevron-forward"
+              size={18}
+              color="#d32f2f"
+              style={{ marginLeft: 5 }}
+            />
           </View>
         </View>
       </TouchableOpacity>
@@ -102,18 +115,34 @@ export default function HomeScreen() {
       {isSidebarOpen && (
         <View style={styles.sidebarOverlay}>
           <Pressable style={styles.blurArea} onPress={toggleSidebar} />
-          <Animated.View style={[styles.sidebarContent, { transform: [{ translateX: slideAnim }] }]}>
+          <Animated.View
+            style={[
+              styles.sidebarContent,
+              { transform: [{ translateX: slideAnim }] },
+            ]}
+          >
             <View style={styles.sidebarHeader}>
               <Text style={styles.menuTitle}>Menu</Text>
             </View>
-            <TouchableOpacity style={styles.sidebarItem} onPress={() => { toggleSidebar(); router.push("/dashboard"); }}>
+            <TouchableOpacity
+              style={styles.sidebarItem}
+              onPress={() => {
+                toggleSidebar();
+                router.push("/dashboard");
+              }}
+            >
               <Ionicons name="grid-outline" size={22} color="#333" />
               <Text style={styles.sidebarText}>Dashboard</Text>
             </TouchableOpacity>
             <View style={styles.sidebarFooter}>
-              <TouchableOpacity style={[styles.sidebarItem, styles.logoutItem]} onPress={() => router.replace("/")}>
+              <TouchableOpacity
+                style={[styles.sidebarItem, styles.logoutItem]}
+                onPress={() => router.replace("/")}
+              >
                 <Ionicons name="log-out-outline" size={22} color="#d32f2f" />
-                <Text style={[styles.sidebarText, { color: "#d32f2f" }]}>Logout</Text>
+                <Text style={[styles.sidebarText, { color: "#d32f2f" }]}>
+                  Logout
+                </Text>
               </TouchableOpacity>
             </View>
           </Animated.View>
@@ -122,18 +151,27 @@ export default function HomeScreen() {
 
       {/* --- FOOTER --- */}
       <View style={styles.footer}>
-        <TouchableOpacity style={styles.footerTab} onPress={() => router.push("/donation-request")}>
+        <TouchableOpacity
+          style={styles.footerTab}
+          onPress={() => router.push("/donation-request")}
+        >
           <Ionicons name="add-circle-outline" size={26} color="#666" />
           <Text style={styles.footerTabText}>Request</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.homeTab} onPress={() => router.push("/home")}>
+        <TouchableOpacity
+          style={styles.homeTab}
+          onPress={() => router.push("/home")}
+        >
           <View style={styles.homeIconContainer}>
             <Ionicons name="home" size={28} color="#fff" />
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.footerTab} onPress={() => router.push("/profile")}>
+        <TouchableOpacity
+          style={styles.footerTab}
+          onPress={() => router.push("/profile")}
+        >
           <Ionicons name="person-outline" size={26} color="#666" />
           <Text style={styles.footerTabText}>Profile</Text>
         </TouchableOpacity>
@@ -148,21 +186,26 @@ const styles = StyleSheet.create({
   // Header Design
   stickyHeader: {
     backgroundColor: "#d32f2f",
-    paddingTop: Platform.OS === "android" ? (StatusBar.currentHeight || 0) + 15 : 60,
+    paddingTop:
+      Platform.OS === "android" ? (StatusBar.currentHeight || 0) + 15 : 60,
     paddingBottom: 60,
     paddingHorizontal: 25,
     borderBottomLeftRadius: 40,
     borderBottomRightRadius: 40,
     elevation: 10,
   },
-  headerTopRow: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" },
+  headerTopRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
   headerTitle: { color: "#fff", fontSize: 22, fontWeight: "bold" },
   headerSubtitle: { color: "#ffcdd2", fontSize: 14, marginTop: 5 },
 
   // Action Buttons Section
   actionSection: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between",
     paddingHorizontal: 25,
     marginTop: -40,
     zIndex: 10,
@@ -172,29 +215,29 @@ const styles = StyleSheet.create({
     height: width * 0.4,
     borderRadius: 30,
     padding: 20,
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
     elevation: 8,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.1,
     shadowRadius: 10,
   },
-  findDonorBtn: { backgroundColor: '#fff' },
+  findDonorBtn: { backgroundColor: "#fff" },
   donateBloodBtn: {
-    backgroundColor: '#d32f2f',
+    backgroundColor: "#d32f2f",
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.2)',
+    borderColor: "rgba(255,255,255,0.2)",
   },
   iconCircle: {
     width: 50,
     height: 50,
     borderRadius: 15,
-    backgroundColor: 'rgba(211, 47, 47, 0.1)',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "rgba(211, 47, 47, 0.1)",
+    justifyContent: "center",
+    alignItems: "center",
   },
-  donateBloodBtnIcon: { backgroundColor: 'rgba(255, 255, 255, 0.2)' },
-  btnLabel: { fontSize: 16, fontWeight: '900', color: '#333', lineHeight: 20 },
+  donateBloodBtnIcon: { backgroundColor: "rgba(255, 255, 255, 0.2)" },
+  btnLabel: { fontSize: 16, fontWeight: "900", color: "#333", lineHeight: 20 },
 
   // Selfless Contribution Button Styling
   contributionContainer: {
@@ -203,42 +246,54 @@ const styles = StyleSheet.create({
     height: 70,
     borderRadius: 20,
     elevation: 5,
-    backgroundColor: '#fff',
-    overflow: 'hidden',
-    shadowColor: '#000',
+    backgroundColor: "#fff",
+    overflow: "hidden",
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 5,
   },
   dualBtn: {
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   leftHalf: {
     flex: 0.25, // লাল অংশ ছোট (আইকনের জন্য)
-    backgroundColor: '#d32f2f',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#d32f2f",
+    justifyContent: "center",
+    alignItems: "center",
   },
   rightHalf: {
     flex: 0.75,
-    backgroundColor: '#fff',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#fff",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
     paddingHorizontal: 15,
   },
   contributionText: {
     fontSize: 17,
-    fontWeight: 'bold',
-    color: '#333',
+    fontWeight: "bold",
+    color: "#333",
   },
 
   // Sidebar & Footer (Keeping your original styles)
   sidebarOverlay: { ...StyleSheet.absoluteFillObject, zIndex: 2000 },
-  blurArea: { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(0,0,0,0.5)" },
-  sidebarContent: { width: width * 0.7, backgroundColor: "#fff", height: "100%", paddingTop: 50 },
-  sidebarHeader: { padding: 20, borderBottomWidth: 1, borderBottomColor: "#eee" },
+  blurArea: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(0,0,0,0.5)",
+  },
+  sidebarContent: {
+    width: width * 0.7,
+    backgroundColor: "#fff",
+    height: "100%",
+    paddingTop: 50,
+  },
+  sidebarHeader: {
+    padding: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: "#eee",
+  },
   menuTitle: { fontSize: 22, fontWeight: "bold", color: "#d32f2f" },
   sidebarItem: { flexDirection: "row", alignItems: "center", padding: 20 },
   sidebarText: { marginLeft: 15, fontSize: 16, color: "#333" },
