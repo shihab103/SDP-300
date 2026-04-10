@@ -68,8 +68,7 @@ export default function HomeScreen() {
       <View style={styles.actionSection}>
         <TouchableOpacity
           style={[styles.squareBtn, styles.findDonorBtn]}
-          // onPress={() => router.push("/find-donor")}
-          onPress={() => router.push("/profile")}
+          onPress={() => router.push("/find_donor")}
         >
           <View style={styles.iconCircle}>
             <Ionicons name="search" size={28} color="#d32f2f" />
@@ -258,7 +257,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   leftHalf: {
-    flex: 0.25, // লাল অংশ ছোট (আইকনের জন্য)
+    flex: 0.25, 
     backgroundColor: "#d32f2f",
     justifyContent: "center",
     alignItems: "center",
