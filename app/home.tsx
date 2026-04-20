@@ -12,7 +12,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-
+import NotificationBell from "./notification";
 const { width } = Dimensions.get("window");
 
 export default function HomeScreen() {
@@ -52,9 +52,10 @@ export default function HomeScreen() {
             <Ionicons name="menu-outline" size={30} color="#fff" />
           </TouchableOpacity>
           <Text style={styles.headerTitle}>Blood Aid</Text>
-          <TouchableOpacity>
-            <Ionicons name="notifications-outline" size={24} color="#fff" />
-          </TouchableOpacity>
+          
+          <View>
+            <NotificationBell />
+          </View>
         </View>
         <Text style={styles.headerSubtitle}>
           Save lives by{" "}
@@ -64,6 +65,7 @@ export default function HomeScreen() {
         </Text>
       </View>
 
+      
       {/* --- ACTION SECTION --- */}
       <View style={styles.actionSection}>
         <TouchableOpacity
@@ -87,17 +89,15 @@ export default function HomeScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* --- SELFLESS CONTRIBUTION BUTTON (Full Width Dual Color) --- */}
+      {/* --- SELFLESS CONTRIBUTION BUTTON --- */}
       <TouchableOpacity
         style={styles.contributionContainer}
         onPress={() => router.push("/selfless-contribution")}
       >
         <View style={styles.dualBtn}>
-          {/* Left Red Half */}
           <View style={styles.leftHalf}>
             <FontAwesome5 name="hands-helping" size={20} color="#fff" />
           </View>
-          {/* Right White Half */}
           <View style={styles.rightHalf}>
             <Text style={styles.contributionText}>Selfless Contribution</Text>
             <Ionicons
@@ -179,14 +179,12 @@ export default function HomeScreen() {
   );
 }
 
+// styles অংশটি আগের মতোই থাকবে...
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#F8F9FA" },
-
-  // Header Design
   stickyHeader: {
     backgroundColor: "#d32f2f",
-    paddingTop:
-      Platform.OS === "android" ? (StatusBar.currentHeight || 0) + 15 : 60,
+    paddingTop: Platform.OS === "android" ? (StatusBar.currentHeight || 0) + 15 : 60,
     paddingBottom: 60,
     paddingHorizontal: 25,
     borderBottomLeftRadius: 40,
@@ -200,8 +198,6 @@ const styles = StyleSheet.create({
   },
   headerTitle: { color: "#fff", fontSize: 22, fontWeight: "bold" },
   headerSubtitle: { color: "#ffcdd2", fontSize: 14, marginTop: 5 },
-
-  // Action Buttons Section
   actionSection: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -237,8 +233,6 @@ const styles = StyleSheet.create({
   },
   donateBloodBtnIcon: { backgroundColor: "rgba(255, 255, 255, 0.2)" },
   btnLabel: { fontSize: 16, fontWeight: "900", color: "#333", lineHeight: 20 },
-
-  // Selfless Contribution Button Styling
   contributionContainer: {
     marginHorizontal: 25,
     marginTop: 20,
@@ -252,47 +246,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 5,
   },
-  dualBtn: {
-    flex: 1,
-    flexDirection: "row",
-  },
-  leftHalf: {
-    flex: 0.25, 
-    backgroundColor: "#d32f2f",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  rightHalf: {
-    flex: 0.75,
-    backgroundColor: "#fff",
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingHorizontal: 15,
-  },
-  contributionText: {
-    fontSize: 17,
-    fontWeight: "bold",
-    color: "#333",
-  },
-
-  // Sidebar & Footer (Keeping your original styles)
+  dualBtn: { flex: 1, flexDirection: "row" },
+  leftHalf: { flex: 0.25, backgroundColor: "#d32f2f", justifyContent: "center", alignItems: "center" },
+  rightHalf: { flex: 0.75, backgroundColor: "#fff", flexDirection: "row", justifyContent: "center", alignItems: "center", paddingHorizontal: 15 },
+  contributionText: { fontSize: 17, fontWeight: "bold", color: "#333" },
   sidebarOverlay: { ...StyleSheet.absoluteFillObject, zIndex: 2000 },
-  blurArea: {
-    ...StyleSheet.absoluteFillObject,
-    backgroundColor: "rgba(0,0,0,0.5)",
-  },
-  sidebarContent: {
-    width: width * 0.7,
-    backgroundColor: "#fff",
-    height: "100%",
-    paddingTop: 50,
-  },
-  sidebarHeader: {
-    padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: "#eee",
-  },
+  blurArea: { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(0,0,0,0.5)" },
+  sidebarContent: { width: width * 0.7, backgroundColor: "#fff", height: "100%", paddingTop: 50 },
+  sidebarHeader: { padding: 20, borderBottomWidth: 1, borderBottomColor: "#eee" },
   menuTitle: { fontSize: 22, fontWeight: "bold", color: "#d32f2f" },
   sidebarItem: { flexDirection: "row", alignItems: "center", padding: 20 },
   sidebarText: { marginLeft: 15, fontSize: 16, color: "#333" },

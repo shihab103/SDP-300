@@ -61,7 +61,7 @@ const calculateDistance = (lat1: string, lon1: string, lat2: string, lon2: strin
 };
 
 export default function FindDonorScreen() {
-  // Current user info (integrate with your AuthContext)
+  // Current user info (integrate with your AuthContext)z
   const user = { email: "shihab@example.com", displayName: "Shihab Uddin", upazilaName: "Savar" }; 
 
   const [requests, setRequests] = useState<DonationRequest[]>([]);
