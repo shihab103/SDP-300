@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import {
   View,
   Text,
@@ -14,10 +14,9 @@ import {
 } from "react-native";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import axios from "axios";
+import { AuthContext } from "@/src/Provider/AuthContext";
 
-// Loading upazilas from your local path
 const upazilasData = require("../assets/data/upazilas.json");
-
 const { width } = Dimensions.get("window");
 
 interface DonationRequest {
@@ -41,58 +40,89 @@ const DISTANCE_RANGES = [
   { label: "Under 100 KM", value: 100 },
 ];
 
-// Distance Calculation logic
 const calculateDistance = (lat1: string, lon1: string, lat2: string, lon2: string) => {
   const l1 = parseFloat(lat1);
   const ln1 = parseFloat(lon1);
   const l2 = parseFloat(lat2);
   const ln2 = parseFloat(lon2);
-
   if (isNaN(l1) || isNaN(ln1) || isNaN(l2) || isNaN(ln2)) return null;
-
   const R = 6371; 
   const dLat = (l2 - l1) * Math.PI / 180;
   const dLon = (ln2 - ln1) * Math.PI / 180;
-  const a = 
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(l1 * Math.PI / 180) * Math.cos(l2 * Math.PI / 180) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(l1 * Math.PI / 180) * Math.cos(l2 * Math.PI / 180) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return parseFloat((R * c).toFixed(1)); 
 };
 
-export default function FindDonorScreen() {
-  // Current user info (integrate with your AuthContext)z
-  const user = { email: "shihab@example.com", displayName: "Shihab Uddin", upazilaName: "Savar" }; 
+const checkDonationEligibility = (requests: DonationRequest[], userEmail: string) => {
+  const doneDonations = requests.filter(r => r.donorEmail === userEmail && r.donationStatus === "done");
+  if (doneDonations.length === 0) return { eligible: true };
+  const latest = doneDonations.sort((a, b) => new Date(b.donationDate).getTime() - new Date(a.donationDate).getTime())[0];
+  const lastDate = new Date(latest.donationDate);
+  const today = new Date();
+  const diffTime = Math.abs(today.getTime() - lastDate.getTime());
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  if (diffDays < 90) return { eligible: false, remainingDays: 90 - diffDays };
+  return { eligible: true };
+};
 
+export default function FindDonorScreen() {
+  const auth = useContext(AuthContext);
+  const currentUserEmail = auth?.user?.email;
+
+  // States
+  const [userData, setUserData] = useState<any>(null);
   const [requests, setRequests] = useState<DonationRequest[]>([]);
   const [filterGroup, setFilterGroup] = useState<string>("All");
   const [filterDistance, setFilterDistance] = useState<string | number>("All");
   const [loading, setLoading] = useState<boolean>(true);
 
-  // Extracting data from your specific JSON structure
   const upazilaList = upazilasData.find((item: any) => item.name === "upazilas")?.data || [];
-
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const apiUrl = "https://webapp-delta-orpin.vercel.app";
 
   useEffect(() => {
-    fetchRequests();
-  }, []);
+    if (currentUserEmail) {
+      fetchInitialData();
+    }
+  }, [currentUserEmail]);
 
-  const fetchRequests = async () => {
+  const fetchInitialData = async () => {
     try {
       setLoading(true);
-      const res = await axios.get<DonationRequest[]>(`${apiUrl}/public-donation-requests`);
-      setRequests(res.data);
+      // Fetch User and Requests in parallel
+      const [userRes, requestsRes] = await Promise.all([
+        axios.get(`${apiUrl}/users/${currentUserEmail}`),
+        axios.get<DonationRequest[]>(`${apiUrl}/public-donation-requests`)
+      ]);
+      setUserData(userRes.data);
+      setRequests(requestsRes.data);
       Animated.timing(fadeAnim, { toValue: 1, duration: 500, useNativeDriver: true }).start();
     } catch (err) {
-      Alert.alert("Error", "Failed to load requests from server.");
+      Alert.alert("Error", "Failed to load data from server.");
     } finally {
       setLoading(false);
     }
   };
 
+  const fetchRequests = async () => {
+    try {
+      const res = await axios.get<DonationRequest[]>(`${apiUrl}/public-donation-requests`);
+      setRequests(res.data);
+    } catch (err) {
+      Alert.alert("Error", "Failed to refresh requests.");
+    }
+  };
+
   const handleDonate = async (id: string) => {
+    if (!userData) return;
+    const eligibility = checkDonationEligibility(requests, userData.email);
+
+    if (!eligibility.eligible) {
+      Alert.alert("Not Eligible Yet", `You can donate again after ${eligibility.remainingDays} days.`);
+      return;
+    }
+
     Alert.alert("Confirm", "Are you sure you want to donate to this patient?", [
       { text: "No", style: "cancel" },
       {
@@ -101,8 +131,8 @@ export default function FindDonorScreen() {
           try {
             await axios.patch(`${apiUrl}/donation-request/${id}`, {
               donationStatus: "inprogress",
-              donorName: user.displayName,
-              donorEmail: user.email,
+              donorName: userData.name,
+              donorEmail: userData.email,
             });
             Alert.alert("Thank You", "Your donation offer has been recorded.");
             fetchRequests();
@@ -126,14 +156,12 @@ export default function FindDonorScreen() {
 
   const filteredRequests = requests.filter((req) => {
     if (req.donationStatus === "done") return false;
-    
     const matchesGroup = filterGroup === "All" || req.bloodGroup === filterGroup;
     
     let matchesDistance = true;
-    if (filterDistance !== "All") {
-      const userGeo = upazilaList.find((u: any) => u.name === user.upazilaName);
+    if (filterDistance !== "All" && userData) {
+      const userGeo = upazilaList.find((u: any) => u.name === userData.upazilaName);
       const reqGeo = upazilaList.find((u: any) => u.name === req.recipientUpazila);
-      
       if (userGeo && reqGeo) {
         const dist = calculateDistance(userGeo.lat, userGeo.lon, reqGeo.lat, reqGeo.lon);
         matchesDistance = dist !== null && dist <= (filterDistance as number);
@@ -141,40 +169,36 @@ export default function FindDonorScreen() {
         matchesDistance = false;
       }
     }
-    
     return matchesGroup && matchesDistance;
   });
 
   const renderRequestCard = ({ item }: { item: DonationRequest }) => {
-    const userGeo = upazilaList.find((u: any) => u.name === user.upazilaName);
+    if (!userData) return null;
+    const userGeo = upazilaList.find((u: any) => u.name === userData.upazilaName);
     const reqGeo = upazilaList.find((u: any) => u.name === item.recipientUpazila);
     const distance = (userGeo && reqGeo) ? calculateDistance(userGeo.lat, userGeo.lon, reqGeo.lat, reqGeo.lon) : null;
 
-    const isDonor = item.donorEmail === user.email;
+    const isDonor = item.donorEmail === userData.email;
     const isInProgress = item.donationStatus === "inprogress";
-    const isOwnRequest = item.requesterEmail === user.email;
+    const isOwnRequest = item.requesterEmail === userData.email;
 
     return (
       <View style={styles.card}>
         <View style={styles.bloodBadge}>
           <Text style={styles.bloodBadgeText}>{item.bloodGroup}</Text>
         </View>
-
         <View style={styles.cardContent}>
           <Text style={styles.patientName}>{item.recipientName}</Text>
-          
           {distance !== null && (
             <View style={styles.distanceTag}>
               <Ionicons name="navigate" size={12} color="#2196F3" />
               <Text style={styles.distanceText}>{distance} KM Away</Text>
             </View>
           )}
-
           <View style={styles.statusRow}>
             <View style={[styles.dot, { backgroundColor: item.donationStatus === 'pending' ? '#FFC107' : '#2196F3' }]} />
             <Text style={styles.statusText}>{item.donationStatus.toUpperCase()}</Text>
           </View>
-
           <View style={styles.infoContainer}>
             <View style={styles.infoBoxFull}>
               <Ionicons name="business" size={16} color="#d32f2f" />
@@ -191,7 +215,6 @@ export default function FindDonorScreen() {
               </View>
             </View>
           </View>
-
           {isOwnRequest ? (
             <View style={styles.ownRequestTag}>
               <Text style={styles.ownRequestText}>Your Own Request</Text>
@@ -216,12 +239,16 @@ export default function FindDonorScreen() {
     );
   };
 
+  if (!currentUserEmail) {
+    return <View style={styles.center}><Text>Please login to see requests.</Text></View>;
+  }
+
   return (
     <View style={styles.container}>
       <StatusBar barStyle="dark-content" />
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Blood <Text style={{color: '#d32f2f'}}>Network</Text></Text>
-        <TouchableOpacity onPress={fetchRequests} style={styles.refreshBtn}>
+        <TouchableOpacity onPress={fetchInitialData} style={styles.refreshBtn}>
           <Ionicons name="refresh" size={20} color="#666" />
         </TouchableOpacity>
       </View>
